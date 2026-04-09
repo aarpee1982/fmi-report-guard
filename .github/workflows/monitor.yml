@@ -1,0 +1,85 @@
+name: Monitor FMI Reports
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+    inputs:
+      audit_initial:
+        description: "Audit currently visible reports instead of seeding state only"
+        required: false
+        type: boolean
+        default: false
+      force_url:
+        description: "Optional specific report URL to audit"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: fmi-report-guard-monitor
+  cancel-in-progress: false
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -e .
+
+      - name: Run monitor
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_MODEL: ${{ vars.OPENAI_MODEL }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          AUDIT_INITIAL: ${{ inputs.audit_initial }}
+          FORCE_URL: ${{ inputs.force_url }}
+        run: |
+          EXTRA_ARGS=()
+          if [ "${AUDIT_INITIAL}" = "true" ]; then
+            EXTRA_ARGS+=(--audit-initial)
+          fi
+          if [ -n "${FORCE_URL}" ]; then
+            EXTRA_ARGS+=(--force-url "${FORCE_URL}")
+          fi
+          python -m fmi_report_guard.main \
+            --state-path state/seen_reports.json \
+            --artifacts-dir artifacts \
+            --pages 2 \
+            --records-per-page 150 \
+            --max-new 25 \
+            "${EXTRA_ARGS[@]}"
+
+      - name: Upload run artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fmi-report-guard-run
+          path: artifacts/
+          if-no-files-found: ignore
+          retention-days: 7
+
+      - name: Commit updated state
+        run: |
+          if git diff --quiet -- state/seen_reports.json; then
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/seen_reports.json
+          git commit -m "chore: update FMI seen-report state"
+          git push
