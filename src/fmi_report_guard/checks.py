@@ -35,7 +35,6 @@ def run_rule_checks(report: ReportPage) -> list[Finding]:
     findings: list[Finding] = []
     findings.extend(check_forecast_years(report))
     findings.extend(check_market_math(report))
-    findings.extend(check_topic_mismatch(report))
     return findings
 
 
@@ -101,7 +100,7 @@ def check_market_math(report: ReportPage) -> list[Finding]:
     if not math.isfinite(implied_cagr):
         return findings
 
-    if abs(implied_cagr - cagr) >= 1.0:
+    if abs(implied_cagr - cagr) > 1.0:
         findings.append(
             Finding(
                 category="numeric_inconsistency",

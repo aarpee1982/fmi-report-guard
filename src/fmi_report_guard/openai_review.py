@@ -6,6 +6,68 @@ from openai import OpenAI
 
 from .models import Finding, ReportPage
 
+MIN_CONFIDENCE = 0.90
+MINOR_ERROR_KEYWORDS = {
+    "duplicate word",
+    "duplicated word",
+    "typographical",
+    "typographical error",
+    "editorial",
+    "editorial typo",
+    "typo",
+    "formatting",
+    "metadata",
+    "redundant",
+    "omits unit",
+    "missing unit",
+    "wording",
+}
+SEGMENTATION_KEYWORDS = {
+    "segmentation",
+    "segment",
+    "segmented by",
+    "topic mismatch",
+    "mismatched product",
+    "pasted here",
+    "unrelated to the report title",
+}
+COMPANY_NEWS_KEYWORDS = {
+    "company",
+    "companies",
+    "player",
+    "players",
+    "merged",
+    "merger",
+    "acquisition",
+    "acquired",
+    "acquire",
+    "partnership",
+    "partnered",
+    "development",
+    "developments",
+    "news",
+    "announced",
+    "launch",
+    "launched",
+    "hallucination",
+    "fabricated",
+    "invented",
+    "competitive landscape",
+}
+NUMERIC_CONTRADICTION_KEYWORDS = {
+    "conflicting",
+    "contradictory",
+    "inconsistent",
+    "more than one",
+    "multiple",
+    "cagr",
+    "forecast year",
+    "forecast period",
+    "market size",
+    "market value",
+    "terminal value",
+}
+
 
 def review_with_openai(
     report: ReportPage,
@@ -70,7 +132,9 @@ def review_with_openai(
     findings: list[Finding] = []
     for item in payload.get("findings", []):
         confidence = float(item.get("confidence", 0))
-        if confidence < 0.85:
+        if confidence < MIN_CONFIDENCE:
+            continue
+        if not _is_material_finding(item):
             continue
         findings.append(
             Finding(
@@ -95,14 +159,17 @@ def _build_messages(report: ReportPage, rule_findings: list[Finding]) -> list[di
         "task": (
             "Review this public market-report page for glaring errors only. "
             "Do not flag stylistic issues, weak writing, or debatable analysis. "
-            "Only alert on high-confidence problems such as a clearly wrong topic, obvious pasted segmentation from another market, "
-            "material numeric inconsistency, or merged-company duplication based on universally known corporate facts."
+            "Only alert on high-confidence problems such as wrong company names, stale merged companies still listed separately, "
+            "fabricated or inconsistent company developments/news, AI hallucinations, or material numeric contradictions."
         ),
         "rules": [
-            "If confidence is below 0.85, return no finding.",
+            "If confidence is below 0.90, return no finding.",
             "If the evidence could still plausibly be correct, return no finding.",
             "Use only the supplied page content and widely known corporate facts.",
             "Prefer false negatives over false positives.",
+            "Ignore segmentation-not-related findings unless they also prove a clear hallucination about companies or facts.",
+            "Ignore duplicated words, minor editorial mistakes, metadata wording issues, and missing-unit formatting issues.",
+            "Ignore CAGR differences of 1.0 percentage point or less.",
         ],
         "report": report.as_prompt_payload(),
         "rule_findings": rules_text,
@@ -113,7 +180,7 @@ def _build_messages(report: ReportPage, rule_findings: list[Finding]) -> list[di
             "role": "system",
             "content": (
                 "You are a strict QA reviewer for public market-report pages. "
-                "You only report glaring, editor-worthy errors."
+                "You only report glaring, editor-worthy errors and ignore minor copy-edit problems."
             ),
         },
         {
@@ -121,3 +188,23 @@ def _build_messages(report: ReportPage, rule_findings: list[Finding]) -> list[di
             "content": json.dumps(prompt, ensure_ascii=True),
         },
     ]
+
+
+def _is_material_finding(item: dict[str, object]) -> bool:
+    text = " ".join(
+        str(item.get(key, ""))
+        for key in ("category", "title", "explanation")
+    ).lower()
+
+    has_company_or_news_signal = any(keyword in text for keyword in COMPANY_NEWS_KEYWORDS)
+    has_numeric_contradiction_signal = any(keyword in text for keyword in NUMERIC_CONTRADICTION_KEYWORDS)
+    has_minor_signal = any(keyword in text for keyword in MINOR_ERROR_KEYWORDS)
+    has_segmentation_signal = any(keyword in text for keyword in SEGMENTATION_KEYWORDS)
+
+    if has_minor_signal and not (has_company_or_news_signal or has_numeric_contradiction_signal):
+        return False
+
+    if has_segmentation_signal and not has_company_or_news_signal:
+        return False
+
+    return has_company_or_news_signal or has_numeric_contradiction_signal

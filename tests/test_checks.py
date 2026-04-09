@@ -1,5 +1,6 @@
-from fmi_report_guard.checks import check_forecast_years, check_topic_mismatch
+from fmi_report_guard.checks import check_forecast_years, check_market_math, run_rule_checks
 from fmi_report_guard.models import ReportPage
+from fmi_report_guard.openai_review import _is_material_finding
 
 
 def make_report(**overrides) -> ReportPage:
@@ -41,8 +42,39 @@ def test_forecast_year_mismatch_is_flagged() -> None:
     assert findings[0].category == "numeric_inconsistency"
 
 
-def test_topic_mismatch_is_flagged() -> None:
+def test_topic_mismatch_is_not_included_in_rule_checks() -> None:
     report = make_report(page_title="Hospital Bedsheet & Pillow Cover Market | Global Industry Analysis Report - 2036")
-    findings = check_topic_mismatch(report)
-    assert findings
-    assert findings[0].category == "topic_mismatch"
+    findings = run_rule_checks(report)
+    assert all(finding.category != "topic_mismatch" for finding in findings)
+
+
+def test_cagr_difference_of_exactly_one_percent_is_ignored() -> None:
+    report = make_report(
+        page_title="Test Market | Global Industry Analysis Report - 2036",
+        card_title="Test Market",
+        h1="Test Market (2026 - 2036)",
+        meta_description=(
+            "Test Market was valued at USD 1.0 billion and is expected to reach "
+            "USD 2.6 billion by 2036, growing at a CAGR of 10.0%."
+        ),
+    )
+    findings = check_market_math(report)
+    assert findings == []
+
+
+def test_minor_editorial_openai_finding_is_filtered() -> None:
+    item = {
+        "category": "Editorial / Typo",
+        "title": "Duplicated word in meta description",
+        "explanation": "The meta description contains a duplicated word and should be edited.",
+    }
+    assert _is_material_finding(item) is False
+
+
+def test_company_hallucination_openai_finding_is_kept() -> None:
+    item = {
+        "category": "Company Hallucination",
+        "title": "Fabricated acquisition claim",
+        "explanation": "The report claims a company acquired another firm, but that development appears invented.",
+    }
+    assert _is_material_finding(item) is True
