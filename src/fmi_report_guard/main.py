@@ -47,9 +47,12 @@ def main() -> None:
         print(f"Bootstrapped {len(cards)} report URLs without auditing.")
         return
 
-    new_cards = [card for card in cards if card.url not in state.seen_urls][: args.max_new]
     if args.force_url:
         new_cards = cards
+    elif args.audit_initial:
+        new_cards = cards[: args.max_new]
+    else:
+        new_cards = [card for card in cards if card.url not in state.seen_urls][: args.max_new]
 
     results: list[tuple[ReportPage, list[Finding]]] = []
     for card in new_cards:
