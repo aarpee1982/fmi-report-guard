@@ -35,6 +35,7 @@ class Finding:
     category: str
     title: str
     explanation: str
+    correction_instruction: str
     confidence: float
     source: str
     evidence: list[str] = field(default_factory=list)

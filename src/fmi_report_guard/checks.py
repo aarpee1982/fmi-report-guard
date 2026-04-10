@@ -5,29 +5,10 @@ import re
 
 from .models import Finding, ReportPage
 
-GENERIC_TITLE_WORDS = {
-    "market",
-    "global",
-    "industry",
-    "analysis",
-    "report",
-    "forecast",
-    "future",
-    "insights",
-    "size",
-    "outlook",
-    "summary",
-    "company",
-    "companies",
-    "cover",
-    "covers",
-    "worldwide",
-    "the",
-    "and",
-    "for",
-    "with",
-    "from",
-    "into",
+MONEY_UNIT_MULTIPLIERS = {
+    "thousand": 1_000,
+    "million": 1_000_000,
+    "billion": 1_000_000_000,
 }
 
 
@@ -44,6 +25,12 @@ def check_forecast_years(report: ReportPage) -> list[Finding]:
     h1_range = _extract_range_years(report.h1)
     meta_year = _extract_year_after_by(report.meta_description)
     card_range = _extract_range_years(report.card_summary)
+    candidate_evidence = {
+        "page_title": report.page_title,
+        "h1_end": report.h1,
+        "meta_description": report.meta_description,
+        "card_summary_end": report.card_summary,
+    }
 
     candidate_years = {
         label: year
@@ -66,9 +53,16 @@ def check_forecast_years(report: ReportPage) -> list[Finding]:
                     "The report exposes more than one ending forecast year across its public title "
                     "and summary fields."
                 ),
+                correction_instruction=(
+                    "Please correct the forecast end year so the page title, H1, meta description, and card summary "
+                    "all show the same reporting period and the same terminal year."
+                ),
                 confidence=0.98,
                 source="rule",
-                evidence=[f"{label}: {year}" for label, year in candidate_years.items()],
+                evidence=[
+                    f"{label}: {candidate_evidence[label]}"
+                    for label in candidate_years
+                ],
             )
         )
 
@@ -92,11 +86,13 @@ def check_market_math(report: ReportPage) -> list[Finding]:
 
     start_amount, start_unit = start_value
     end_amount, end_unit = end_value
-    if start_unit != end_unit:
+    normalized_start = _normalize_money_value(start_amount, start_unit)
+    normalized_end = _normalize_money_value(end_amount, end_unit)
+    if normalized_start <= 0 or normalized_end <= 0:
         return findings
 
     periods = max(years[1] - years[0], 1)
-    implied_cagr = ((end_amount / start_amount) ** (1 / periods) - 1) * 100
+    implied_cagr = ((normalized_end / normalized_start) ** (1 / periods) - 1) * 100
     if not math.isfinite(implied_cagr):
         return findings
 
@@ -106,8 +102,13 @@ def check_market_math(report: ReportPage) -> list[Finding]:
                 category="numeric_inconsistency",
                 title="Published CAGR does not match the exposed market values",
                 explanation=(
-                    f"Using the public start and end values over {periods} years implies roughly "
-                    f"{implied_cagr:.1f}% CAGR, which materially differs from the stated {cagr:.1f}%."
+                    f"After normalizing the public start and end values across thousand/million/billion units, "
+                    f"the exposed figures imply roughly {implied_cagr:.1f}% CAGR over {periods} years, which "
+                    f"materially differs from the stated {cagr:.1f}%."
+                ),
+                correction_instruction=(
+                    "Please correct the published market values or the CAGR so they are mathematically consistent "
+                    f"across the {years[0]}-{years[1]} forecast period, and confirm the million/billion unit labels are correct."
                 ),
                 confidence=0.94,
                 source="rule",
@@ -119,53 +120,6 @@ def check_market_math(report: ReportPage) -> list[Finding]:
         )
 
     return findings
-
-
-def check_topic_mismatch(report: ReportPage) -> list[Finding]:
-    findings: list[Finding] = []
-    title_terms = _significant_terms(report.card_title or report.h1 or report.page_title)
-    if len(title_terms) < 3:
-        return findings
-
-    candidate_texts: list[str] = []
-    lead_focus = _trim_after_marker(report.lead_summary, "segmented by")
-    if lead_focus:
-        candidate_texts.append(lead_focus)
-
-    for paragraph in report.summary_paragraphs[:5]:
-        for marker in ("refers to the category of", "designed for use in", "encompasses"):
-            trimmed = _trim_after_marker(paragraph, marker)
-            if trimmed:
-                candidate_texts.append(trimmed)
-
-    for candidate in candidate_texts:
-        lowered = candidate.lower()
-        if len(lowered) < 40:
-            continue
-        overlap = sum(1 for term in title_terms if term in lowered)
-        overlap_ratio = overlap / len(title_terms)
-        has_signature = ("," in candidate) or ("(" in candidate and ")" in candidate)
-        if overlap_ratio <= 0.20 and has_signature:
-            findings.append(
-                Finding(
-                    category="topic_mismatch",
-                    title="Lead segmentation appears unrelated to the report title",
-                    explanation=(
-                        "The public descriptive text barely overlaps with the report topic named in the title, "
-                        "which is a strong sign that text from a different market page was pasted here."
-                    ),
-                    confidence=0.92,
-                    source="rule",
-                    evidence=[
-                        report.card_title or report.h1,
-                        candidate,
-                    ],
-                )
-            )
-            break
-
-    return findings
-
 
 def _extract_trailing_year(text: str) -> int | None:
     match = re.search(r"[-–]\s*(20\d{2})\s*$", text)
@@ -208,17 +162,5 @@ def _extract_money_value(text: str, *, start: bool) -> tuple[float, str] | None:
             return float(match.group(1)), match.group(2)
     return None
 
-
-def _significant_terms(text: str) -> list[str]:
-    raw_terms = re.findall(r"[a-zA-Z]{4,}", text.lower())
-    return [
-        term
-        for term in raw_terms
-        if term not in GENERIC_TITLE_WORDS
-    ]
-
-
-def _trim_after_marker(text: str, marker: str) -> str:
-    if marker.lower() not in text.lower():
-        return ""
-    return re.split(re.escape(marker), text, flags=re.I, maxsplit=1)[1].strip(" .,:;-")
+def _normalize_money_value(amount: float, unit: str) -> float:
+    return amount * MONEY_UNIT_MULTIPLIERS[unit.lower()]

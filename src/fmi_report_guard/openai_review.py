@@ -7,6 +7,12 @@ from openai import OpenAI
 from .models import Finding, ReportPage
 
 MIN_CONFIDENCE = 0.90
+ALLOWED_CATEGORIES = {
+    "numeric_inconsistency",
+    "unit_scale_error",
+    "company_name_error",
+    "company_development_error",
+}
 MINOR_ERROR_KEYWORDS = {
     "duplicate word",
     "duplicated word",
@@ -31,30 +37,9 @@ SEGMENTATION_KEYWORDS = {
     "pasted here",
     "unrelated to the report title",
 }
-COMPANY_NEWS_KEYWORDS = {
-    "company",
-    "companies",
-    "player",
-    "players",
-    "merged",
-    "merger",
-    "acquisition",
-    "acquired",
-    "acquire",
-    "partnership",
-    "partnered",
-    "development",
-    "developments",
-    "news",
-    "announced",
-    "launch",
-    "launched",
-    "hallucination",
-    "fabricated",
-    "invented",
-    "competitive landscape",
-}
 NUMERIC_CONTRADICTION_KEYWORDS = {
+    "numeric",
+    "number",
     "conflicting",
     "contradictory",
     "inconsistent",
@@ -66,6 +51,48 @@ NUMERIC_CONTRADICTION_KEYWORDS = {
     "market size",
     "market value",
     "terminal value",
+}
+UNIT_SCALE_KEYWORDS = {
+    "million",
+    "billion",
+    "thousand",
+    "unit scale",
+    "scale error",
+    "magnitude",
+    "order of magnitude",
+}
+COMPANY_NAME_KEYWORDS = {
+    "company name",
+    "company names",
+    "wrong company",
+    "incorrect company",
+    "misspelled company",
+    "wrong player",
+    "incorrect player",
+    "stale merged companies",
+    "merged companies",
+    "still listed separately",
+    "listed separately",
+    "duplicate company",
+    "duplicate companies",
+}
+COMPANY_DEVELOPMENT_KEYWORDS = {
+    "company development",
+    "company developments",
+    "fabricated development",
+    "invented development",
+    "fabricated news",
+    "invented news",
+    "acquisition",
+    "acquired",
+    "acquire",
+    "partnership",
+    "partnered",
+    "merger",
+    "merged",
+    "launch",
+    "launched",
+    "announced",
 }
 
 
@@ -94,9 +121,13 @@ def review_with_openai(
                             "items": {
                                 "type": "object",
                                 "properties": {
-                                    "category": {"type": "string"},
+                                    "category": {
+                                        "type": "string",
+                                        "enum": sorted(ALLOWED_CATEGORIES),
+                                    },
                                     "title": {"type": "string"},
                                     "explanation": {"type": "string"},
+                                    "correction_instruction": {"type": "string"},
                                     "confidence": {
                                         "type": "number",
                                         "minimum": 0,
@@ -111,6 +142,7 @@ def review_with_openai(
                                     "category",
                                     "title",
                                     "explanation",
+                                    "correction_instruction",
                                     "confidence",
                                     "evidence",
                                 ],
@@ -141,6 +173,7 @@ def review_with_openai(
                 category=str(item.get("category", "other")),
                 title=str(item.get("title", "Possible glaring issue")),
                 explanation=str(item.get("explanation", "")),
+                correction_instruction=str(item.get("correction_instruction", "")),
                 confidence=confidence,
                 source="openai",
                 evidence=[str(value) for value in item.get("evidence", [])[:3]],
@@ -159,15 +192,18 @@ def _build_messages(report: ReportPage, rule_findings: list[Finding]) -> list[di
         "task": (
             "Review this public market-report page for glaring errors only. "
             "Do not flag stylistic issues, weak writing, or debatable analysis. "
-            "Only alert on high-confidence problems such as wrong company names, stale merged companies still listed separately, "
-            "fabricated or inconsistent company developments/news, AI hallucinations, or material numeric contradictions."
+            "Only alert on high-confidence problems in these categories: numeric_inconsistency, "
+            "unit_scale_error, company_name_error, and company_development_error."
         ),
         "rules": [
             "If confidence is below 0.90, return no finding.",
             "If the evidence could still plausibly be correct, return no finding.",
             "Use only the supplied page content and widely known corporate facts.",
             "Prefer false negatives over false positives.",
-            "Ignore segmentation-not-related findings unless they also prove a clear hallucination about companies or facts.",
+            "Never alert on segmentation alignment, segment taxonomy, or segment completeness by itself.",
+            "If the analyst's segmentation could plausibly be intentional, return no finding.",
+            "Focus on glaring number inconsistencies, million/billion unit-scale mistakes, wrong company names, and wrong or fabricated company developments only.",
+            "For every finding, include a concrete correction_instruction written for an uploader, starting with 'Please correct this by'.",
             "Ignore duplicated words, minor editorial mistakes, metadata wording issues, and missing-unit formatting issues.",
             "Ignore CAGR differences of 1.0 percentage point or less.",
         ],
@@ -191,20 +227,36 @@ def _build_messages(report: ReportPage, rule_findings: list[Finding]) -> list[di
 
 
 def _is_material_finding(item: dict[str, object]) -> bool:
+    category = str(item.get("category", "")).strip().lower()
+    if category not in ALLOWED_CATEGORIES:
+        return False
+    if not str(item.get("correction_instruction", "")).strip():
+        return False
+
     text = " ".join(
         str(item.get(key, ""))
-        for key in ("category", "title", "explanation")
+        for key in ("category", "title", "explanation", "correction_instruction")
     ).lower()
 
-    has_company_or_news_signal = any(keyword in text for keyword in COMPANY_NEWS_KEYWORDS)
-    has_numeric_contradiction_signal = any(keyword in text for keyword in NUMERIC_CONTRADICTION_KEYWORDS)
     has_minor_signal = any(keyword in text for keyword in MINOR_ERROR_KEYWORDS)
     has_segmentation_signal = any(keyword in text for keyword in SEGMENTATION_KEYWORDS)
 
-    if has_minor_signal and not (has_company_or_news_signal or has_numeric_contradiction_signal):
+    if has_minor_signal:
         return False
 
-    if has_segmentation_signal and not has_company_or_news_signal:
+    if has_segmentation_signal and category not in {"company_name_error", "company_development_error"}:
         return False
 
-    return has_company_or_news_signal or has_numeric_contradiction_signal
+    if category == "numeric_inconsistency":
+        return any(keyword in text for keyword in NUMERIC_CONTRADICTION_KEYWORDS)
+
+    if category == "unit_scale_error":
+        return any(keyword in text for keyword in UNIT_SCALE_KEYWORDS)
+
+    if category == "company_name_error":
+        return any(keyword in text for keyword in COMPANY_NAME_KEYWORDS)
+
+    if category == "company_development_error":
+        return any(keyword in text for keyword in COMPANY_DEVELOPMENT_KEYWORDS)
+
+    return False

@@ -69,13 +69,14 @@ def main() -> None:
 
     write_run_artifacts(results, artifacts_dir)
 
-    if not args.dry_run and results and config.github_token and config.github_repository:
+    if not args.dry_run and config.github_token and config.github_repository:
         github = GitHubIssueClient(token=config.github_token, repository=config.github_repository)
         for report, findings in results:
             github.ensure_issue(
                 title=build_issue_title(report),
                 body=build_issue_body(report, findings),
             )
+        github.sync_correction_digest()
 
     print(f"Audited {len(new_cards)} report(s); found issues in {len(results)} report(s).")
 

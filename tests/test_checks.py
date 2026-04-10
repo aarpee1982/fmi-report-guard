@@ -62,19 +62,80 @@ def test_cagr_difference_of_exactly_one_percent_is_ignored() -> None:
     assert findings == []
 
 
+def test_cross_unit_market_math_is_ignored_when_values_support_the_stated_cagr() -> None:
+    report = make_report(
+        page_title="Test Market | Global Industry Analysis Report - 2036",
+        card_title="Test Market",
+        h1="Test Market (2026 - 2036)",
+        meta_description=(
+            "Test Market was valued at USD 950 million and is expected to reach "
+            "USD 1.2 billion by 2036, growing at a CAGR of 2.4%."
+        ),
+    )
+    findings = check_market_math(report)
+    assert findings == []
+
+
+def test_cross_unit_market_math_flags_glaring_scale_error() -> None:
+    report = make_report(
+        page_title="Test Market | Global Industry Analysis Report - 2036",
+        card_title="Test Market",
+        h1="Test Market (2026 - 2036)",
+        meta_description=(
+            "Test Market was valued at USD 1.0 billion and is expected to reach "
+            "USD 2.6 million by 2036, growing at a CAGR of 10.0%."
+        ),
+    )
+    findings = check_market_math(report)
+    assert findings
+    assert findings[0].category == "numeric_inconsistency"
+
+
 def test_minor_editorial_openai_finding_is_filtered() -> None:
     item = {
         "category": "Editorial / Typo",
         "title": "Duplicated word in meta description",
         "explanation": "The meta description contains a duplicated word and should be edited.",
+        "correction_instruction": "Please correct this by removing the duplicated word.",
     }
     assert _is_material_finding(item) is False
 
 
 def test_company_hallucination_openai_finding_is_kept() -> None:
     item = {
-        "category": "Company Hallucination",
+        "category": "company_development_error",
         "title": "Fabricated acquisition claim",
         "explanation": "The report claims a company acquired another firm, but that development appears invented.",
+        "correction_instruction": "Please correct this by removing the acquisition claim unless it can be verified from a reliable public source.",
     }
     assert _is_material_finding(item) is True
+
+
+def test_segmentation_driven_openai_finding_is_filtered() -> None:
+    item = {
+        "category": "company_name_error",
+        "title": "Segment list appears unrelated to the market",
+        "explanation": "The segmentation appears unrelated to the report title and may be pasted here.",
+        "correction_instruction": "Please correct this by reviewing the segment list against the intended market definition.",
+    }
+    assert _is_material_finding(item) is False
+
+
+def test_unit_scale_openai_finding_is_kept() -> None:
+    item = {
+        "category": "unit_scale_error",
+        "title": "Million versus billion market value mismatch",
+        "explanation": "The report says USD 2.6 million instead of USD 2.6 billion, creating an order of magnitude scale error.",
+        "correction_instruction": "Please correct this by updating the unit label so the market value uses the verified billion-scale figure.",
+    }
+    assert _is_material_finding(item) is True
+
+
+def test_openai_finding_without_correction_instruction_is_filtered() -> None:
+    item = {
+        "category": "company_development_error",
+        "title": "Fabricated acquisition claim",
+        "explanation": "The report claims a company acquired another firm, but that development appears invented.",
+        "correction_instruction": "",
+    }
+    assert _is_material_finding(item) is False

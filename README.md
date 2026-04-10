@@ -5,8 +5,8 @@
 It is intentionally narrow:
 
 - It looks for obvious forecast-year inconsistencies.
-- It checks for clearly broken market math when the page exposes enough numbers.
-- It uses OpenAI to flag only high-confidence topic mismatches, hallucinated segmentation, or obvious merged-company duplication.
+- It checks for clearly broken market math, including glaring `million` vs `billion` scale mistakes when the page exposes enough numbers.
+- It uses OpenAI only for high-confidence company-name errors and fabricated or wrong company developments.
 - It does nothing when a report looks normal.
 
 ## How it works
@@ -16,7 +16,8 @@ It is intentionally narrow:
 3. It fetches only unseen report pages and extracts public text such as the page title, H1, summary, FAQ snippets, and competitive-language paragraphs.
 4. It runs deterministic checks first, then an OpenAI review pass.
 5. If findings exist, it creates a GitHub issue for that report and uploads a run artifact.
-6. It commits the updated seen-state back into the repo so the next run only handles fresh reports.
+6. It also updates one rolling GitHub digest issue that groups open corrections in one place and shows how to fix them.
+7. It commits the updated seen-state back into the repo so the next run only handles fresh reports.
 
 ## Bootstrap behavior
 
@@ -34,6 +35,13 @@ If you want to audit the currently visible reports once, run the workflow manual
 Optional repository variable:
 
 - `OPENAI_MODEL`: defaults to `gpt-5-mini`
+
+GitHub digest behavior:
+
+- The repo maintains a rolling issue titled `"[FMI Guard] Open correction digest"`.
+- That digest is rebuilt from the currently open FMI Guard report issues.
+- Repeated uploader instructions are grouped together so you do not have to send the same correction repeatedly.
+- Each grouped item includes the fix instruction, the reason it is wrong, and the exact sentence(s) that need correction.
 
 ## Local usage
 
@@ -59,6 +67,12 @@ Run tests:
 
 ```bash
 pytest
+```
+
+Preview the rolling correction digest locally:
+
+```bash
+python -m fmi_report_guard.daily_summary --dry-run
 ```
 
 ## Notes
