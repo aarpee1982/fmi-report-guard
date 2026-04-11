@@ -22,6 +22,7 @@ dev = [
 [project.scripts]
 fmi-report-guard = "fmi_report_guard.main:main"
 fmi-report-guard-daily-summary = "fmi_report_guard.daily_summary:main"
+fmi-report-guard-sync-digest = "fmi_report_guard.sync_digest:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}

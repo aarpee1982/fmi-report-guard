@@ -53,9 +53,11 @@ def check_forecast_years(report: ReportPage) -> list[Finding]:
                     "The report exposes more than one ending forecast year across its public title "
                     "and summary fields."
                 ),
+                uploader_summary=(
+                    "The forecast years do not match across the page, so the upload team needs to align the period everywhere."
+                ),
                 correction_instruction=(
-                    "Please correct the forecast end year so the page title, H1, meta description, and card summary "
-                    "all show the same reporting period and the same terminal year."
+                    "Please align the forecast period across the page title, H1, meta description, and card summary so all of them show the same verified end year."
                 ),
                 confidence=0.98,
                 source="rule",
@@ -106,9 +108,11 @@ def check_market_math(report: ReportPage) -> list[Finding]:
                     f"the exposed figures imply roughly {implied_cagr:.1f}% CAGR over {periods} years, which "
                     f"materially differs from the stated {cagr:.1f}%."
                 ),
+                uploader_summary=(
+                    "The market numbers and CAGR do not match, so the upload team needs to fix the values or the unit labels before publishing."
+                ),
                 correction_instruction=(
-                    "Please correct the published market values or the CAGR so they are mathematically consistent "
-                    f"across the {years[0]}-{years[1]} forecast period, and confirm the million/billion unit labels are correct."
+                    f"Please verify the start value, end value, CAGR, and million or billion unit labels, then update the page so the figures are mathematically consistent across the {years[0]}-{years[1]} forecast period."
                 ),
                 confidence=0.94,
                 source="rule",

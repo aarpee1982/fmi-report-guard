@@ -19,8 +19,11 @@ def test_build_digest_issue_body_groups_same_correction_instruction() -> None:
 ### Million versus billion market value mismatch (unit_scale_error, openai, confidence 0.96)
 The report says USD 2.6 million instead of USD 2.6 billion.
 
-Correction instruction:
-- Please correct this by updating the unit label so the market value uses the verified billion-scale figure.
+Dumbed-down version for upload team:
+- The market value unit is wrong and needs to be changed from million to billion.
+
+Copy-paste fix for upload team:
+- Please change the market value unit from million to billion and verify the number everywhere it appears on the page.
 
 Evidence:
 - meta_description: Market One was valued at USD 1.0 billion and is expected to reach USD 2.6 million by 2036.
@@ -42,8 +45,11 @@ Evidence:
 ### Million versus billion market value mismatch (unit_scale_error, openai, confidence 0.95)
 The report says USD 3.1 million instead of USD 3.1 billion.
 
-Correction instruction:
-- Please correct this by updating the unit label so the market value uses the verified billion-scale figure.
+Dumbed-down version for upload team:
+- The market value unit is wrong and needs to be changed from million to billion.
+
+Copy-paste fix for upload team:
+- Please change the market value unit from million to billion and verify the number everywhere it appears on the page.
 
 Evidence:
 - meta_description: Market Two was valued at USD 1.4 billion and is expected to reach USD 3.1 million by 2036.
@@ -54,6 +60,7 @@ Evidence:
 
     assert digest.count("## Correction Group") == 1
     assert "Affected findings: 2" in digest
+    assert "Copy-paste fix for upload team: Please change the market value unit from million to billion and verify the number everywhere it appears on the page." in digest
     assert "### Market One" in digest
     assert "### Market Two" in digest
 

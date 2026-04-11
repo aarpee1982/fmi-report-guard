@@ -36,8 +36,12 @@ def build_issue_body(report: ReportPage, findings: list[Finding]) -> str:
         )
         lines.append(finding.explanation)
         lines.append("")
+        if finding.uploader_summary:
+            lines.append("Dumbed-down version for upload team:")
+            lines.append(f"- {finding.uploader_summary}")
+            lines.append("")
         if finding.correction_instruction:
-            lines.append("Correction instruction:")
+            lines.append("Copy-paste fix for upload team:")
             lines.append(f"- {finding.correction_instruction}")
             lines.append("")
         if finding.evidence:
@@ -60,6 +64,7 @@ def write_run_artifacts(results: list[tuple[ReportPage, list[Finding]]], output_
                     "category": finding.category,
                     "title": finding.title,
                     "explanation": finding.explanation,
+                    "uploader_summary": finding.uploader_summary,
                     "correction_instruction": finding.correction_instruction,
                     "confidence": finding.confidence,
                     "source": finding.source,
@@ -126,7 +131,7 @@ def build_digest_issue_body(open_report_issues: list[DigestIssue]) -> str:
     for index, instruction in enumerate(sorted(grouped_findings), start=1):
         items = grouped_findings[instruction]
         lines.append(f"## Correction Group {index}")
-        lines.append(f"Uploader instruction: {instruction}")
+        lines.append(f"Copy-paste fix for upload team: {instruction}")
         lines.append(f"Affected findings: {len(items)}")
         lines.append("")
 
@@ -137,6 +142,9 @@ def build_digest_issue_body(open_report_issues: list[DigestIssue]) -> str:
             lines.append(f"- Finding: {finding.title}")
             lines.append(
                 f"- Category: {finding.category} | Source: {finding.source} | Confidence: {finding.confidence:.2f}"
+            )
+            lines.append(
+                f"- Dumbed-down version: {finding.uploader_summary or finding.explanation}"
             )
             lines.append(f"- Why this is an error: {finding.explanation}")
             if finding.evidence:

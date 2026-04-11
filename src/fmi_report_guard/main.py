@@ -76,7 +76,6 @@ def main() -> None:
                 title=build_issue_title(report),
                 body=build_issue_body(report, findings),
             )
-        github.sync_correction_digest()
 
     print(f"Audited {len(new_cards)} report(s); found issues in {len(results)} report(s).")
 

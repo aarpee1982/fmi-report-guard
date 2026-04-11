@@ -96,6 +96,7 @@ def test_minor_editorial_openai_finding_is_filtered() -> None:
         "category": "Editorial / Typo",
         "title": "Duplicated word in meta description",
         "explanation": "The meta description contains a duplicated word and should be edited.",
+        "uploader_summary": "This is just a minor copy issue.",
         "correction_instruction": "Please correct this by removing the duplicated word.",
     }
     assert _is_material_finding(item) is False
@@ -106,6 +107,7 @@ def test_company_hallucination_openai_finding_is_kept() -> None:
         "category": "company_development_error",
         "title": "Fabricated acquisition claim",
         "explanation": "The report claims a company acquired another firm, but that development appears invented.",
+        "uploader_summary": "The company development mentioned on the page appears to be made up.",
         "correction_instruction": "Please correct this by removing the acquisition claim unless it can be verified from a reliable public source.",
     }
     assert _is_material_finding(item) is True
@@ -116,6 +118,7 @@ def test_segmentation_driven_openai_finding_is_filtered() -> None:
         "category": "company_name_error",
         "title": "Segment list appears unrelated to the market",
         "explanation": "The segmentation appears unrelated to the report title and may be pasted here.",
+        "uploader_summary": "The segment list looks unrelated to the market definition.",
         "correction_instruction": "Please correct this by reviewing the segment list against the intended market definition.",
     }
     assert _is_material_finding(item) is False
@@ -126,6 +129,7 @@ def test_unit_scale_openai_finding_is_kept() -> None:
         "category": "unit_scale_error",
         "title": "Million versus billion market value mismatch",
         "explanation": "The report says USD 2.6 million instead of USD 2.6 billion, creating an order of magnitude scale error.",
+        "uploader_summary": "The market value unit is wrong and needs to be changed from million to billion.",
         "correction_instruction": "Please correct this by updating the unit label so the market value uses the verified billion-scale figure.",
     }
     assert _is_material_finding(item) is True
@@ -136,6 +140,18 @@ def test_openai_finding_without_correction_instruction_is_filtered() -> None:
         "category": "company_development_error",
         "title": "Fabricated acquisition claim",
         "explanation": "The report claims a company acquired another firm, but that development appears invented.",
+        "uploader_summary": "The company development mentioned on the page appears to be made up.",
         "correction_instruction": "",
+    }
+    assert _is_material_finding(item) is False
+
+
+def test_openai_finding_without_uploader_summary_is_filtered() -> None:
+    item = {
+        "category": "company_development_error",
+        "title": "Fabricated acquisition claim",
+        "explanation": "The report claims a company acquired another firm, but that development appears invented.",
+        "uploader_summary": "",
+        "correction_instruction": "Please correct this by removing the acquisition claim unless it can be verified from a reliable public source.",
     }
     assert _is_material_finding(item) is False

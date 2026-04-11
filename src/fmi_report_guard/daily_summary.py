@@ -23,6 +23,7 @@ class DigestFinding:
     source: str
     confidence: float
     explanation: str
+    uploader_summary: str
     correction_instruction: str
     evidence: list[str] = field(default_factory=list)
 
@@ -164,6 +165,7 @@ def parse_digest_issue(*, issue_title: str, issue_url: str, created_at: str, bod
     current: DigestFinding | None = None
     collecting_evidence = False
     collecting_correction_instruction = False
+    collecting_uploader_summary = False
 
     for raw_line in lines:
         line = raw_line.strip()
@@ -186,24 +188,38 @@ def parse_digest_issue(*, issue_title: str, issue_url: str, created_at: str, bod
             current = _parse_finding_heading(line.removeprefix("### ").strip())
             collecting_evidence = False
             collecting_correction_instruction = False
+            collecting_uploader_summary = False
             continue
 
         if not current:
             continue
 
-        if line == "Correction instruction:":
+        if line in {"Dumbed-down version for upload team:", "Uploader summary:"}:
+            collecting_uploader_summary = True
+            collecting_correction_instruction = False
+            collecting_evidence = False
+            continue
+
+        if line in {"Correction instruction:", "Copy-paste fix for upload team:"}:
             collecting_correction_instruction = True
+            collecting_uploader_summary = False
             collecting_evidence = False
             continue
 
         if line == "Evidence:":
             collecting_evidence = True
+            collecting_uploader_summary = False
             collecting_correction_instruction = False
             continue
 
         if not line:
             collecting_evidence = False
+            collecting_uploader_summary = False
             collecting_correction_instruction = False
+            continue
+
+        if collecting_uploader_summary and line.startswith("- "):
+            current.uploader_summary = line.removeprefix("- ").strip()
             continue
 
         if collecting_correction_instruction and line.startswith("- "):
@@ -267,9 +283,10 @@ def build_daily_summary_markdown(
             lines.append(
                 f"Category: {finding.category} | Source: {finding.source} | Confidence: {finding.confidence:.2f}"
             )
+            lines.append(f"Dumbed-down version: {finding.uploader_summary or finding.explanation}")
             lines.append(f"Why this is an error: {finding.explanation}")
             lines.append(
-                f"Uploader instruction: {finding.correction_instruction or 'Please review this finding and correct the page content to match the verified source facts.'}"
+                f"Copy-paste fix for upload team: {finding.correction_instruction or 'Please review this finding and correct the page content to match the verified source facts.'}"
             )
             lines.append("Exact sentence(s):")
             if finding.evidence:
@@ -355,6 +372,7 @@ def _parse_finding_heading(value: str) -> DigestFinding:
             source="unknown",
             confidence=0.0,
             explanation="",
+            uploader_summary="",
             correction_instruction="",
         )
 
@@ -364,5 +382,6 @@ def _parse_finding_heading(value: str) -> DigestFinding:
         source=match.group("source"),
         confidence=float(match.group("confidence")),
         explanation="",
+        uploader_summary="",
         correction_instruction="",
     )

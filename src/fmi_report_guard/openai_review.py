@@ -127,6 +127,7 @@ def review_with_openai(
                                     },
                                     "title": {"type": "string"},
                                     "explanation": {"type": "string"},
+                                    "uploader_summary": {"type": "string"},
                                     "correction_instruction": {"type": "string"},
                                     "confidence": {
                                         "type": "number",
@@ -142,6 +143,7 @@ def review_with_openai(
                                     "category",
                                     "title",
                                     "explanation",
+                                    "uploader_summary",
                                     "correction_instruction",
                                     "confidence",
                                     "evidence",
@@ -173,6 +175,7 @@ def review_with_openai(
                 category=str(item.get("category", "other")),
                 title=str(item.get("title", "Possible glaring issue")),
                 explanation=str(item.get("explanation", "")),
+                uploader_summary=str(item.get("uploader_summary", "")),
                 correction_instruction=str(item.get("correction_instruction", "")),
                 confidence=confidence,
                 source="openai",
@@ -203,7 +206,8 @@ def _build_messages(report: ReportPage, rule_findings: list[Finding]) -> list[di
             "Never alert on segmentation alignment, segment taxonomy, or segment completeness by itself.",
             "If the analyst's segmentation could plausibly be intentional, return no finding.",
             "Focus on glaring number inconsistencies, million/billion unit-scale mistakes, wrong company names, and wrong or fabricated company developments only.",
-            "For every finding, include a concrete correction_instruction written for an uploader, starting with 'Please correct this by'.",
+            "For every finding, include a short uploader_summary in plain language for a non-editor.",
+            "For every finding, include a single concrete correction_instruction written as a copy-paste sentence for the upload team, starting with 'Please'.",
             "Ignore duplicated words, minor editorial mistakes, metadata wording issues, and missing-unit formatting issues.",
             "Ignore CAGR differences of 1.0 percentage point or less.",
         ],
@@ -230,12 +234,14 @@ def _is_material_finding(item: dict[str, object]) -> bool:
     category = str(item.get("category", "")).strip().lower()
     if category not in ALLOWED_CATEGORIES:
         return False
+    if not str(item.get("uploader_summary", "")).strip():
+        return False
     if not str(item.get("correction_instruction", "")).strip():
         return False
 
     text = " ".join(
         str(item.get(key, ""))
-        for key in ("category", "title", "explanation", "correction_instruction")
+        for key in ("category", "title", "explanation", "uploader_summary", "correction_instruction")
     ).lower()
 
     has_minor_signal = any(keyword in text for keyword in MINOR_ERROR_KEYWORDS)

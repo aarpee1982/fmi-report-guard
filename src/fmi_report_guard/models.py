@@ -35,6 +35,7 @@ class Finding:
     category: str
     title: str
     explanation: str
+    uploader_summary: str
     correction_instruction: str
     confidence: float
     source: str
