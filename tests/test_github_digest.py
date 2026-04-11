@@ -1,5 +1,5 @@
 from fmi_report_guard.daily_summary import parse_digest_issue
-from fmi_report_guard.issues import build_digest_issue_body
+from fmi_report_guard.issues import _upgrade_digest_issue, build_digest_issue_body
 
 
 def test_build_digest_issue_body_groups_same_correction_instruction() -> None:
@@ -68,3 +68,31 @@ Evidence:
 def test_build_digest_issue_body_handles_empty_queue() -> None:
     digest = build_digest_issue_body([])
     assert "No open glaring corrections are pending right now." in digest
+
+
+def test_upgrade_digest_issue_backfills_old_issue_fields() -> None:
+    old_issue = parse_digest_issue(
+        issue_title="[FMI Guard] Glaring errors detected: Legacy Market",
+        issue_url="https://github.com/example/repo/issues/9",
+        created_at="2026-04-10T12:00:00Z",
+        body="""# FMI Report Guard alert
+
+- Report: Legacy Market
+- URL: https://example.com/legacy-market
+- Listed date: April 10, 2026
+- Page publish date: 2026-04-10T11:00:00+05:30
+
+## Findings
+
+### Conflicting 2036 market-size figures (Numeric inconsistency, openai, confidence 0.96)
+The report gives conflicting 2036 market-size figures and they cannot both be correct.
+
+Evidence:
+- meta_description: Legacy Market is projected to reach USD 6.4 billion by 2036.
+""",
+    )
+
+    upgraded = _upgrade_digest_issue(old_issue)
+
+    assert upgraded.findings[0].uploader_summary == "The market numbers on this page do not match and need correction before upload."
+    assert upgraded.findings[0].correction_instruction.startswith("Please verify the market values")

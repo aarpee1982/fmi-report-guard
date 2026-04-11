@@ -6,7 +6,7 @@ from pathlib import Path
 
 import requests
 
-from .daily_summary import DigestIssue, parse_digest_issue
+from .daily_summary import DigestFinding, DigestIssue, parse_digest_issue
 from .models import Finding, ReportPage
 
 DIGEST_ISSUE_TITLE = "[FMI Guard] Open correction digest"
@@ -18,19 +18,45 @@ def build_issue_title(report: ReportPage) -> str:
 
 
 def build_issue_body(report: ReportPage, findings: list[Finding]) -> str:
+    digest_issue = DigestIssue(
+        report_title=report.card_title or report.h1,
+        report_url=report.url,
+        listed_date=report.card_published_on or "unknown",
+        page_publish_date=report.publish_date or "unknown",
+        issue_title="",
+        issue_url="",
+        created_at="",
+        findings=[
+            DigestFinding(
+                title=finding.title,
+                category=finding.category,
+                source=finding.source,
+                confidence=finding.confidence,
+                explanation=finding.explanation,
+                uploader_summary=finding.uploader_summary,
+                correction_instruction=finding.correction_instruction,
+                evidence=finding.evidence,
+            )
+            for finding in findings
+        ],
+    )
+    return build_issue_body_from_digest_issue(digest_issue)
+
+
+def build_issue_body_from_digest_issue(issue: DigestIssue) -> str:
     lines = [
         "# FMI Report Guard alert",
         "",
-        f"- Report: {report.card_title or report.h1}",
-        f"- URL: {report.url}",
-        f"- Listed date: {report.card_published_on or 'unknown'}",
-        f"- Page publish date: {report.publish_date or 'unknown'}",
+        f"- Report: {issue.report_title}",
+        f"- URL: {issue.report_url}",
+        f"- Listed date: {issue.listed_date or 'unknown'}",
+        f"- Page publish date: {issue.page_publish_date or 'unknown'}",
         "",
         "## Findings",
         "",
     ]
 
-    for finding in findings:
+    for finding in issue.findings:
         lines.append(
             f"### {finding.title} ({finding.category}, {finding.source}, confidence {finding.confidence:.2f})"
         )
@@ -182,9 +208,36 @@ class GitHubIssueClient:
         response.raise_for_status()
 
     def sync_correction_digest(self) -> None:
+        self.backfill_open_report_issues()
         open_report_issues = self._load_open_report_issues()
         digest_body = build_digest_issue_body(open_report_issues)
         self._upsert_issue(DIGEST_ISSUE_TITLE, digest_body)
+
+    def backfill_open_report_issues(self) -> None:
+        for item in self._list_issues(state="open"):
+            title = str(item.get("title", ""))
+            if title == DIGEST_ISSUE_TITLE or "pull_request" in item:
+                continue
+            if not title.startswith("[FMI Guard] Glaring errors detected:"):
+                continue
+
+            issue = parse_digest_issue(
+                issue_title=title,
+                issue_url=str(item.get("html_url", "")),
+                created_at=str(item.get("created_at", "")),
+                body=str(item.get("body", "")),
+            )
+            upgraded_issue = _upgrade_digest_issue(issue)
+            upgraded_body = build_issue_body_from_digest_issue(upgraded_issue)
+            if upgraded_body == str(item.get("body", "")):
+                continue
+
+            response = self.session.patch(
+                f"https://api.github.com/repos/{self.repository}/issues/{item['number']}",
+                json={"body": upgraded_body},
+                timeout=30,
+            )
+            response.raise_for_status()
 
     def _issue_exists(self, title: str) -> bool:
         return self._find_issue_by_title(title, state="open") is not None
@@ -251,3 +304,60 @@ class GitHubIssueClient:
             issues.extend(items)
             page += 1
         return issues
+
+
+def _upgrade_digest_issue(issue: DigestIssue) -> DigestIssue:
+    upgraded_findings: list[DigestFinding] = []
+    for finding in issue.findings:
+        uploader_summary = finding.uploader_summary.strip() or _default_uploader_summary(finding)
+        correction_instruction = finding.correction_instruction.strip()
+        if not correction_instruction or not correction_instruction.lower().startswith("please"):
+            correction_instruction = _default_correction_instruction(finding)
+
+        upgraded_findings.append(
+            DigestFinding(
+                title=finding.title,
+                category=finding.category,
+                source=finding.source,
+                confidence=finding.confidence,
+                explanation=finding.explanation,
+                uploader_summary=uploader_summary,
+                correction_instruction=correction_instruction,
+                evidence=finding.evidence,
+            )
+        )
+
+    return DigestIssue(
+        report_title=issue.report_title,
+        report_url=issue.report_url,
+        listed_date=issue.listed_date,
+        page_publish_date=issue.page_publish_date,
+        issue_title=issue.issue_title,
+        issue_url=issue.issue_url,
+        created_at=issue.created_at,
+        findings=upgraded_findings,
+    )
+
+
+def _default_uploader_summary(finding: DigestFinding) -> str:
+    text = f"{finding.title} {finding.category} {finding.explanation}".lower()
+    if any(keyword in text for keyword in {"cagr", "market size", "market value", "forecast", "million", "billion", "numeric"}):
+        return "The market numbers on this page do not match and need correction before upload."
+    if any(keyword in text for keyword in {"company", "player", "brand", "merged", "acquisition", "partnership", "launch"}):
+        return "A company name or company development on this page looks incorrect and needs correction."
+    if any(keyword in text for keyword in {"segment", "segmentation", "type", "application", "end use"}):
+        return "The segment list on this page looks incorrect and needs to be aligned with the correct market definition."
+    return "This sentence on the page looks wrong and needs correction before upload."
+
+
+def _default_correction_instruction(finding: DigestFinding) -> str:
+    text = f"{finding.title} {finding.category} {finding.explanation}".lower()
+    if any(keyword in text for keyword in {"cagr", "market size", "market value", "forecast", "million", "billion", "numeric"}):
+        return "Please verify the market values, CAGR, forecast year, and million or billion unit labels, then update the affected sentence so all numbers match the approved source."
+    if any(keyword in text for keyword in {"company", "player", "brand", "merged"}):
+        return "Please replace the incorrect company name or merged-company reference with the verified company name everywhere it appears in the affected sentence."
+    if any(keyword in text for keyword in {"acquisition", "partnership", "launch", "announced", "development"}):
+        return "Please remove or replace the unverified company development with a verified company update from a reliable public source."
+    if any(keyword in text for keyword in {"segment", "segmentation", "type", "application", "end use"}):
+        return "Please replace the incorrect segment list with the verified segmentation for this market and remove any pasted labels that do not belong."
+    return "Please review the affected sentence and replace it with the verified wording from the approved source."

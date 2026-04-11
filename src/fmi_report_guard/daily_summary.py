@@ -361,8 +361,8 @@ def _parse_github_timestamp(value: str) -> datetime:
 
 
 def _parse_finding_heading(value: str) -> DigestFinding:
-    match = re.match(
-        r"(?P<title>.+?) \((?P<category>[^,]+), (?P<source>[^,]+), confidence (?P<confidence>[\d.]+)\)$",
+    match = re.search(
+        r" \((?P<category>.+), (?P<source>[^,]+), confidence (?P<confidence>[\d.]+)\)$",
         value,
     )
     if not match:
@@ -377,7 +377,7 @@ def _parse_finding_heading(value: str) -> DigestFinding:
         )
 
     return DigestFinding(
-        title=match.group("title"),
+        title=value[: match.start()].strip(),
         category=match.group("category"),
         source=match.group("source"),
         confidence=float(match.group("confidence")),
