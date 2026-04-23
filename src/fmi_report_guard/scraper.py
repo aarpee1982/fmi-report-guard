@@ -3,13 +3,22 @@ from __future__ import annotations
 import json
 import re
 from html import unescape
+from urllib.parse import urlparse
 
 import requests
 from bs4 import BeautifulSoup
 
 from .models import ReportCard, ReportPage
+from .title_index import make_indexed_title
 
 REPORTS_AJAX_URL = "https://www.futuremarketinsights.com/reportajax/reports_by_reportajax"
+REPORT_SITEMAP_URLS = [
+    "https://www.futuremarketinsights.com/reports.xml",
+    "https://www.futuremarketinsights.com/reports-2.xml",
+    "https://www.futuremarketinsights.com/reports-3.xml",
+    "https://www.futuremarketinsights.com/reports-4.xml",
+    "https://www.futuremarketinsights.com/reports-5.xml",
+]
 
 
 def normalize_text(value: str) -> str:
@@ -124,6 +133,23 @@ class FMIClient:
             competitive_paragraphs=competitive_paragraphs[:6],
             faq_items=faq_items[:8],
         )
+
+    def fetch_title_index(self) -> list[object]:
+        indexed_titles: list[object] = []
+        seen_urls: set[str] = set()
+        for sitemap_url in REPORT_SITEMAP_URLS:
+            response = self.session.get(sitemap_url, timeout=self.timeout_seconds)
+            response.raise_for_status()
+            soup = BeautifulSoup(response.text, "xml")
+            for node in soup.find_all("loc"):
+                url = normalize_text(node.get_text(" ", strip=True))
+                if not url or url in seen_urls:
+                    continue
+                seen_urls.add(url)
+                slug = urlparse(url).path.rstrip("/").split("/")[-1]
+                title = normalize_text(slug.replace("-", " "))
+                indexed_titles.append(make_indexed_title(url=url, title=title))
+        return indexed_titles
 
     def _extract_json_ld_metadata(self, soup: BeautifulSoup) -> tuple[list[dict[str, str]], str]:
         faq_items: list[dict[str, str]] = []

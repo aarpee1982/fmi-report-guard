@@ -1,5 +1,6 @@
-from fmi_report_guard.checks import check_forecast_years, check_market_math, run_rule_checks
+from fmi_report_guard.checks import check_duplicate_title, check_forecast_years, check_market_math, run_rule_checks
 from fmi_report_guard.models import ReportPage
+from fmi_report_guard.title_index import make_indexed_title
 from fmi_report_guard.openai_review import _is_material_finding
 
 
@@ -46,6 +47,50 @@ def test_topic_mismatch_is_not_included_in_rule_checks() -> None:
     report = make_report(page_title="Hospital Bedsheet & Pillow Cover Market | Global Industry Analysis Report - 2036")
     findings = run_rule_checks(report)
     assert all(finding.category != "topic_mismatch" for finding in findings)
+
+
+def test_exact_duplicate_title_is_flagged() -> None:
+    report = make_report(card_title="Bamboo Market")
+    findings = check_duplicate_title(
+        report,
+        title_index=[
+            make_indexed_title(
+                url="https://www.futuremarketinsights.com/reports/bamboo-market",
+                title="bamboo market",
+            )
+        ],
+    )
+    assert findings
+    assert findings[0].category == "duplicate_title"
+
+
+def test_plural_only_duplicate_title_is_flagged() -> None:
+    report = make_report(card_title="Bamboos Market")
+    findings = check_duplicate_title(
+        report,
+        title_index=[
+            make_indexed_title(
+                url="https://www.futuremarketinsights.com/reports/bamboo-market",
+                title="bamboo market",
+            )
+        ],
+    )
+    assert findings
+    assert "singular or plural duplicate" in findings[0].explanation
+
+
+def test_thematic_overlap_is_ignored_for_duplicate_titles() -> None:
+    report = make_report(card_title="Surface Disinfectant Chemicals Market")
+    findings = check_duplicate_title(
+        report,
+        title_index=[
+            make_indexed_title(
+                url="https://www.futuremarketinsights.com/reports/surface-disinfectant-market",
+                title="surface disinfectant market",
+            )
+        ],
+    )
+    assert findings == []
 
 
 def test_cagr_difference_of_exactly_one_percent_is_ignored() -> None:

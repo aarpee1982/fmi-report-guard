@@ -6,6 +6,7 @@ It is intentionally narrow:
 
 - It looks for obvious forecast-year inconsistencies.
 - It checks for clearly broken market math, including glaring `million` vs `billion` scale mistakes when the page exposes enough numbers.
+- It flags exact title duplicates and singular-plural title duplicates against FMI's full sitemap-backed report URL base.
 - It uses OpenAI only for high-confidence company-name errors and fabricated or wrong company developments.
 - It does nothing when a report looks normal.
 
@@ -14,11 +15,11 @@ It is intentionally narrow:
 1. The workflow polls FMI's reports AJAX endpoint every 10 minutes.
 2. It compares the newest report URLs against `state/seen_reports.json`.
 3. It fetches only unseen report pages and extracts public text such as the page title, H1, summary, FAQ snippets, and competitive-language paragraphs.
-4. It runs deterministic checks first, then an OpenAI review pass.
+4. It runs deterministic checks first, including a sitemap-backed duplicate-title check, then an OpenAI review pass.
 5. If findings exist, it creates a GitHub issue for that report and uploads a run artifact.
 6. Each report issue includes a dumbed-down uploader summary, a copy-paste fix sentence, and the exact public sentence(s) that triggered the alert.
 7. A separate scheduled workflow keeps one rolling GitHub digest issue updated from the currently open FMI Guard issues.
-8. It commits the updated seen-state back into the repo so the next run only handles fresh reports.
+8. It commits the updated seen-state and cached sitemap title index back into the repo so the next run only handles fresh reports without re-fetching the full title base every time.
 
 ## Bootstrap behavior
 

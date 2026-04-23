@@ -4,6 +4,7 @@ import math
 import re
 
 from .models import Finding, ReportPage
+from .title_index import IndexedTitle, make_indexed_title
 
 MONEY_UNIT_MULTIPLIERS = {
     "thousand": 1_000,
@@ -12,10 +13,11 @@ MONEY_UNIT_MULTIPLIERS = {
 }
 
 
-def run_rule_checks(report: ReportPage) -> list[Finding]:
+def run_rule_checks(report: ReportPage, *, title_index: list[IndexedTitle] | None = None) -> list[Finding]:
     findings: list[Finding] = []
     findings.extend(check_forecast_years(report))
     findings.extend(check_market_math(report))
+    findings.extend(check_duplicate_title(report, title_index=title_index or []))
     return findings
 
 
@@ -124,6 +126,57 @@ def check_market_math(report: ReportPage) -> list[Finding]:
         )
 
     return findings
+
+
+def check_duplicate_title(report: ReportPage, *, title_index: list[IndexedTitle]) -> list[Finding]:
+    if not title_index:
+        return []
+
+    current_title = report.card_title or report.h1 or report.page_title
+    candidate = make_indexed_title(url=report.url, title=current_title)
+    if not candidate.normalized_title:
+        return []
+
+    best_exact: IndexedTitle | None = None
+    best_plural: IndexedTitle | None = None
+    for existing in title_index:
+        if not existing.url or existing.url == report.url:
+            continue
+        if existing.normalized_title == candidate.normalized_title:
+            best_exact = existing
+            break
+        if existing.singular_title == candidate.singular_title:
+            best_plural = existing
+
+    match = best_exact or best_plural
+    if not match:
+        return []
+
+    variant_kind = "exact title duplicate" if best_exact else "singular or plural duplicate"
+    return [
+        Finding(
+            category="duplicate_title",
+            title="Report title duplicates an existing FMI report title",
+            explanation=(
+                f'The new report title "{current_title}" appears to be a {variant_kind} of the already indexed FMI title '
+                f'"{match.title}" at {match.url}. This check intentionally ignores looser thematic overlap and only '
+                "flags exact or plural-only title collisions."
+            ),
+            uploader_summary=(
+                "This report title looks like a duplicate of an already published FMI title and needs to be reviewed before upload."
+            ),
+            correction_instruction=(
+                f"Please review the title against the existing FMI report {match.url} and rename this report if it is a duplicate or only a singular-plural variant."
+            ),
+            confidence=0.99 if best_exact else 0.96,
+            source="rule",
+            evidence=[
+                f"current_title: {current_title}",
+                f"existing_title: {match.title}",
+                f"existing_url: {match.url}",
+            ],
+        )
+    ]
 
 def _extract_trailing_year(text: str) -> int | None:
     match = re.search(r"[-–]\s*(20\d{2})\s*$", text)

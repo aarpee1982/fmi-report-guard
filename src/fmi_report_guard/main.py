@@ -10,6 +10,7 @@ from .models import Finding, ReportCard, ReportPage
 from .openai_review import review_with_openai
 from .scraper import FMIClient
 from .state_store import SeenState
+from .title_index import TITLE_INDEX_PATH, IndexedTitle, load_or_refresh_title_index
 
 
 def parse_args() -> argparse.Namespace:
@@ -29,6 +30,7 @@ def main() -> None:
     args = parse_args()
     config = AppConfig.from_env()
     client = FMIClient(timeout_seconds=config.request_timeout_seconds)
+    title_index = load_or_refresh_title_index(client=client, path=TITLE_INDEX_PATH)
     state_path = Path(args.state_path)
     artifacts_dir = Path(args.artifacts_dir)
     state = SeenState.load(state_path)
@@ -57,7 +59,7 @@ def main() -> None:
     results: list[tuple[ReportPage, list[Finding]]] = []
     for card in new_cards:
         report = client.fetch_report_page(card)
-        findings = collect_findings(report, config)
+        findings = collect_findings(report, config, title_index=title_index)
         if findings:
             results.append((report, findings))
         if not args.force_url:
@@ -80,8 +82,8 @@ def main() -> None:
     print(f"Audited {len(new_cards)} report(s); found issues in {len(results)} report(s).")
 
 
-def collect_findings(report: ReportPage, config: AppConfig) -> list[Finding]:
-    findings = run_rule_checks(report)
+def collect_findings(report: ReportPage, config: AppConfig, *, title_index: list[IndexedTitle]) -> list[Finding]:
+    findings = run_rule_checks(report, title_index=title_index)
     seen_keys = {(finding.category, finding.title) for finding in findings}
 
     if config.openai_api_key:
