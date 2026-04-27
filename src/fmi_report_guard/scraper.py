@@ -6,7 +6,7 @@ from html import unescape
 from urllib.parse import urlparse
 
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, FeatureNotFound
 
 from .models import ReportCard, ReportPage
 from .title_index import make_indexed_title
@@ -140,7 +140,10 @@ class FMIClient:
         for sitemap_url in REPORT_SITEMAP_URLS:
             response = self.session.get(sitemap_url, timeout=self.timeout_seconds)
             response.raise_for_status()
-            soup = BeautifulSoup(response.text, "xml")
+            try:
+                soup = BeautifulSoup(response.text, "xml")
+            except FeatureNotFound:
+                soup = BeautifulSoup(response.text, "html.parser")
             for node in soup.find_all("loc"):
                 url = normalize_text(node.get_text(" ", strip=True))
                 if not url or url in seen_urls:
