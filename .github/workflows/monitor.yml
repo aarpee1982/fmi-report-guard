@@ -14,6 +14,10 @@ on:
         description: "Optional specific report URL to audit"
         required: false
         type: string
+      benchmark_release_tag:
+        description: "Optional GitHub Release tag containing fmi_global_benchmarks.sqlite or .zip"
+        required: false
+        type: string
 
 permissions:
   contents: write
@@ -40,6 +44,29 @@ jobs:
       - name: Install dependencies
         run: pip install -e .
 
+      - name: Download benchmark DB
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BENCHMARK_DB_URL: ${{ vars.FMI_BENCHMARK_DB_URL }}
+          BENCHMARK_RELEASE_TAG: ${{ inputs.benchmark_release_tag || vars.FMI_BENCHMARK_DB_RELEASE_TAG }}
+        run: |
+          mkdir -p data
+          if [ -n "${BENCHMARK_DB_URL}" ]; then
+            curl -L --fail "${BENCHMARK_DB_URL}" -o data/fmi_global_benchmarks.sqlite
+          fi
+          if [ ! -f data/fmi_global_benchmarks.sqlite ] && [ -n "${BENCHMARK_RELEASE_TAG}" ]; then
+            gh release download "${BENCHMARK_RELEASE_TAG}" --pattern "fmi_global_benchmarks.sqlite*" --dir data
+          fi
+          if [ -f data/fmi_global_benchmarks.sqlite.zip ]; then
+            unzip -o data/fmi_global_benchmarks.sqlite.zip -d data
+          fi
+          if [ -f data/fmi_global_benchmarks.sqlite ]; then
+            echo "FMI_BENCHMARK_DB=${PWD}/data/fmi_global_benchmarks.sqlite" >> "${GITHUB_ENV}"
+            echo "Benchmark DB ready at ${PWD}/data/fmi_global_benchmarks.sqlite"
+          else
+            echo "Benchmark DB not configured. Hierarchy checks will be skipped."
+          fi
+
       - name: Run monitor
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -55,6 +82,9 @@ jobs:
           fi
           if [ -n "${FORCE_URL}" ]; then
             EXTRA_ARGS+=(--force-url "${FORCE_URL}")
+          fi
+          if [ -n "${FMI_BENCHMARK_DB}" ]; then
+            EXTRA_ARGS+=(--benchmark-db "${FMI_BENCHMARK_DB}")
           fi
           python -m fmi_report_guard.main \
             --state-path state/seen_reports.json \

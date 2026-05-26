@@ -6,6 +6,7 @@ from pathlib import Path
 
 import requests
 
+from .aio_audit import aio_decision, aio_readiness_score, build_aio_audit_report
 from .daily_summary import DigestFinding, DigestIssue, parse_digest_issue
 from .models import Finding, ReportPage
 
@@ -47,7 +48,7 @@ def build_issue_body_from_digest_issue(issue: DigestIssue) -> str:
     lines = [
         "# FMI Report Guard alert",
         "",
-        f"- Report: {issue.report_title}",
+        f"- Market name: {issue.report_title}",
         f"- URL: {issue.report_url}",
         f"- Listed date: {issue.listed_date or 'unknown'}",
         f"- Page publish date: {issue.page_publish_date or 'unknown'}",
@@ -63,15 +64,15 @@ def build_issue_body_from_digest_issue(issue: DigestIssue) -> str:
         lines.append(finding.explanation)
         lines.append("")
         if finding.uploader_summary:
-            lines.append("Dumbed-down version for upload team:")
+            lines.append("Issue for upload team:")
             lines.append(f"- {finding.uploader_summary}")
             lines.append("")
         if finding.correction_instruction:
-            lines.append("Copy-paste fix for upload team:")
+            lines.append("Change with:")
             lines.append(f"- {finding.correction_instruction}")
             lines.append("")
         if finding.evidence:
-            lines.append("Evidence:")
+            lines.append("Exact sentence(s) / Control+F:")
             for snippet in finding.evidence:
                 lines.append(f"- {snippet}")
             lines.append("")
@@ -79,12 +80,19 @@ def build_issue_body_from_digest_issue(issue: DigestIssue) -> str:
     return "\n".join(lines).strip() + "\n"
 
 
-def write_run_artifacts(results: list[tuple[ReportPage, list[Finding]]], output_dir: Path) -> None:
+def write_run_artifacts(
+    results: list[tuple[ReportPage, list[Finding]]],
+    output_dir: Path,
+    *,
+    audited_results: list[tuple[ReportPage, list[Finding]]] | None = None,
+) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
     summary_payload = [
         {
             "url": report.url,
             "title": report.card_title or report.h1,
+            "aio_readiness_score": aio_readiness_score(findings),
+            "aio_decision": aio_decision(aio_readiness_score(findings), findings),
             "findings": [
                 {
                     "category": finding.category,
@@ -112,12 +120,30 @@ def write_run_artifacts(results: list[tuple[ReportPage, list[Finding]]], output_
     else:
         for report, findings in results:
             lines.append(f"## {report.card_title or report.h1}")
-            lines.append(report.url)
+            lines.append(f"URL: {report.url}")
             lines.append("")
             for finding in findings:
                 lines.append(f"- {finding.title} [{finding.category}, {finding.source}, {finding.confidence:.2f}]")
+                control_f = _control_f_text(finding.evidence)
+                if control_f:
+                    lines.append(f"  - Control+F: {control_f}")
+                if finding.correction_instruction:
+                    lines.append(f"  - Change with: {finding.correction_instruction}")
             lines.append("")
     (output_dir / "latest_run.md").write_text("\n".join(lines).strip() + "\n", encoding="utf-8")
+
+    aio_source = audited_results if audited_results is not None else results
+    aio_lines = ["# FMI Report Guard AIO audit report", ""]
+    if not aio_source:
+        aio_lines.append("No report pages were audited in this run.")
+    else:
+        for report, findings in aio_source:
+            aio_lines.append(build_aio_audit_report(report, findings).strip())
+            aio_lines.append("")
+    (output_dir / "latest_aio_audit.md").write_text(
+        "\n".join(aio_lines).strip() + "\n",
+        encoding="utf-8",
+    )
 
 
 def build_digest_issue_body(open_report_issues: list[DigestIssue]) -> str:
@@ -182,6 +208,13 @@ def build_digest_issue_body(open_report_issues: list[DigestIssue]) -> str:
             lines.append("")
 
     return "\n".join(lines).strip() + "\n"
+
+
+def _control_f_text(evidence: list[str]) -> str:
+    for snippet in evidence:
+        if snippet.startswith("Control+F:"):
+            return snippet.removeprefix("Control+F:").strip()
+    return evidence[0] if evidence else ""
 
 
 class GitHubIssueClient:

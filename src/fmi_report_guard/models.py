@@ -25,9 +25,18 @@ class ReportPage:
     summary_paragraphs: list[str] = field(default_factory=list)
     competitive_paragraphs: list[str] = field(default_factory=list)
     faq_items: list[dict[str, str]] = field(default_factory=list)
+    headings: list[str] = field(default_factory=list)
+    table_texts: list[str] = field(default_factory=list)
+    metadata_text: str = ""
+    schema_text: str = ""
+    visible_text: str = ""
 
     def as_prompt_payload(self) -> dict[str, object]:
-        return asdict(self)
+        payload = asdict(self)
+        for key in ("schema_text", "visible_text"):
+            if isinstance(payload.get(key), str):
+                payload[key] = str(payload[key])[:12000]
+        return payload
 
 
 @dataclass(slots=True)

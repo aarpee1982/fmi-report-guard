@@ -1,4 +1,12 @@
-from fmi_report_guard.checks import check_duplicate_title, check_forecast_years, check_market_math, run_rule_checks
+from fmi_report_guard.benchmarks import BenchmarkMarket
+from fmi_report_guard.aio_audit import build_aio_audit_report, run_aio_audit
+from fmi_report_guard.checks import (
+    check_benchmark_hierarchy,
+    check_duplicate_title,
+    check_forecast_years,
+    check_market_math,
+    run_rule_checks,
+)
 from fmi_report_guard.models import ReportPage
 from fmi_report_guard.title_index import make_indexed_title
 from fmi_report_guard.openai_review import _is_material_finding
@@ -200,3 +208,111 @@ def test_openai_finding_without_uploader_summary_is_filtered() -> None:
         "correction_instruction": "Please correct this by removing the acquisition claim unless it can be verified from a reliable public source.",
     }
     assert _is_material_finding(item) is False
+
+
+def test_subset_market_larger_than_parent_benchmark_is_flagged() -> None:
+    report = make_report(
+        url="https://www.futuremarketinsights.com/reports/android-smartphone-market",
+        card_title="Android Smartphone Market",
+        h1="Android Smartphone Market (2026 - 2036)",
+        meta_description=(
+            "Android Smartphone Market was valued at USD 900 billion in 2026 and "
+            "is expected to reach USD 2,000 billion by 2036, growing at a CAGR of 8.0%."
+        ),
+    )
+    findings = check_benchmark_hierarchy(
+        report,
+        benchmarks=[
+            BenchmarkMarket(
+                market_name="Smartphone Market",
+                url="https://www.futuremarketinsights.com/reports/smartphone-market",
+                category="Technology",
+                estimated_year=2026,
+                estimated_value=800,
+                estimated_unit="billion",
+                estimated_value_usd_mn=800_000,
+                forecast_year=2036,
+                forecast_value=1_500,
+                forecast_unit="billion",
+                forecast_value_usd_mn=1_500_000,
+                cagr_percent=6.5,
+            )
+        ],
+    )
+    assert findings
+    assert findings[0].category == "benchmark_hierarchy"
+    assert "Control+F:" in "\n".join(findings[0].evidence)
+    assert "Change with:" in "\n".join(findings[0].evidence)
+
+
+def test_parent_market_smaller_than_subset_benchmark_is_flagged() -> None:
+    report = make_report(
+        url="https://www.futuremarketinsights.com/reports/smartphone-market",
+        card_title="Smartphone Market",
+        h1="Smartphone Market (2026 - 2036)",
+        meta_description=(
+            "Smartphone Market was valued at USD 500 billion in 2026 and "
+            "is expected to reach USD 1,000 billion by 2036, growing at a CAGR of 7.0%."
+        ),
+    )
+    findings = check_benchmark_hierarchy(
+        report,
+        benchmarks=[
+            BenchmarkMarket(
+                market_name="Android Smartphone Market",
+                url="https://www.futuremarketinsights.com/reports/android-smartphone-market",
+                category="Technology",
+                estimated_year=2026,
+                estimated_value=600,
+                estimated_unit="billion",
+                estimated_value_usd_mn=600_000,
+                forecast_year=2036,
+                forecast_value=1_300,
+                forecast_unit="billion",
+                forecast_value_usd_mn=1_300_000,
+                cagr_percent=8.0,
+            )
+        ],
+    )
+    assert findings
+    assert findings[0].title == "Parent market is smaller than FMI subset benchmark"
+
+
+def test_aio_audit_flags_number_mismatch_across_faq_and_metadata() -> None:
+    report = make_report(
+        page_title="Test Market | Global Industry Analysis Report - 2036",
+        card_title="Test Market",
+        h1="Test Market (2026 - 2036)",
+        meta_description=(
+            "Test Market was valued at USD 1.2 billion in 2026 and is expected to reach "
+            "USD 1.6 billion by 2036, growing at a CAGR of 2.9%."
+        ),
+        lead_summary=(
+            "The Test Market was valued at USD 12 million in 2026 and is expected to reach "
+            "USD 1.6 billion by 2036, growing at a CAGR of 2.9% due to rising enterprise adoption. "
+            "By segment, platform users and regional buyers shape demand across key end users."
+        ),
+    )
+    findings = run_aio_audit(report)
+    assert any(finding.category == "number_consistency" for finding in findings)
+
+
+def test_aio_audit_report_uses_a_to_i_sections() -> None:
+    report = make_report(
+        page_title="Test Market | Global Industry Analysis Report - 2036",
+        card_title="Test Market",
+        h1="Test Market (2026 - 2036)",
+        meta_description=(
+            "Test Market was valued at USD 1.2 billion in 2026 and is expected to reach "
+            "USD 1.6 billion by 2036, growing at a CAGR of 2.9%."
+        ),
+        lead_summary=(
+            "The Test Market was valued at USD 1.2 billion in 2026 and is expected to reach "
+            "USD 1.6 billion by 2036, growing at a CAGR of 2.9% due to rising enterprise adoption. "
+            "By segment, platform users and regional buyers shape demand across key end users."
+        ),
+    )
+    body = build_aio_audit_report(report, run_aio_audit(report))
+    assert "## A. Overall AI readiness score:" in body
+    assert "## D. Number mismatch table:" in body
+    assert "## I. Final action checklist:" in body
