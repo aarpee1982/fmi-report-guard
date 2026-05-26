@@ -20,6 +20,7 @@ class AppConfig:
     smtp_password: str | None
     smtp_use_ssl: bool
     smtp_starttls: bool
+    benchmark_db_path: str | None
 
     @classmethod
     def from_env(cls) -> "AppConfig":
@@ -39,6 +40,7 @@ class AppConfig:
             smtp_password=os.getenv("FMI_SMTP_PASSWORD") or None,
             smtp_use_ssl=_env_flag("FMI_SMTP_USE_SSL", default=False),
             smtp_starttls=_env_flag("FMI_SMTP_STARTTLS", default=True),
+            benchmark_db_path=os.getenv("FMI_BENCHMARK_DB") or None,
         )
 
 

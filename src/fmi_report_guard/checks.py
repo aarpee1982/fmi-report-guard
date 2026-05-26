@@ -3,6 +3,7 @@ from __future__ import annotations
 import math
 import re
 
+from .benchmarks import BenchmarkMarket, find_hierarchy_matches
 from .models import Finding, ReportPage
 from .title_index import IndexedTitle, make_indexed_title
 
@@ -13,11 +14,17 @@ MONEY_UNIT_MULTIPLIERS = {
 }
 
 
-def run_rule_checks(report: ReportPage, *, title_index: list[IndexedTitle] | None = None) -> list[Finding]:
+def run_rule_checks(
+    report: ReportPage,
+    *,
+    title_index: list[IndexedTitle] | None = None,
+    benchmarks: list[BenchmarkMarket] | None = None,
+) -> list[Finding]:
     findings: list[Finding] = []
     findings.extend(check_forecast_years(report))
     findings.extend(check_market_math(report))
     findings.extend(check_duplicate_title(report, title_index=title_index or []))
+    findings.extend(check_benchmark_hierarchy(report, benchmarks=benchmarks or []))
     return findings
 
 
@@ -177,6 +184,147 @@ def check_duplicate_title(report: ReportPage, *, title_index: list[IndexedTitle]
             ],
         )
     ]
+
+
+def check_benchmark_hierarchy(report: ReportPage, *, benchmarks: list[BenchmarkMarket]) -> list[Finding]:
+    if not benchmarks:
+        return []
+
+    market_name = report.card_title or report.h1 or report.page_title
+    current = _extract_current_market_values(report)
+    if not market_name or not current:
+        return []
+
+    findings: list[Finding] = []
+    current_estimated_usd_mn, current_forecast_usd_mn, control_sentence = current
+    for relation, benchmark in find_hierarchy_matches(
+        market_name=market_name,
+        url=report.url,
+        benchmarks=benchmarks,
+    ):
+        if relation == "candidate_subset":
+            if current_forecast_usd_mn > benchmark.forecast_value_usd_mn * 1.02:
+                findings.append(
+                    _benchmark_finding(
+                        report=report,
+                        title="Subset market is larger than broader FMI benchmark",
+                        explanation=(
+                            f"{market_name} appears narrower than {benchmark.market_name}, but its exposed forecast "
+                            f"value is larger than the broader FMI benchmark."
+                        ),
+                        control_sentence=control_sentence,
+                        correction=(
+                            f"Recheck scope or value. {market_name} should not exceed {benchmark.market_name}. "
+                            f"Benchmark: {benchmark.forecast_year} {benchmark.forecast_value:g} {benchmark.forecast_unit} at {benchmark.url}."
+                        ),
+                    )
+                )
+            if current_estimated_usd_mn > benchmark.estimated_value_usd_mn * 1.02:
+                findings.append(
+                    _benchmark_finding(
+                        report=report,
+                        title="Subset base value is larger than broader FMI benchmark",
+                        explanation=(
+                            f"{market_name} appears narrower than {benchmark.market_name}, but its exposed base or "
+                            f"estimated value is larger than the broader FMI benchmark."
+                        ),
+                        control_sentence=control_sentence,
+                        correction=(
+                            f"Recheck scope or value. The subset market should not exceed {benchmark.market_name}. "
+                            f"Benchmark: {benchmark.estimated_year} {benchmark.estimated_value:g} {benchmark.estimated_unit} at {benchmark.url}."
+                        ),
+                    )
+                )
+        elif relation == "candidate_parent":
+            if current_forecast_usd_mn < benchmark.forecast_value_usd_mn * 0.98:
+                findings.append(
+                    _benchmark_finding(
+                        report=report,
+                        title="Parent market is smaller than FMI subset benchmark",
+                        explanation=(
+                            f"{market_name} appears broader than {benchmark.market_name}, but its exposed forecast "
+                            f"value is smaller than the narrower FMI benchmark."
+                        ),
+                        control_sentence=control_sentence,
+                        correction=(
+                            f"Recheck scope or value. {market_name} should not be smaller than subset {benchmark.market_name}. "
+                            f"Benchmark: {benchmark.forecast_year} {benchmark.forecast_value:g} {benchmark.forecast_unit} at {benchmark.url}."
+                        ),
+                    )
+                )
+
+    return findings
+
+
+def _benchmark_finding(
+    *,
+    report: ReportPage,
+    title: str,
+    explanation: str,
+    control_sentence: str,
+    correction: str,
+) -> Finding:
+    return Finding(
+        category="benchmark_hierarchy",
+        title=title,
+        explanation=explanation,
+        uploader_summary=(
+            "This report appears to break the parent/submarket size rule, so the upload team needs to verify the scope and market values."
+        ),
+        correction_instruction=correction,
+        confidence=0.92,
+        source="benchmark_db",
+        evidence=[
+            f"Market name: {report.card_title or report.h1 or report.page_title}",
+            f"URL: {report.url}",
+            f"Control+F: {control_sentence}",
+            f"Change with: {correction}",
+        ],
+    )
+
+
+def _extract_current_market_values(report: ReportPage) -> tuple[float, float, str] | None:
+    window = "\n".join(
+        [report.meta_description, report.card_summary, report.lead_summary]
+        + report.summary_paragraphs[:3]
+        + [item["question"] + " " + item["answer"] for item in report.faq_items[:4]]
+    )
+    values = _extract_money_values_by_year(window)
+    if not values:
+        return None
+
+    estimated_candidates = [
+        item for item in values if item[0] in {2025, 2026}
+    ]
+    forecast_candidates = [
+        item for item in values if item[0] >= 2030
+    ]
+    if not estimated_candidates or not forecast_candidates:
+        return None
+
+    estimated = sorted(estimated_candidates, key=lambda item: item[0])[0]
+    forecast = sorted(forecast_candidates, key=lambda item: item[0], reverse=True)[0]
+    return estimated[1], forecast[1], forecast[2]
+
+
+def _extract_money_values_by_year(text: str) -> list[tuple[int, float, str]]:
+    money_pattern = re.compile(
+        r"(?:USD|US\$|\$)\s*([\d,]+(?:\.\d+)?)\s*(thousand|million|billion)?",
+        flags=re.I,
+    )
+    out: list[tuple[int, float, str]] = []
+    for sentence in re.split(r"(?<=[.!?])\s+", text):
+        if re.search(r"incremental opportunity|absolute dollar opportunity|opportunity of", sentence, flags=re.I):
+            continue
+        year_positions = [(int(match.group(1)), match.start()) for match in re.finditer(r"\b(20\d{2})\b", sentence)]
+        if not year_positions:
+            continue
+        for match in money_pattern.finditer(sentence):
+            amount = float(match.group(1).replace(",", ""))
+            unit = (match.group(2) or "million").lower()
+            nearest_year = min(year_positions, key=lambda item: abs(item[1] - match.start()))[0]
+            out.append((nearest_year, _normalize_money_value(amount, unit) / 1_000_000, sentence.strip()))
+    return out
 
 def _extract_trailing_year(text: str) -> int | None:
     match = re.search(r"[-–]\s*(20\d{2})\s*$", text)

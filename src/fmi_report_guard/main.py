@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
+from .benchmarks import BenchmarkMarket, load_benchmarks
 from .checks import run_rule_checks
 from .config import AppConfig
 from .issues import GitHubIssueClient, build_issue_body, build_issue_title, write_run_artifacts
@@ -23,6 +24,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--audit-initial", action="store_true")
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--force-url")
+    parser.add_argument("--benchmark-db")
     return parser.parse_args()
 
 
@@ -31,6 +33,8 @@ def main() -> None:
     config = AppConfig.from_env()
     client = FMIClient(timeout_seconds=config.request_timeout_seconds)
     title_index = load_or_refresh_title_index(client=client, path=TITLE_INDEX_PATH)
+    benchmark_db_path = args.benchmark_db or config.benchmark_db_path
+    benchmarks = load_benchmarks(benchmark_db_path)
     state_path = Path(args.state_path)
     artifacts_dir = Path(args.artifacts_dir)
     state = SeenState.load(state_path)
@@ -59,7 +63,7 @@ def main() -> None:
     results: list[tuple[ReportPage, list[Finding]]] = []
     for card in new_cards:
         report = client.fetch_report_page(card)
-        findings = collect_findings(report, config, title_index=title_index)
+        findings = collect_findings(report, config, title_index=title_index, benchmarks=benchmarks)
         if findings:
             results.append((report, findings))
         if not args.force_url:
@@ -82,8 +86,14 @@ def main() -> None:
     print(f"Audited {len(new_cards)} report(s); found issues in {len(results)} report(s).")
 
 
-def collect_findings(report: ReportPage, config: AppConfig, *, title_index: list[IndexedTitle]) -> list[Finding]:
-    findings = run_rule_checks(report, title_index=title_index)
+def collect_findings(
+    report: ReportPage,
+    config: AppConfig,
+    *,
+    title_index: list[IndexedTitle],
+    benchmarks: list[BenchmarkMarket],
+) -> list[Finding]:
+    findings = run_rule_checks(report, title_index=title_index, benchmarks=benchmarks)
     seen_keys = {(finding.category, finding.title) for finding in findings}
 
     if config.openai_api_key:
