@@ -129,6 +129,7 @@ INDUSTRIAL_CONTAMINATION_SIGNALS = {
 
 COUNTRY_OR_REGION_WORDS = {
     "asia",
+    "australia",
     "canada",
     "china",
     "europe",
@@ -138,6 +139,12 @@ COUNTRY_OR_REGION_WORDS = {
     "italy",
     "japan",
     "north america",
+    "new zealand",
+    "australia-new zealand",
+    "brazil",
+    "mexico",
+    "gcc",
+    "asean",
     "south korea",
     "uk",
     "united kingdom",
@@ -267,6 +274,8 @@ def check_number_consistency(report: ReportPage) -> list[Finding]:
 def check_forecast_period_consistency(report: ReportPage) -> list[Finding]:
     periods: dict[tuple[int, int], list[tuple[str, str]]] = {}
     for block in _audit_blocks(report):
+        if block.location == "full visible page":
+            continue
         for sentence in _sentences(block.text):
             lower = sentence.lower()
             if any(keyword in lower for keyword in ("historical", "history", "from 2019", "past")):
@@ -310,7 +319,7 @@ def check_content_contamination(report: ReportPage) -> list[Finding]:
     lower_text = text.lower()
     findings: list[Finding] = []
 
-    if any(signal in lower_title for signal in NON_INDUSTRIAL_TITLE_SIGNALS):
+    if _has_phrase_signal(lower_title, NON_INDUSTRIAL_TITLE_SIGNALS):
         contamination = [signal for signal in INDUSTRIAL_CONTAMINATION_SIGNALS if signal in lower_text]
         if len(contamination) >= 2:
             sentence = _first_sentence_with(text, contamination[0]) or _first_sentence_with(text, contamination[1])
@@ -538,11 +547,20 @@ def check_faq_quality(report: ReportPage) -> list[Finding]:
 
 
 def check_segment_country_logic(report: ReportPage) -> list[Finding]:
-    text = _page_text(report)
+    text = " ".join(
+        [
+            report.meta_description,
+            report.lead_summary,
+            " ".join(report.summary_paragraphs[:4]),
+            " ".join(f"{item.get('question', '')} {item.get('answer', '')}" for item in report.faq_items[:8]),
+        ]
+    )
     leader_sentences = []
     for sentence in _sentences(text):
         lower = sentence.lower()
         if not any(term in lower for term in ("lead", "dominat", "largest", "fastest-growing", "fastest growing")):
+            continue
+        if not any(scope in lower for scope in ("global", "overall", "market share", "share of the market")):
             continue
         if any(place in lower for place in COUNTRY_OR_REGION_WORDS):
             leader_sentences.append(sentence)
@@ -603,21 +621,22 @@ def check_terminology(report: ReportPage) -> list[Finding]:
 
     duplicate = re.search(r"\b([A-Za-z]{4,})\s+\1\b", text, flags=re.I)
     if duplicate:
-        sentence = _first_sentence_with(text, duplicate.group(0)) or duplicate.group(0)
-        findings.append(
-            _finding(
-                category="terminology",
-                title="Duplicate word appears in page content",
-                explanation=f"The page repeats the word '{duplicate.group(1)}' consecutively.",
-                uploader_summary="Duplicate word should be removed.",
-                correction=f"Remove one repeated '{duplicate.group(1)}'.",
-                evidence=[
-                    f"Control+F: {_trim(sentence)}",
-                    f"Change with: {sentence.replace(duplicate.group(0), duplicate.group(1), 1)}",
-                ],
-                confidence=0.9,
+        if duplicate.group(1).lower() not in {"market", "report", "analysis", "future", "insights"}:
+            sentence = _first_sentence_with(text, duplicate.group(0)) or duplicate.group(0)
+            findings.append(
+                _finding(
+                    category="terminology",
+                    title="Duplicate word appears in page content",
+                    explanation=f"The page repeats the word '{duplicate.group(1)}' consecutively.",
+                    uploader_summary="Duplicate word should be removed.",
+                    correction=f"Remove one repeated '{duplicate.group(1)}'.",
+                    evidence=[
+                        f"Control+F: {_trim(sentence)}",
+                        f"Change with: {sentence.replace(duplicate.group(0), duplicate.group(1), 1)}",
+                    ],
+                    confidence=0.9,
+                )
             )
-        )
 
     if "â" in text or "�" in text:
         sentence = _first_sentence_with(text, "â") or _first_sentence_with(text, "�") or text[:180]
@@ -867,7 +886,7 @@ def _is_global_cagr_sentence(sentence: str) -> bool:
         return False
     if any(skip in lower for skip in ("segment", "country", "regional", "region ", "end user")):
         return False
-    return "market" in lower or "global" in lower or "cagr" in lower
+    return "market" in lower or "global" in lower
 
 
 def _opening_summary(report: ReportPage) -> str:
@@ -1071,6 +1090,17 @@ def _evidence_value(evidence: list[str], key: str) -> str:
         if item.startswith(prefix):
             return item.removeprefix(prefix).strip()
     return ""
+
+
+def _has_phrase_signal(text: str, signals: set[str]) -> bool:
+    for signal in signals:
+        if " " in signal or "-" in signal:
+            if signal in text:
+                return True
+            continue
+        if re.search(rf"\b{re.escape(signal)}\b", text):
+            return True
+    return False
 
 
 def _dedupe_findings(findings: list[Finding]) -> list[Finding]:
