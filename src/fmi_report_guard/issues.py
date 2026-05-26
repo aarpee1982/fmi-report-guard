@@ -6,6 +6,7 @@ from pathlib import Path
 
 import requests
 
+from .aio_audit import aio_decision, aio_readiness_score, build_aio_audit_report
 from .daily_summary import DigestFinding, DigestIssue, parse_digest_issue
 from .models import Finding, ReportPage
 
@@ -79,12 +80,19 @@ def build_issue_body_from_digest_issue(issue: DigestIssue) -> str:
     return "\n".join(lines).strip() + "\n"
 
 
-def write_run_artifacts(results: list[tuple[ReportPage, list[Finding]]], output_dir: Path) -> None:
+def write_run_artifacts(
+    results: list[tuple[ReportPage, list[Finding]]],
+    output_dir: Path,
+    *,
+    audited_results: list[tuple[ReportPage, list[Finding]]] | None = None,
+) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
     summary_payload = [
         {
             "url": report.url,
             "title": report.card_title or report.h1,
+            "aio_readiness_score": aio_readiness_score(findings),
+            "aio_decision": aio_decision(aio_readiness_score(findings), findings),
             "findings": [
                 {
                     "category": finding.category,
@@ -123,6 +131,19 @@ def write_run_artifacts(results: list[tuple[ReportPage, list[Finding]]], output_
                     lines.append(f"  - Change with: {finding.correction_instruction}")
             lines.append("")
     (output_dir / "latest_run.md").write_text("\n".join(lines).strip() + "\n", encoding="utf-8")
+
+    aio_source = audited_results if audited_results is not None else results
+    aio_lines = ["# FMI Report Guard AIO audit report", ""]
+    if not aio_source:
+        aio_lines.append("No report pages were audited in this run.")
+    else:
+        for report, findings in aio_source:
+            aio_lines.append(build_aio_audit_report(report, findings).strip())
+            aio_lines.append("")
+    (output_dir / "latest_aio_audit.md").write_text(
+        "\n".join(aio_lines).strip() + "\n",
+        encoding="utf-8",
+    )
 
 
 def build_digest_issue_body(open_report_issues: list[DigestIssue]) -> str:

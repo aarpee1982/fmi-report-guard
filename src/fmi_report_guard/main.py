@@ -61,9 +61,11 @@ def main() -> None:
         new_cards = [card for card in cards if card.url not in state.seen_urls][: args.max_new]
 
     results: list[tuple[ReportPage, list[Finding]]] = []
+    audited_results: list[tuple[ReportPage, list[Finding]]] = []
     for card in new_cards:
         report = client.fetch_report_page(card)
         findings = collect_findings(report, config, title_index=title_index, benchmarks=benchmarks)
+        audited_results.append((report, findings))
         if findings:
             results.append((report, findings))
         if not args.force_url:
@@ -73,7 +75,7 @@ def main() -> None:
         state.bootstrapped = True
         state.save(state_path)
 
-    write_run_artifacts(results, artifacts_dir)
+    write_run_artifacts(results, artifacts_dir, audited_results=audited_results)
 
     if not args.dry_run and config.github_token and config.github_repository:
         github = GitHubIssueClient(token=config.github_token, repository=config.github_repository)

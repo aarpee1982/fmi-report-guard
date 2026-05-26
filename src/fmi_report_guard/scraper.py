@@ -93,6 +93,11 @@ class FMIClient:
 
         h2_nodes = [normalize_text(node.get_text(" ", strip=True)) for node in soup.find_all("h2")]
         lead_summary = h2_nodes[0] if h2_nodes else ""
+        headings = [
+            normalize_text(node.get_text(" ", strip=True))
+            for node in soup.find_all(["h1", "h2", "h3", "h4"])
+        ]
+        headings = [heading for heading in headings if heading]
 
         paragraphs = [normalize_text(node.get_text(" ", strip=True)) for node in soup.find_all("p")]
         paragraphs = [paragraph for paragraph in paragraphs if len(paragraph) >= 50]
@@ -118,6 +123,17 @@ class FMIClient:
                 competitive_paragraphs.append(paragraph)
 
         faq_items, publish_date = self._extract_json_ld_metadata(soup)
+        schema_text = self._extract_schema_text(soup)
+        metadata_text = self._extract_metadata_text(soup)
+        table_texts = [
+            normalize_text(node.get_text(" ", strip=True))
+            for node in soup.find_all("table")
+        ]
+        table_texts = [text for text in table_texts if len(text) >= 20]
+
+        for node in soup.find_all(["script", "style", "noscript"]):
+            node.decompose()
+        visible_text = normalize_text(soup.get_text(" ", strip=True))
 
         return ReportPage(
             url=card.url,
@@ -132,6 +148,11 @@ class FMIClient:
             summary_paragraphs=summary_paragraphs[:8],
             competitive_paragraphs=competitive_paragraphs[:6],
             faq_items=faq_items[:8],
+            headings=headings[:80],
+            table_texts=table_texts[:20],
+            metadata_text=metadata_text,
+            schema_text=schema_text,
+            visible_text=visible_text[:60000],
         )
 
     def fetch_title_index(self) -> list[object]:
@@ -184,6 +205,55 @@ class FMIClient:
                             faq_items.append({"question": question, "answer": answer})
 
         return faq_items, publish_date
+
+    def _extract_schema_text(self, soup: BeautifulSoup) -> str:
+        parts: list[str] = []
+        for script in soup.find_all("script", attrs={"type": "application/ld+json"}):
+            raw = normalize_text(script.string or script.get_text(" ", strip=True))
+            if not raw:
+                continue
+
+            try:
+                payload = json.loads(raw)
+            except json.JSONDecodeError:
+                continue
+
+            for item in self._yield_json_ld_items(payload):
+                compact = {
+                    key: item.get(key)
+                    for key in (
+                        "@type",
+                        "name",
+                        "headline",
+                        "description",
+                        "datePublished",
+                        "dateModified",
+                    )
+                    if item.get(key)
+                }
+                main_entity = item.get("mainEntity")
+                if main_entity:
+                    compact["mainEntity"] = main_entity
+                if compact:
+                    parts.append(json.dumps(compact, ensure_ascii=True, sort_keys=True))
+
+        return normalize_text(" ".join(parts))[:20000]
+
+    def _extract_metadata_text(self, soup: BeautifulSoup) -> str:
+        parts: list[str] = []
+        if soup.title:
+            parts.append(f"title: {normalize_text(soup.title.get_text(' ', strip=True))}")
+        for attrs in (
+            {"name": "description"},
+            {"property": "og:title"},
+            {"property": "og:description"},
+            {"name": "twitter:title"},
+            {"name": "twitter:description"},
+        ):
+            node = soup.find("meta", attrs=attrs)
+            if node and node.get("content"):
+                parts.append(f"{next(iter(attrs.values()))}: {normalize_text(str(node.get('content', '')))}")
+        return normalize_text(" ".join(parts))[:8000]
 
     def _yield_json_ld_items(self, payload: object) -> list[dict[str, object]]:
         if isinstance(payload, list):

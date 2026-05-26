@@ -1,4 +1,5 @@
 from fmi_report_guard.benchmarks import BenchmarkMarket
+from fmi_report_guard.aio_audit import build_aio_audit_report, run_aio_audit
 from fmi_report_guard.checks import (
     check_benchmark_hierarchy,
     check_duplicate_title,
@@ -275,3 +276,43 @@ def test_parent_market_smaller_than_subset_benchmark_is_flagged() -> None:
     )
     assert findings
     assert findings[0].title == "Parent market is smaller than FMI subset benchmark"
+
+
+def test_aio_audit_flags_number_mismatch_across_faq_and_metadata() -> None:
+    report = make_report(
+        page_title="Test Market | Global Industry Analysis Report - 2036",
+        card_title="Test Market",
+        h1="Test Market (2026 - 2036)",
+        meta_description=(
+            "Test Market was valued at USD 1.2 billion in 2026 and is expected to reach "
+            "USD 1.6 billion by 2036, growing at a CAGR of 2.9%."
+        ),
+        lead_summary=(
+            "The Test Market was valued at USD 12 million in 2026 and is expected to reach "
+            "USD 1.6 billion by 2036, growing at a CAGR of 2.9% due to rising enterprise adoption. "
+            "By segment, platform users and regional buyers shape demand across key end users."
+        ),
+    )
+    findings = run_aio_audit(report)
+    assert any(finding.category == "number_consistency" for finding in findings)
+
+
+def test_aio_audit_report_uses_a_to_i_sections() -> None:
+    report = make_report(
+        page_title="Test Market | Global Industry Analysis Report - 2036",
+        card_title="Test Market",
+        h1="Test Market (2026 - 2036)",
+        meta_description=(
+            "Test Market was valued at USD 1.2 billion in 2026 and is expected to reach "
+            "USD 1.6 billion by 2036, growing at a CAGR of 2.9%."
+        ),
+        lead_summary=(
+            "The Test Market was valued at USD 1.2 billion in 2026 and is expected to reach "
+            "USD 1.6 billion by 2036, growing at a CAGR of 2.9% due to rising enterprise adoption. "
+            "By segment, platform users and regional buyers shape demand across key end users."
+        ),
+    )
+    body = build_aio_audit_report(report, run_aio_audit(report))
+    assert "## A. Overall AI readiness score:" in body
+    assert "## D. Number mismatch table:" in body
+    assert "## I. Final action checklist:" in body

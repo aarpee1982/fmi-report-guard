@@ -3,6 +3,7 @@ from __future__ import annotations
 import math
 import re
 
+from .aio_audit import run_aio_audit
 from .benchmarks import BenchmarkMarket, find_hierarchy_matches
 from .models import Finding, ReportPage
 from .title_index import IndexedTitle, make_indexed_title
@@ -25,6 +26,7 @@ def run_rule_checks(
     findings.extend(check_market_math(report))
     findings.extend(check_duplicate_title(report, title_index=title_index or []))
     findings.extend(check_benchmark_hierarchy(report, benchmarks=benchmarks or []))
+    findings.extend(run_aio_audit(report))
     return findings
 
 
