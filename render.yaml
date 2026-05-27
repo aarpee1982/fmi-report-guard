@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: fmi-benchmark-checker
+    runtime: static
+    rootDir: web
+    buildCommand: npm run fetch-db && npm run build
+    staticPublishPath: ./dist
+    autoDeployTrigger: commit
+    headers:
+      - path: /*
+        name: X-Frame-Options
+        value: sameorigin
+      - path: /fmi_global_benchmarks.sqlite.zip
+        name: Cache-Control
+        value: public, max-age=86400
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html

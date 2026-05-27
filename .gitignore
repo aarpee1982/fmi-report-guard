@@ -4,3 +4,12 @@ __pycache__/
 artifacts/
 *.pyc
 *.egg-info/
+web/node_modules/
+web/dist/
+web/verify/
+web/*.log
+web/*.png
+web/tsconfig.tsbuildinfo
+web/public/*.sqlite
+web/public/*.db
+web/public/*.zip
