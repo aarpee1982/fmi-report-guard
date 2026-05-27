@@ -13,7 +13,8 @@ import {
   Loader2,
   Search,
   ShieldAlert,
-  ShieldCheck
+  ShieldCheck,
+  Sparkles
 } from "lucide-react";
 
 type Unit = "USD million" | "USD billion";
@@ -46,6 +47,38 @@ type Match = {
 
 const DEFAULT_DB_URL =
   import.meta.env.VITE_BENCHMARK_DB_URL || "/fmi_global_benchmarks.sqlite.zip";
+const LLM_API_URL =
+  import.meta.env.VITE_LLM_API_URL || "http://127.0.0.1:8000";
+const LLM_MATCH_LIMIT = 12;
+
+type AiJudgment = {
+  market_name: string;
+  url: string;
+  relationship:
+    | "candidate_is_child"
+    | "candidate_is_parent"
+    | "sibling_or_adjacent"
+    | "unrelated"
+    | "unclear";
+  confidence: number;
+  violates_parent_child_rule: boolean;
+  issue: string;
+  control_f: string;
+  change_with: string;
+  reason: string;
+};
+
+type AiResult = {
+  summary: string;
+  should_escalate: boolean;
+  judgments: AiJudgment[];
+};
+
+type AiState =
+  | { status: "idle"; message: string }
+  | { status: "loading"; message: string }
+  | { status: "ready"; message: string; result: AiResult }
+  | { status: "error"; message: string };
 
 const STOPWORDS = new Set([
   "market",
@@ -289,6 +322,10 @@ function App() {
   const [unit2036, setUnit2036] = useState<Unit>("USD million");
   const [searchText, setSearchText] = useState("");
   const [copyState, setCopyState] = useState("Copy issues");
+  const [aiState, setAiState] = useState<AiState>({
+    status: "idle",
+    message: "AI brain not run yet."
+  });
 
   async function loadBytes(bytes: Uint8Array, source: string) {
     setDbState({ status: "loading", message: "Opening SQLite in browser..." });
@@ -355,6 +392,9 @@ function App() {
   }, [benchmarks, canCheck, candidate2026, candidate2036, cagrValue, title]);
 
   const issues = matches.filter((match) => match.issue);
+  const llmCandidateMatches = matches
+    .filter((match) => match.relation !== "self_check")
+    .slice(0, LLM_MATCH_LIMIT);
   const filteredMatches = matches.filter((match) => {
     if (!searchText.trim()) return true;
     const haystack = `${match.benchmark.marketName} ${match.benchmark.url} ${match.issue ?? ""}`.toLowerCase();
@@ -380,6 +420,81 @@ function App() {
     await navigator.clipboard.writeText(copyableIssues);
     setCopyState("Copied");
     window.setTimeout(() => setCopyState("Copy issues"), 1400);
+  }
+
+  async function askAiBrain() {
+    if (!canCheck || candidate2026 === null || candidate2036 === null) return;
+    if (!llmCandidateMatches.length) {
+      setAiState({
+        status: "ready",
+        message: "No benchmark candidates available for AI review.",
+        result: {
+          summary: "No likely parent-child benchmark candidates were found.",
+          should_escalate: false,
+          judgments: []
+        }
+      });
+      return;
+    }
+
+    try {
+      setAiState({
+        status: "loading",
+        message: `Sending ${llmCandidateMatches.length} likely matches to AI brain...`
+      });
+      const response = await fetch(`${LLM_API_URL.replace(/\/$/, "")}/api/judge`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          candidate: {
+            title: title.trim(),
+            estimated_year: 2026,
+            estimated_value_usd_mn: candidate2026,
+            forecast_year: 2036,
+            forecast_value_usd_mn: candidate2036,
+            cagr_percent: cagrValue
+          },
+          matches: llmCandidateMatches.map((match) => ({
+            relationship_hint:
+              match.relation === "candidate_subset"
+                ? "candidate may be child of benchmark"
+                : "candidate may be parent of benchmark",
+            issue_hint: match.issue ?? "",
+            recommendation_hint: match.recommendation ?? "",
+            benchmark: {
+              market_name: match.benchmark.marketName,
+              url: match.benchmark.url,
+              category: match.benchmark.category,
+              estimated_year: match.benchmark.estimatedYear,
+              estimated_value_usd_mn: match.benchmark.estimatedValueUsdMn,
+              forecast_year: match.benchmark.forecastYear,
+              forecast_value_usd_mn: match.benchmark.forecastValueUsdMn,
+              cagr_percent: match.benchmark.cagrPercent
+            }
+          }))
+        })
+      });
+
+      if (!response.ok) {
+        const errorText = await response.text();
+        throw new Error(errorText || `AI API failed with ${response.status}`);
+      }
+
+      const result = (await response.json()) as AiResult;
+      setAiState({
+        status: "ready",
+        message: result.should_escalate ? "AI found likely true hierarchy issues." : "AI did not confirm a hard hierarchy issue.",
+        result
+      });
+    } catch (error) {
+      setAiState({
+        status: "error",
+        message:
+          error instanceof Error
+            ? error.message
+            : "AI brain request failed."
+      });
+    }
   }
 
   return (
@@ -511,7 +626,68 @@ function App() {
               <ClipboardCopy aria-hidden="true" />
               {copyState}
             </button>
+            <button className="ai-button" type="button" onClick={askAiBrain} disabled={!canCheck || aiState.status === "loading"}>
+              {aiState.status === "loading" ? <Loader2 className="spin" aria-hidden="true" /> : <Sparkles aria-hidden="true" />}
+              Ask AI brain
+            </button>
           </div>
+
+          <section className={`ai-panel ${aiState.status}`}>
+            <div className="ai-panel-head">
+              <Sparkles aria-hidden="true" />
+              <div>
+                <h3>AI relationship judgment</h3>
+                <p>{aiState.message}</p>
+              </div>
+            </div>
+            {aiState.status === "ready" && (
+              <div className="ai-results">
+                <p className="ai-summary">{aiState.result.summary}</p>
+                {aiState.result.judgments.length ? (
+                  <div className="ai-grid">
+                    {aiState.result.judgments.map((judgment, index) => (
+                      <article
+                        className={`ai-card ${judgment.violates_parent_child_rule ? "ai-issue" : ""}`}
+                        key={`${judgment.url || judgment.market_name}-${index}`}
+                      >
+                        <div className="ai-card-title">
+                          <strong>{judgment.market_name}</strong>
+                          <span>{judgment.relationship.replaceAll("_", " ")} · {(judgment.confidence * 100).toFixed(0)}%</span>
+                        </div>
+                        <p>{judgment.reason}</p>
+                        {judgment.violates_parent_child_rule && (
+                          <>
+                            <dl>
+                              <div>
+                                <dt>Issue</dt>
+                                <dd>{judgment.issue}</dd>
+                              </div>
+                              <div>
+                                <dt>Control+F</dt>
+                                <dd>{judgment.control_f}</dd>
+                              </div>
+                              <div>
+                                <dt>Change with</dt>
+                                <dd>{judgment.change_with}</dd>
+                              </div>
+                            </dl>
+                            {judgment.url && (
+                              <a href={judgment.url} target="_blank" rel="noreferrer">
+                                <LinkIcon aria-hidden="true" />
+                                Open benchmark
+                              </a>
+                            )}
+                          </>
+                        )}
+                      </article>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="ai-empty">No AI judgments returned.</p>
+                )}
+              </div>
+            )}
+          </section>
 
           <div className="table-wrap">
             <table>

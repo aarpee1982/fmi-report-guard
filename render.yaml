@@ -1,11 +1,29 @@
 services:
   - type: web
+    name: fmi-benchmark-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -e .
+    startCommand: uvicorn fmi_report_guard.api:app --host 0.0.0.0 --port $PORT
+    autoDeployTrigger: commit
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: OPENAI_MODEL
+        value: gpt-5-mini
+      - key: ALLOWED_ORIGINS
+        value: https://fmi-benchmark-checker.onrender.com,http://localhost:5173,http://127.0.0.1:5173
+
+  - type: web
     name: fmi-benchmark-checker
     runtime: static
     rootDir: web
     buildCommand: npm run fetch-db && npm run build
     staticPublishPath: ./dist
     autoDeployTrigger: commit
+    envVars:
+      - key: VITE_LLM_API_URL
+        value: https://fmi-benchmark-api.onrender.com
     headers:
       - path: /*
         name: X-Frame-Options

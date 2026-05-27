@@ -88,3 +88,12 @@ python -m fmi_report_guard.sync_digest
 - GitHub Actions schedules are best-effort. A `*/10` cron does not guarantee an exact 10-minute wall-clock run.
 - The monitor is tuned to avoid noise. If the model is not highly confident, it should return no findings.
 - Do not paste your API key into code or issues. Use the GitHub secret only.
+
+## Benchmark checker web app
+
+The Render Blueprint deploys:
+
+- `fmi-benchmark-checker`: static frontend for writers.
+- `fmi-benchmark-api`: Python API for LLM relationship judgment.
+
+Set `OPENAI_API_KEY` in the Render environment for `fmi-benchmark-api`.
