@@ -27,13 +27,18 @@ On Render, the build downloads the ZIP into the static bundle so the browser loa
 
 The repo root contains `render.yaml`.
 
-Render settings:
+The Blueprint creates two services:
 
-- Root directory: `web`
-- Build command: `npm run fetch-db && npm run build`
-- Publish directory: `dist`
+- `fmi-benchmark-checker`: static frontend
+- `fmi-benchmark-api`: Python API that calls OpenAI
 
-The DB ZIP is not committed to Git. Render downloads it during build.
+Set this secret on `fmi-benchmark-api`, not on the static frontend:
+
+```text
+OPENAI_API_KEY
+```
+
+The DB ZIP is not committed to Git. Render downloads it during the frontend build.
 
 ## Check logic
 
