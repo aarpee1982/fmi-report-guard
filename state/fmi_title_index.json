@@ -1,11 +1,41 @@
 {
-  "refreshed_at": "2026-06-19T12:27:12.145629+00:00",
+  "refreshed_at": "2026-06-22T10:17:35.497976+00:00",
   "titles": [
     {
       "url": "https://www.futuremarketinsights.com/reports/coal-briquettes-market",
       "title": "coal briquettes market",
       "normalized_title": "coal briquettes",
       "singular_title": "coal briquette"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/cultured-wheat-based-mold-inhibitors-for-bakery-market",
+      "title": "cultured wheat based mold inhibitors for bakery market",
+      "normalized_title": "cultured wheat based mold inhibitors bakery",
+      "singular_title": "cultured wheat based mold inhibitor bakery"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/data-center-construction-tools-and-anchoring-systems-market",
+      "title": "data center construction tools and anchoring systems market",
+      "normalized_title": "data center construction tools anchoring systems",
+      "singular_title": "data center construction tool anchoring system"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/fava-bean-plant-burger-market",
+      "title": "fava bean plant burger market",
+      "normalized_title": "fava bean plant burger",
+      "singular_title": "fava bean plant burger"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/fermented-legume-protein-market",
+      "title": "fermented legume protein market",
+      "normalized_title": "fermented legume protein",
+      "singular_title": "fermented legume protein"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/microplastic-free-personal-care-polymers-market",
+      "title": "microplastic free personal care polymers market",
+      "normalized_title": "microplastic free personal care polymers",
+      "singular_title": "microplastic free personal care polymer"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/medical-coatings-market",
@@ -27464,6 +27494,12 @@
       "singular_title": "middle east 3d printing material"
     },
     {
+      "url": "https://www.futuremarketinsights.com/reports/commercial-heat-pump-market",
+      "title": "commercial heat pump market",
+      "normalized_title": "commercial heat pump",
+      "singular_title": "commercial heat pump"
+    },
+    {
       "url": "https://www.futuremarketinsights.com/reports/platform-trolley-market",
       "title": "platform trolley market",
       "normalized_title": "platform trolley",
@@ -27474,6 +27510,24 @@
       "title": "industrial carts market",
       "normalized_title": "industrial carts",
       "singular_title": "industrial cart"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/wire-free-rtk-satellite-navigation-robotic-mowers-market",
+      "title": "wire free rtk satellite navigation robotic mowers market",
+      "normalized_title": "wire free rtk satellite navigation robotic mowers",
+      "singular_title": "wire free rtk satellite navigation robotic mower"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/battery-powered-concrete-cut-off-machines-market",
+      "title": "battery powered concrete cut off machines market",
+      "normalized_title": "battery powered concrete cut off machines",
+      "singular_title": "battery powered concrete cut off machine"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/on-tool-dust-extraction-systems-market",
+      "title": "on tool dust extraction systems market",
+      "normalized_title": "on tool dust extraction systems",
+      "singular_title": "on tool dust extraction system"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/automated-material-handling-equipment-market",
@@ -37826,12 +37880,6 @@
       "singular_title": "nail gun"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/commercial-heat-pump-market",
-      "title": "commercial heat pump market",
-      "normalized_title": "commercial heat pump",
-      "singular_title": "commercial heat pump"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/pick-and-place-machines-market",
       "title": "pick and place machines market",
       "normalized_title": "pick place machines",
@@ -45548,10 +45596,64 @@
       "singular_title": "level measuring instrument"
     },
     {
+      "url": "https://www.futuremarketinsights.com/reports/natural-chew-pet-treats-market",
+      "title": "natural chew pet treats market",
+      "normalized_title": "natural chew pet treats",
+      "singular_title": "natural chew pet treat"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/nutrient-dense-food-products-market",
+      "title": "nutrient dense food products market",
+      "normalized_title": "nutrient dense food products",
+      "singular_title": "nutrient dense food product"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/freeze-dried-fruit-inclusions-market",
+      "title": "freeze dried fruit inclusions market",
+      "normalized_title": "freeze dried fruit inclusions",
+      "singular_title": "freeze dried fruit inclusion"
+    },
+    {
       "url": "https://www.futuremarketinsights.com/reports/freeze-dried-mango-market",
       "title": "freeze dried mango market",
       "normalized_title": "freeze dried mango",
       "singular_title": "freeze dried mango"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/freeze-dried-strawberry-market",
+      "title": "freeze dried strawberry market",
+      "normalized_title": "freeze dried strawberry",
+      "singular_title": "freeze dried strawberry"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/omega-3-fortified-foods-market",
+      "title": "omega 3 fortified foods market",
+      "normalized_title": "omega 3 fortified foods",
+      "singular_title": "omega 3 fortified food"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/koji-meat-alternative-market",
+      "title": "koji meat alternative market",
+      "normalized_title": "koji meat alternative",
+      "singular_title": "koji meat alternative"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/plant-based-chicken-filets-market",
+      "title": "plant based chicken filets market",
+      "normalized_title": "plant based chicken filets",
+      "singular_title": "plant based chicken filet"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/private-label-plant-based-meals-market",
+      "title": "private label plant based meals market",
+      "normalized_title": "private label plant based meals",
+      "singular_title": "private label plant based meal"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/plant-based-egg-bites-market",
+      "title": "plant based egg bites market",
+      "normalized_title": "plant based egg bites",
+      "singular_title": "plant based egg bite"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/pea-protein-ingredients-market",
@@ -45828,6 +45930,12 @@
       "title": "blueberry powder market",
       "normalized_title": "blueberry powder",
       "singular_title": "blueberry powder"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/chia-protein-powder-market",
+      "title": "chia protein powder market",
+      "normalized_title": "chia protein powder",
+      "singular_title": "chia protein powder"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/private-label-cbd-gummies-market",
@@ -67560,12 +67668,6 @@
       "title": "whole wheat flour industry analysis in korea",
       "normalized_title": "whole wheat flour korea",
       "singular_title": "whole wheat flour korea"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/nutrient-dense-food-products-market",
-      "title": "nutrient dense food products market",
-      "normalized_title": "nutrient dense food products",
-      "singular_title": "nutrient dense food product"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/nata-de-coco-market",
@@ -98756,6 +98858,24 @@
       "singular_title": "flexible bottle"
     },
     {
+      "url": "https://www.futuremarketinsights.com/reports/dysmenorrhea-treatment-market",
+      "title": "dysmenorrhea treatment market",
+      "normalized_title": "dysmenorrhea treatment",
+      "singular_title": "dysmenorrhea treatment"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/continuous-peripheral-nerve-block-catheter-market",
+      "title": "continuous peripheral nerve block catheter market",
+      "normalized_title": "continuous peripheral nerve block catheter",
+      "singular_title": "continuous peripheral nerve block catheter"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/pharmaceutical-omega-3-api-market",
+      "title": "pharmaceutical omega 3 api market",
+      "normalized_title": "pharmaceutical omega 3 api",
+      "singular_title": "pharmaceutical omega 3 api"
+    },
+    {
       "url": "https://www.futuremarketinsights.com/reports/scabies-treatment-market",
       "title": "scabies treatment market",
       "normalized_title": "scabies treatment",
@@ -119840,12 +119960,6 @@
       "singular_title": "muscle stimulation device"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/dysmenorrhea-treatment-market",
-      "title": "dysmenorrhea treatment market",
-      "normalized_title": "dysmenorrhea treatment",
-      "singular_title": "dysmenorrhea treatment"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/hemostasis-testing-systems-market",
       "title": "hemostasis testing systems market",
       "normalized_title": "hemostasis testing systems",
@@ -119988,12 +120102,6 @@
       "title": "continuous renal replacement therapy market",
       "normalized_title": "continuous renal replacement therapy",
       "singular_title": "continuous renal replacement therapy"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/continuous-peripheral-nerve-block-catheter-market",
-      "title": "continuous peripheral nerve block catheter market",
-      "normalized_title": "continuous peripheral nerve block catheter",
-      "singular_title": "continuous peripheral nerve block catheter"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/allogeneic-t-cell-therapies-market",
