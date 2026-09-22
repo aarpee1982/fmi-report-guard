@@ -13,11 +13,19 @@ from .title_index import make_indexed_title
 
 REPORTS_AJAX_URL = "https://www.futuremarketinsights.com/reportajax/reports_by_reportajax"
 REPORT_SITEMAP_URLS = [
-    "https://www.futuremarketinsights.com/reports.xml",
-    "https://www.futuremarketinsights.com/reports-2.xml",
-    "https://www.futuremarketinsights.com/reports-3.xml",
-    "https://www.futuremarketinsights.com/reports-4.xml",
-    "https://www.futuremarketinsights.com/reports-5.xml",
+    "https://www.futuremarketinsights.com/chemicals-and-materials.xml",
+    "https://www.futuremarketinsights.com/technology.xml",
+    "https://www.futuremarketinsights.com/industrial-automation.xml",
+    "https://www.futuremarketinsights.com/automotive.xml",
+    "https://www.futuremarketinsights.com/consumer-product.xml",
+    "https://www.futuremarketinsights.com/food-and-beverage.xml",
+    "https://www.futuremarketinsights.com/services-and-utilities.xml",
+    "https://www.futuremarketinsights.com/oil-and-gas.xml",
+    "https://www.futuremarketinsights.com/healthcare.xml",
+    "https://www.futuremarketinsights.com/travel-and-tourism.xml",
+    "https://www.futuremarketinsights.com/packaging.xml",
+    "https://www.futuremarketinsights.com/testing-equipment.xml",
+    "https://www.futuremarketinsights.com/process-automation.xml",
 ]
 
 

@@ -11,6 +11,10 @@ services:
         sync: false
       - key: OPENAI_MODEL
         value: gpt-5-mini
+      - key: TYPESAFE_API_KEY
+        sync: false
+      - key: TYPESAFE_MODEL
+        value: jev-latest
       - key: ALLOWED_ORIGINS
         value: https://fmi-benchmark-checker.onrender.com,http://localhost:5173,http://127.0.0.1:5173
 

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import re
+import sqlite3
 import unicodedata
 from dataclasses import dataclass
 from datetime import UTC, datetime, timedelta
@@ -97,6 +98,64 @@ def load_or_refresh_title_index(
     titles = client.fetch_title_index()
     _save_payload(path, titles=titles, refreshed_at=now)
     return titles
+
+
+def load_cached_title_index(path: Path = TITLE_INDEX_PATH) -> list[IndexedTitle]:
+    """Load the local title cache without making a network request."""
+    payload = _load_payload(path)
+    return _payload_to_titles(payload) if payload else []
+
+
+def load_titles_from_benchmark_db(path: str | Path | None) -> list[IndexedTitle]:
+    """Load all report titles from a healthy FMI benchmark database.
+
+    A broken or older database is treated as unavailable so the caller can fall
+    back to the sitemap-backed JSON cache.
+    """
+    if not path:
+        return []
+    db_path = Path(path)
+    if not db_path.exists():
+        return []
+
+    try:
+        conn = sqlite3.connect(f"file:{db_path}?mode=ro", uri=True)
+        rows = conn.execute(
+            """
+            SELECT url, COALESCE(NULLIF(TRIM(market_name), ''), NULLIF(TRIM(meta_title), ''))
+            FROM reports
+            WHERE COALESCE(NULLIF(TRIM(market_name), ''), NULLIF(TRIM(meta_title), '')) IS NOT NULL
+            """
+        ).fetchall()
+    except sqlite3.Error:
+        return []
+    finally:
+        if "conn" in locals():
+            conn.close()
+
+    return [make_indexed_title(url=str(url), title=str(title)) for url, title in rows]
+
+
+def load_title_corpus(
+    *,
+    index_path: Path = TITLE_INDEX_PATH,
+    benchmark_db_path: str | Path | None = None,
+) -> list[IndexedTitle]:
+    """Merge the cached sitemap titles with any titles in the benchmark DB."""
+    candidates = load_cached_title_index(index_path)
+    candidates.extend(load_titles_from_benchmark_db(benchmark_db_path))
+
+    by_url: dict[str, IndexedTitle] = {}
+    without_url: dict[str, IndexedTitle] = {}
+    for item in candidates:
+        if not item.normalized_title:
+            continue
+        url_key = item.url.rstrip("/").lower()
+        if url_key:
+            by_url[url_key] = item
+        else:
+            without_url.setdefault(item.singular_title, item)
+    return list(by_url.values()) + list(without_url.values())
 
 
 def _load_payload(path: Path) -> dict[str, object] | None:

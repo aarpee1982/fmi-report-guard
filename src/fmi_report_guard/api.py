@@ -2,11 +2,22 @@ from __future__ import annotations
 
 import json
 import os
+from pathlib import Path
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from openai import OpenAI
 from pydantic import BaseModel, Field
+
+from .title_index import TITLE_INDEX_PATH, load_title_corpus
+from .title_novelty import (
+    DEFAULT_TYPESAFE_ENDPOINT,
+    DEFAULT_TYPESAFE_MODEL,
+    DecisionThresholds,
+    TitleRetriever,
+    TypeSafeJevClient,
+    assess_title_novelty,
+)
 
 
 DEFAULT_ALLOWED_ORIGINS = [
@@ -49,6 +60,16 @@ class JudgeRequest(BaseModel):
     matches: list[MatchInput] = Field(default_factory=list, max_length=MAX_MATCHES)
 
 
+class ProposedTitleInput(BaseModel):
+    title: str = Field(min_length=3, max_length=180)
+    aliases: list[str] = Field(default_factory=list, max_length=8)
+
+
+class TitleNoveltyRequest(BaseModel):
+    titles: list[ProposedTitleInput] = Field(min_length=1, max_length=5)
+    top_k: int = Field(default=30, ge=5, le=50)
+
+
 def _allowed_origins() -> list[str]:
     configured = os.getenv("ALLOWED_ORIGINS", "")
     if not configured.strip():
@@ -71,7 +92,55 @@ def health() -> dict[str, object]:
     return {
         "ok": True,
         "openai_configured": bool(os.getenv("OPENAI_API_KEY")),
+        "typesafe_configured": bool(os.getenv("TYPESAFE_API_KEY")),
         "model": os.getenv("OPENAI_MODEL", "gpt-5-mini"),
+        "typesafe_model": os.getenv("TYPESAFE_MODEL", DEFAULT_TYPESAFE_MODEL),
+    }
+
+
+@app.post("/api/title-novelty")
+def judge_title_novelty(payload: TitleNoveltyRequest) -> dict[str, object]:
+    index_path = Path(os.getenv("FMI_TITLE_INDEX") or TITLE_INDEX_PATH)
+    corpus = load_title_corpus(
+        index_path=index_path,
+        benchmark_db_path=os.getenv("FMI_BENCHMARK_DB") or None,
+    )
+    if not corpus:
+        raise HTTPException(status_code=503, detail="No FMI title corpus is available.")
+
+    api_key = os.getenv("TYPESAFE_API_KEY")
+    jev_client = None
+    if api_key:
+        jev_client = TypeSafeJevClient(
+            api_key=api_key,
+            model=os.getenv("TYPESAFE_MODEL", DEFAULT_TYPESAFE_MODEL),
+            endpoint=os.getenv("TYPESAFE_ENDPOINT", DEFAULT_TYPESAFE_ENDPOINT),
+            timeout_seconds=float(os.getenv("TYPESAFE_TIMEOUT_SECONDS", "120")),
+        )
+
+    thresholds = DecisionThresholds(
+        same_market_reject=_float_env("FMI_NOVELTY_REJECT", 0.85),
+        same_market_review=_float_env("FMI_NOVELTY_DUPLICATE_REVIEW", 0.55),
+        scope_overlap_review=_float_env("FMI_NOVELTY_SCOPE_REVIEW", 0.70),
+        geography_variant_review=_float_env("FMI_NOVELTY_GEOGRAPHY_REVIEW", 0.80),
+    )
+    retriever = TitleRetriever(corpus)
+    results = [
+        assess_title_novelty(
+            proposed_title=item.title,
+            aliases=item.aliases,
+            corpus=retriever,
+            top_k=payload.top_k,
+            jev_client=jev_client,
+            thresholds=thresholds,
+        ).as_dict()
+        for item in payload.titles
+    ]
+    return {
+        "corpus_size": len(corpus),
+        "top_k": payload.top_k,
+        "thresholds_calibrated": False,
+        "results": results,
     }
 
 
@@ -185,3 +254,11 @@ def _judgment_schema() -> dict[str, object]:
         "required": ["summary", "should_escalate", "judgments"],
         "additionalProperties": False,
     }
+
+
+def _float_env(name: str, default: float) -> float:
+    try:
+        value = float(os.getenv(name, str(default)))
+    except ValueError:
+        return default
+    return value if 0 <= value <= 1 else default

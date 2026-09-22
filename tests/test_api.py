@@ -1,3 +1,5 @@
+import json
+
 from fastapi.testclient import TestClient
 
 from fmi_report_guard.api import app
@@ -56,3 +58,35 @@ def test_judge_returns_without_model_call_when_no_matches(monkeypatch) -> None:
 
     assert response.status_code == 200
     assert response.json()["should_escalate"] is False
+
+
+def test_title_novelty_rejects_local_collision_without_typesafe(monkeypatch, tmp_path) -> None:
+    index_path = tmp_path / "titles.json"
+    index_path.write_text(
+        json.dumps(
+            {
+                "refreshed_at": "2026-09-22T00:00:00+00:00",
+                "titles": [
+                    {
+                        "url": "https://example.test/air-dryer-cartridge",
+                        "title": "Air Dryer Cartridge Market",
+                        "normalized_title": "air dryer cartridge",
+                        "singular_title": "air dryer cartridge",
+                    }
+                ],
+            }
+        ),
+        encoding="utf-8",
+    )
+    monkeypatch.setenv("FMI_TITLE_INDEX", str(index_path))
+    monkeypatch.delenv("FMI_BENCHMARK_DB", raising=False)
+    monkeypatch.delenv("TYPESAFE_API_KEY", raising=False)
+    client = TestClient(app)
+
+    response = client.post(
+        "/api/title-novelty",
+        json={"titles": [{"title": "Air Dryer Cartridges Market"}], "top_k": 5},
+    )
+
+    assert response.status_code == 200
+    assert response.json()["results"][0]["status"] == "reject"

@@ -7,6 +7,7 @@ It is intentionally narrow:
 - It looks for obvious forecast-year inconsistencies.
 - It checks for clearly broken market math, including glaring `million` vs `billion` scale mistakes when the page exposes enough numbers.
 - It flags exact title duplicates and singular-plural title duplicates against FMI's full sitemap-backed report URL base.
+- It can screen up to five proposed titles with a local shortlist followed by Jev semantic judgments.
 - It uses OpenAI only for high-confidence company-name errors and fabricated or wrong company developments.
 - It does nothing when a report looks normal.
 
@@ -82,6 +83,42 @@ Sync the rolling digest issue directly:
 ```bash
 python -m fmi_report_guard.sync_digest
 ```
+
+## Proposed-title novelty gate
+
+The novelty gate does not send the full FMI catalogue to a model. It searches the local cached corpus first, keeps the 30 closest titles, and sends only those proposed-title/existing-title pairs to TypeSafe Jev. Exact and singular/plural collisions are rejected locally without an API call.
+
+Configure the TypeSafe key only as a server-side environment variable:
+
+```bash
+export TYPESAFE_API_KEY="..."
+```
+
+Check up to five titles from the command line:
+
+```bash
+fmi-title-novelty \
+  "Egg Wash Alternatives Market" \
+  "Frozen Bao Market"
+```
+
+Or call the API:
+
+```bash
+curl -X POST http://localhost:8000/api/title-novelty \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "titles": [
+      {
+        "title": "Egg Wash Alternatives Market",
+        "aliases": ["Egg Wash Substitutes Market"]
+      }
+    ],
+    "top_k": 30
+  }'
+```
+
+Each result is `reject`, `review`, `pass`, or `needs_jev`. Jev separately scores whether the pair is the same market, has a parent/child scope relationship, or differs mainly by geography. The default decision thresholds are deliberately conservative and marked uncalibrated until they are measured against an FMI-labelled title-pair set.
 
 ## Notes
 

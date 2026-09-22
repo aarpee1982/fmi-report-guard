@@ -13,3 +13,4 @@ web/tsconfig.tsbuildinfo
 web/public/*.sqlite
 web/public/*.db
 web/public/*.zip
+data/
