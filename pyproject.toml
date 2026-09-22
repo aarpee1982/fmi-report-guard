@@ -27,6 +27,7 @@ fmi-report-guard = "fmi_report_guard.main:main"
 fmi-report-guard-daily-summary = "fmi_report_guard.daily_summary:main"
 fmi-report-guard-sync-digest = "fmi_report_guard.sync_digest:main"
 fmi-title-novelty = "fmi_report_guard.title_novelty_cli:main"
+fmi-refresh-title-index = "fmi_report_guard.refresh_title_index:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}

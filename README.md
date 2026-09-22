@@ -120,6 +120,14 @@ curl -X POST http://localhost:8000/api/title-novelty \
 
 Each result is `reject`, `review`, `pass`, or `needs_jev`. Jev separately scores whether the pair is the same market, has a parent/child scope relationship, or differs mainly by geography. The default decision thresholds are deliberately conservative and marked uncalibrated until they are measured against an FMI-labelled title-pair set.
 
+Rebuild the complete title cache without any OpenAI or TypeSafe call:
+
+```bash
+fmi-refresh-title-index
+```
+
+The dedicated `Refresh FMI Title Index Without AI` GitHub workflow performs the same deterministic build each day. It refuses to replace the cache if fewer than 25,000 unique titles are retrieved, preventing a partial sitemap response from shrinking the corpus.
+
 ## Notes
 
 - GitHub Actions schedules are best-effort. A `*/10` cron does not guarantee an exact 10-minute wall-clock run.

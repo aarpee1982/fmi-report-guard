@@ -100,6 +100,23 @@ def load_or_refresh_title_index(
     return titles
 
 
+def refresh_title_index(
+    *,
+    client: FMIClient,
+    path: Path = TITLE_INDEX_PATH,
+    min_titles: int = 25_000,
+) -> list[IndexedTitle]:
+    """Rebuild the cache from FMI sitemaps without invoking any AI service."""
+    titles = client.fetch_title_index()
+    if len(titles) < min_titles:
+        raise ValueError(
+            f"Refusing to replace the title index: found {len(titles):,}, "
+            f"expected at least {min_titles:,}."
+        )
+    _save_payload(path, titles=titles, refreshed_at=datetime.now(UTC))
+    return titles
+
+
 def load_cached_title_index(path: Path = TITLE_INDEX_PATH) -> list[IndexedTitle]:
     """Load the local title cache without making a network request."""
     payload = _load_payload(path)

@@ -1,0 +1,51 @@
+name: Refresh FMI Title Index Without AI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/refresh-title-index.yml"
+      - "src/fmi_report_guard/refresh_title_index.py"
+      - "src/fmi_report_guard/scraper.py"
+      - "src/fmi_report_guard/title_index.py"
+  schedule:
+    - cron: "17 2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fmi-title-index-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install deterministic indexer
+        run: pip install -e .
+
+      - name: Build title index from FMI sitemaps
+        run: python -m fmi_report_guard.refresh_title_index --min-titles 25000
+
+      - name: Commit refreshed title index
+        run: |
+          if [ -z "$(git status --porcelain -- state/fmi_title_index.json)" ]; then
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/fmi_title_index.json
+          git commit -m "chore: refresh FMI title index without AI"
+          git push
