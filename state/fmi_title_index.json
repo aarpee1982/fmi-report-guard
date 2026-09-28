@@ -1,6 +1,12 @@
 {
-  "refreshed_at": "2026-09-27T08:11:22.030613+00:00",
+  "refreshed_at": "2026-09-28T08:43:02.981139+00:00",
   "titles": [
+    {
+      "url": "https://www.futuremarketinsights.com/reports/blade-infusion-resins-market",
+      "title": "blade infusion resins market",
+      "normalized_title": "blade infusion resins",
+      "singular_title": "blade infusion resin"
+    },
     {
       "url": "https://www.futuremarketinsights.com/reports/sls-refresh-powders-market",
       "title": "sls refresh powders market",
@@ -97538,6 +97544,48 @@
       "singular_title": "india pou water purifier"
     },
     {
+      "url": "https://www.futuremarketinsights.com/reports/pulse-ingredients-market",
+      "title": "pulse ingredients market",
+      "normalized_title": "pulse ingredients",
+      "singular_title": "pulse ingredient"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/nucleotide-market",
+      "title": "nucleotide market",
+      "normalized_title": "nucleotide",
+      "singular_title": "nucleotide"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/bubble-tea-market",
+      "title": "bubble tea market",
+      "normalized_title": "bubble tea",
+      "singular_title": "bubble tea"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/allergen-free-food-market",
+      "title": "allergen free food market",
+      "normalized_title": "allergen free food",
+      "singular_title": "allergen free food"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/products-from-food-waste-market",
+      "title": "products from food waste market",
+      "normalized_title": "products from food waste",
+      "singular_title": "product from food waste"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/phospholipase-enzyme-market",
+      "title": "phospholipase enzyme market",
+      "normalized_title": "phospholipase enzyme",
+      "singular_title": "phospholipase enzyme"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/plant-based-fish-feed-market",
+      "title": "plant based fish feed market",
+      "normalized_title": "plant based fish feed",
+      "singular_title": "plant based fish feed"
+    },
+    {
       "url": "https://www.futuremarketinsights.com/reports/mango-ripening-controls-market",
       "title": "mango ripening controls market",
       "normalized_title": "mango ripening controls",
@@ -102896,12 +102944,6 @@
       "singular_title": "coq10 gummy"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/pulse-ingredients-market",
-      "title": "pulse ingredients market",
-      "normalized_title": "pulse ingredients",
-      "singular_title": "pulse ingredient"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/tapioca-pearls-market",
       "title": "tapioca pearls market",
       "normalized_title": "tapioca pearls",
@@ -103856,12 +103898,6 @@
       "singular_title": "wet pet food"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/bubble-tea-market",
-      "title": "bubble tea market",
-      "normalized_title": "bubble tea",
-      "singular_title": "bubble tea"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/plant-based-tuna-market",
       "title": "plant based tuna market",
       "normalized_title": "plant based tuna",
@@ -104396,12 +104432,6 @@
       "singular_title": "digestion resistant maltodextrin"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/plant-based-fish-feed-market",
-      "title": "plant based fish feed market",
-      "normalized_title": "plant based fish feed",
-      "singular_title": "plant based fish feed"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/tapioca-market",
       "title": "tapioca market",
       "normalized_title": "tapioca",
@@ -104820,12 +104850,6 @@
       "title": "cannabis concentrate market",
       "normalized_title": "cannabis concentrate",
       "singular_title": "cannabis concentrate"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/allergen-free-food-market",
-      "title": "allergen free food market",
-      "normalized_title": "allergen free food",
-      "singular_title": "allergen free food"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/calcium-lactate-market",
@@ -108506,12 +108530,6 @@
       "singular_title": "north american dietary supplement"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/phospholipase-enzyme-market",
-      "title": "phospholipase enzyme market",
-      "normalized_title": "phospholipase enzyme",
-      "singular_title": "phospholipase enzyme"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/gentian-market",
       "title": "gentian market",
       "normalized_title": "gentian",
@@ -110264,10 +110282,10 @@
       "singular_title": "salad oil"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/products-from-food-waste-market",
-      "title": "products from food waste market",
-      "normalized_title": "products from food waste",
-      "singular_title": "product from food waste"
+      "url": "https://www.futuremarketinsights.com/reports/coffee-creamer-market",
+      "title": "coffee creamer market",
+      "normalized_title": "coffee creamer",
+      "singular_title": "coffee creamer"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/health-and-wellness-foods-market",
@@ -113924,12 +113942,6 @@
       "singular_title": "d lactate free probiotic"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/coffee-creamer-market",
-      "title": "coffee creamer market",
-      "normalized_title": "coffee creamer",
-      "singular_title": "coffee creamer"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/reduced-fat-butter-market",
       "title": "reduced fat butter market",
       "normalized_title": "reduced fat butter",
@@ -115644,12 +115656,6 @@
       "title": "feed barley market",
       "normalized_title": "feed barley",
       "singular_title": "feed barley"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/nucleotide-market",
-      "title": "nucleotide market",
-      "normalized_title": "nucleotide",
-      "singular_title": "nucleotide"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/animal-growth-promoter-market",
@@ -163542,6 +163548,12 @@
       "title": "tourist disaster response assistance",
       "normalized_title": "tourist disaster response assistance",
       "singular_title": "tourist disaster response assistance"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/kitting-and-assembly-packaging-services-market",
+      "title": "kitting and assembly packaging services market",
+      "normalized_title": "kitting assembly packaging services",
+      "singular_title": "kitting assembly packaging service"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/pet-preform-reheat-additives-market",
