@@ -1,5 +1,5 @@
 {
-  "refreshed_at": "2026-09-30T08:35:28.292038+00:00",
+  "refreshed_at": "2026-10-01T08:57:41.955267+00:00",
   "titles": [
     {
       "url": "https://www.futuremarketinsights.com/reports/aircraft-potting-compounds-market",
@@ -83048,6 +83048,12 @@
       "singular_title": "automotive bearing"
     },
     {
+      "url": "https://www.futuremarketinsights.com/reports/heatless-curling-sets-market",
+      "title": "heatless curling sets market",
+      "normalized_title": "heatless curling sets",
+      "singular_title": "heatless curling set"
+    },
+    {
       "url": "https://www.futuremarketinsights.com/reports/eyebrow-lamination-kits-market",
       "title": "eyebrow lamination kits market",
       "normalized_title": "eyebrow lamination kits",
@@ -97580,6 +97586,36 @@
       "singular_title": "india pou water purifier"
     },
     {
+      "url": "https://www.futuremarketinsights.com/reports/potato-bread-and-rolls-market",
+      "title": "potato bread and rolls market",
+      "normalized_title": "potato bread rolls",
+      "singular_title": "potato bread roll"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/multigrain-and-seeded-bread-market",
+      "title": "multigrain and seeded bread market",
+      "normalized_title": "multigrain seeded bread",
+      "singular_title": "multigrain seeded bread"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/potato-flake-market",
+      "title": "potato flake market",
+      "normalized_title": "potato flake",
+      "singular_title": "potato flake"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/food-additives-market",
+      "title": "food additives market",
+      "normalized_title": "food additives",
+      "singular_title": "food additive"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/sensor-based-fertilization-market",
+      "title": "sensor based fertilization market",
+      "normalized_title": "sensor based fertilization",
+      "singular_title": "sensor based fertilization"
+    },
+    {
       "url": "https://www.futuremarketinsights.com/reports/basque-cheesecake-market",
       "title": "basque cheesecake market",
       "normalized_title": "basque cheesecake",
@@ -99120,12 +99156,6 @@
       "title": "protease market",
       "normalized_title": "protease",
       "singular_title": "protease"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/potato-flake-market",
-      "title": "potato flake market",
-      "normalized_title": "potato flake",
-      "singular_title": "potato flake"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/licorice-extract-market",
@@ -107208,12 +107238,6 @@
       "title": "animal feed protein ingredients market",
       "normalized_title": "animal feed protein ingredients",
       "singular_title": "animal feed protein ingredient"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/food-additives-market",
-      "title": "food additives market",
-      "normalized_title": "food additives",
-      "singular_title": "food additive"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/postpartum-health-supplements-market",
