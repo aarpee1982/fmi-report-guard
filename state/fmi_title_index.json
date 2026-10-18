@@ -1,6 +1,12 @@
 {
-  "refreshed_at": "2026-10-17T06:58:32.748900+00:00",
+  "refreshed_at": "2026-10-18T07:14:56.893209+00:00",
   "titles": [
+    {
+      "url": "https://www.futuremarketinsights.com/reports/pharmaceutical-grade-sodium-chloride-market",
+      "title": "pharmaceutical grade sodium chloride market",
+      "normalized_title": "pharmaceutical grade sodium chloride",
+      "singular_title": "pharmaceutical grade sodium chloride"
+    },
     {
       "url": "https://www.futuremarketinsights.com/reports/polymer-emulsion-market",
       "title": "polymer emulsion market",
@@ -3720,12 +3726,6 @@
       "title": "ph adjuster market",
       "normalized_title": "ph adjuster",
       "singular_title": "ph adjuster"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/pharmaceutical-grade-sodium-chloride-market",
-      "title": "pharmaceutical grade sodium chloride market",
-      "normalized_title": "pharmaceutical grade sodium chloride",
-      "singular_title": "pharmaceutical grade sodium chloride"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/low-voc-and-chrome-free-coating-application-services-market",
@@ -98264,6 +98264,36 @@
       "singular_title": "india pou water purifier"
     },
     {
+      "url": "https://www.futuremarketinsights.com/reports/shea-butter-market",
+      "title": "shea butter market",
+      "normalized_title": "shea butter",
+      "singular_title": "shea butter"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/food-and-grocery-retail-market",
+      "title": "food and grocery retail market",
+      "normalized_title": "food grocery retail",
+      "singular_title": "food grocery retail"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/microalgae-food-and-beverage-sector",
+      "title": "microalgae food and beverage sector",
+      "normalized_title": "microalgae food beverage sector",
+      "singular_title": "microalgae food beverage sector"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/curcumin-market",
+      "title": "curcumin market",
+      "normalized_title": "curcumin",
+      "singular_title": "curcumin"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/vegan-dog-food-market",
+      "title": "vegan dog food market",
+      "normalized_title": "vegan dog food",
+      "singular_title": "vegan dog food"
+    },
+    {
       "url": "https://www.futuremarketinsights.com/reports/cider-market",
       "title": "cider market",
       "normalized_title": "cider",
@@ -105554,12 +105584,6 @@
       "singular_title": "plant based milk"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/vegan-dog-food-market",
-      "title": "vegan dog food market",
-      "normalized_title": "vegan dog food",
-      "singular_title": "vegan dog food"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/micellar-casein-market",
       "title": "micellar casein market",
       "normalized_title": "micellar casein",
@@ -105582,12 +105606,6 @@
       "title": "agriculture adjuvants market",
       "normalized_title": "agriculture adjuvants",
       "singular_title": "agriculture adjuvant"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/curcumin-market",
-      "title": "curcumin market",
-      "normalized_title": "curcumin",
-      "singular_title": "curcumin"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/plant-based-pet-food-market",
@@ -105666,12 +105684,6 @@
       "title": "scrambled egg mix market",
       "normalized_title": "scrambled egg mix",
       "singular_title": "scrambled egg mix"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/microalgae-food-and-beverage-sector",
-      "title": "microalgae food and beverage sector",
-      "normalized_title": "microalgae food beverage sector",
-      "singular_title": "microalgae food beverage sector"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/plant-based-cheese-market",
@@ -117596,12 +117608,6 @@
       "singular_title": "black tea extract"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/shea-butter-market",
-      "title": "shea butter market",
-      "normalized_title": "shea butter",
-      "singular_title": "shea butter"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/protein-supplements-market",
       "title": "protein supplements market",
       "normalized_title": "protein supplements",
@@ -117648,12 +117654,6 @@
       "title": "food service industry",
       "normalized_title": "food service",
       "singular_title": "food service"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/food-and-grocery-retail-market",
-      "title": "food and grocery retail market",
-      "normalized_title": "food grocery retail",
-      "singular_title": "food grocery retail"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/fibert-market",
@@ -164810,6 +164810,36 @@
       "singular_title": "tourist disaster response assistance"
     },
     {
+      "url": "https://www.futuremarketinsights.com/reports/edible-water-pods-market",
+      "title": "edible water pods market",
+      "normalized_title": "edible water pods",
+      "singular_title": "edible water pod"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/retail-e-commerce-packaging-market",
+      "title": "retail e commerce packaging market",
+      "normalized_title": "retail e commerce packaging",
+      "singular_title": "retail e commerce packaging"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/solid-board-market",
+      "title": "solid board market",
+      "normalized_title": "solid board",
+      "singular_title": "solid board"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/stick-packaging-market",
+      "title": "stick packaging market",
+      "normalized_title": "stick packaging",
+      "singular_title": "stick packaging"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/sustainable-plastic-packaging-market",
+      "title": "sustainable plastic packaging market",
+      "normalized_title": "sustainable plastic packaging",
+      "singular_title": "sustainable plastic packaging"
+    },
+    {
       "url": "https://www.futuremarketinsights.com/reports/wooden-cutleries-market",
       "title": "wooden cutleries market",
       "normalized_title": "wooden cutleries",
@@ -167486,12 +167516,6 @@
       "singular_title": "foodservice paper bag"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/stick-packaging-market",
-      "title": "stick packaging market",
-      "normalized_title": "stick packaging",
-      "singular_title": "stick packaging"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/packaging-laminates-market",
       "title": "packaging laminates market",
       "normalized_title": "packaging laminates",
@@ -170070,12 +170094,6 @@
       "title": "yoga and wellness kits packaging market",
       "normalized_title": "yoga wellness kits packaging",
       "singular_title": "yoga wellness kit packaging"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/solid-board-market",
-      "title": "solid board market",
-      "normalized_title": "solid board",
-      "singular_title": "solid board"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/lubricant-packaging-market",
@@ -173456,12 +173474,6 @@
       "singular_title": "flexible plastic pouch"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/sustainable-plastic-packaging-market",
-      "title": "sustainable plastic packaging market",
-      "normalized_title": "sustainable plastic packaging",
-      "singular_title": "sustainable plastic packaging"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/sustainable-pharmaceutical-packaging-market",
       "title": "sustainable pharmaceutical packaging market",
       "normalized_title": "sustainable pharmaceutical packaging",
@@ -175244,12 +175256,6 @@
       "singular_title": "pharmaceutical glass container europe"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/retail-e-commerce-packaging-market",
-      "title": "retail e commerce packaging market",
-      "normalized_title": "retail e commerce packaging",
-      "singular_title": "retail e commerce packaging"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/b2b-hygienic-paper-market",
       "title": "b2b hygienic paper market",
       "normalized_title": "b2b hygienic paper",
@@ -175482,12 +175488,6 @@
       "title": "india steel drum and ibc market",
       "normalized_title": "india steel drum ibc",
       "singular_title": "india steel drum ibc"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/edible-water-pods-market",
-      "title": "edible water pods market",
-      "normalized_title": "edible water pods",
-      "singular_title": "edible water pod"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/sink-bowls-market",
