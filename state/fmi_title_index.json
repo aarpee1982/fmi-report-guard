@@ -1,6 +1,54 @@
 {
-  "refreshed_at": "2026-10-19T07:47:05.289441+00:00",
+  "refreshed_at": "2026-10-20T07:35:15.119206+00:00",
   "titles": [
+    {
+      "url": "https://www.futuremarketinsights.com/reports/chelating-agents-market",
+      "title": "chelating agents market",
+      "normalized_title": "chelating agents",
+      "singular_title": "chelating agent"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/carbon-black-market",
+      "title": "carbon black market",
+      "normalized_title": "carbon black",
+      "singular_title": "carbon black"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/tile-adhesive-market",
+      "title": "tile adhesive market",
+      "normalized_title": "tile adhesive",
+      "singular_title": "tile adhesive"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/frp-recycling-market",
+      "title": "frp recycling market",
+      "normalized_title": "frp recycling",
+      "singular_title": "frp recycling"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/bioplastic-and-biopolymer-market",
+      "title": "bioplastic and biopolymer market",
+      "normalized_title": "bioplastic biopolymer",
+      "singular_title": "bioplastic biopolymer"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/automotive-fabric-market",
+      "title": "automotive fabric market",
+      "normalized_title": "automotive fabric",
+      "singular_title": "automotive fabric"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/amino-acids-market",
+      "title": "amino acids market",
+      "normalized_title": "amino acids",
+      "singular_title": "amino acid"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/advanced-polymer-composites-market",
+      "title": "advanced polymer composites market",
+      "normalized_title": "advanced polymer composites",
+      "singular_title": "advanced polymer composite"
+    },
     {
       "url": "https://www.futuremarketinsights.com/reports/iron-ore-pellet-market",
       "title": "iron ore pellet market",
@@ -1308,12 +1356,6 @@
       "title": "alumina trihydrate market",
       "normalized_title": "alumina trihydrate",
       "singular_title": "alumina trihydrate"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/amino-acids-market",
-      "title": "amino acids market",
-      "normalized_title": "amino acids",
-      "singular_title": "amino acid"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/aircraft-cleaning-chemical-market",
@@ -2796,12 +2838,6 @@
       "title": "rust remover market",
       "normalized_title": "rust remover",
       "singular_title": "rust remover"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/chelating-agents-market",
-      "title": "chelating agents market",
-      "normalized_title": "chelating agents",
-      "singular_title": "chelating agent"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/hexylene-glycol-market",
@@ -12602,12 +12638,6 @@
       "singular_title": "high performance medical plastic"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/bioplastic-and-biopolymer-market",
-      "title": "bioplastic and biopolymer market",
-      "normalized_title": "bioplastic biopolymer",
-      "singular_title": "bioplastic biopolymer"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/hexagonal-boron-nitride-powder-market",
       "title": "hexagonal boron nitride powder market",
       "normalized_title": "hexagonal boron nitride powder",
@@ -13404,12 +13434,6 @@
       "title": "soap salts market",
       "normalized_title": "soap salts",
       "singular_title": "soap salt"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/tile-adhesive-market",
-      "title": "tile adhesive market",
-      "normalized_title": "tile adhesive",
-      "singular_title": "tile adhesive"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/automotive-wheel-coating-market",
@@ -19430,12 +19454,6 @@
       "singular_title": "cleaning place cip"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/frp-recycling-market",
-      "title": "frp recycling market",
-      "normalized_title": "frp recycling",
-      "singular_title": "frp recycling"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/refinery-and-petrochemical-filtration-market",
       "title": "refinery and petrochemical filtration market",
       "normalized_title": "refinery petrochemical filtration",
@@ -19652,12 +19670,6 @@
       "singular_title": "roofing chemical"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/automotive-fabric-market",
-      "title": "automotive fabric market",
-      "normalized_title": "automotive fabric",
-      "singular_title": "automotive fabric"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/graphite-market",
       "title": "graphite market",
       "normalized_title": "graphite",
@@ -19728,12 +19740,6 @@
       "title": "plaster accelerator market",
       "normalized_title": "plaster accelerator",
       "singular_title": "plaster accelerator"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/advanced-polymer-composites-market",
-      "title": "advanced polymer composites market",
-      "normalized_title": "advanced polymer composites",
-      "singular_title": "advanced polymer composite"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/europe-industrial-lubricants-market",
@@ -19878,12 +19884,6 @@
       "title": "hindered amine light stabilizers market",
       "normalized_title": "hindered amine light stabilizers",
       "singular_title": "hindered amine light stabilizer"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/carbon-black-market",
-      "title": "carbon black market",
-      "normalized_title": "carbon black",
-      "singular_title": "carbon black"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/bioenzyme-fertilizer-market",
@@ -24860,6 +24860,78 @@
       "singular_title": "middle east 3d printing material"
     },
     {
+      "url": "https://www.futuremarketinsights.com/reports/conference-room-solutions-market",
+      "title": "conference room solutions market",
+      "normalized_title": "conference room solutions",
+      "singular_title": "conference room solution"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/community-engagement-platform-market",
+      "title": "community engagement platform market",
+      "normalized_title": "community engagement platform",
+      "singular_title": "community engagement platform"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/master-recharge-api-market",
+      "title": "master recharge api market",
+      "normalized_title": "master recharge api",
+      "singular_title": "master recharge api"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/smart-mining-technologies-market",
+      "title": "smart mining technologies market",
+      "normalized_title": "smart mining technologies",
+      "singular_title": "smart mining technology"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/multifunction-calibrators-market",
+      "title": "multifunction calibrators market",
+      "normalized_title": "multifunction calibrators",
+      "singular_title": "multifunction calibrator"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/global-telecommunications-services-market",
+      "title": "global telecommunications services market",
+      "normalized_title": "telecommunications services",
+      "singular_title": "telecommunication service"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/global-flat-panel-display-market",
+      "title": "global flat panel display market",
+      "normalized_title": "flat panel display",
+      "singular_title": "flat panel display"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/embedded-banking-market",
+      "title": "embedded banking market",
+      "normalized_title": "embedded banking",
+      "singular_title": "embedded banking"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/cybersecurity-insurance-market",
+      "title": "cybersecurity insurance market",
+      "normalized_title": "cybersecurity insurance",
+      "singular_title": "cybersecurity insurance"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/automotive-soc-market",
+      "title": "automotive soc market",
+      "normalized_title": "automotive soc",
+      "singular_title": "automotive soc"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/3d-motion-capture-market",
+      "title": "3d motion capture market",
+      "normalized_title": "3d motion capture",
+      "singular_title": "3d motion capture"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/computeraided-facility-management-cafm-market",
+      "title": "computeraided facility management cafm market",
+      "normalized_title": "computeraided facility management cafm",
+      "singular_title": "computeraided facility management cafm"
+    },
+    {
       "url": "https://www.futuremarketinsights.com/reports/employee-recognition-software-market",
       "title": "employee recognition software market",
       "normalized_title": "employee recognition software",
@@ -26672,12 +26744,6 @@
       "singular_title": "colored bipv"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/3d-motion-capture-market",
-      "title": "3d motion capture market",
-      "normalized_title": "3d motion capture",
-      "singular_title": "3d motion capture"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/identity-and-access-management-market",
       "title": "identity and access management market",
       "normalized_title": "identity access management",
@@ -27554,12 +27620,6 @@
       "singular_title": "high speed interconnect"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/community-engagement-platform-market",
-      "title": "community engagement platform market",
-      "normalized_title": "community engagement platform",
-      "singular_title": "community engagement platform"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/5pl-solutions-market",
       "title": "5pl solutions market",
       "normalized_title": "5pl solutions",
@@ -27930,12 +27990,6 @@
       "title": "wearable computing devices market",
       "normalized_title": "wearable computing devices",
       "singular_title": "wearable computing device"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/global-flat-panel-display-market",
-      "title": "global flat panel display market",
-      "normalized_title": "flat panel display",
-      "singular_title": "flat panel display"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/utility-analytics-energy-analytics-market",
@@ -28922,12 +28976,6 @@
       "singular_title": "teledermatology"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/global-telecommunications-services-market",
-      "title": "global telecommunications services market",
-      "normalized_title": "telecommunications services",
-      "singular_title": "telecommunication service"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/telecom-site-management-software-market",
       "title": "telecom site management software market",
       "normalized_title": "telecom site management software",
@@ -29648,12 +29696,6 @@
       "singular_title": "embedded intelligence"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/embedded-banking-market",
-      "title": "embedded banking market",
-      "normalized_title": "embedded banking",
-      "singular_title": "embedded banking"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/electronics-retailing-market",
       "title": "electronics retailing market",
       "normalized_title": "electronics retailing",
@@ -30036,12 +30078,6 @@
       "title": "smart mining market",
       "normalized_title": "smart mining",
       "singular_title": "smart mining"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/automotive-soc-market",
-      "title": "automotive soc market",
-      "normalized_title": "automotive soc",
-      "singular_title": "automotive soc"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/aerial-imaging-market",
@@ -30924,12 +30960,6 @@
       "title": "wire to board connector market",
       "normalized_title": "wire board connector",
       "singular_title": "wire board connector"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/conference-room-solutions-market",
-      "title": "conference room solutions market",
-      "normalized_title": "conference room solutions",
-      "singular_title": "conference room solution"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/licensing-platforms-for-solvent-based-rhdpe-recycling-processes-market",
@@ -32366,12 +32396,6 @@
       "singular_title": "comprehensive management solution power quality"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/smart-mining-technologies-market",
-      "title": "smart mining technologies market",
-      "normalized_title": "smart mining technologies",
-      "singular_title": "smart mining technology"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/buy-now-pay-later-bnpl-platform-market",
       "title": "buy now pay later bnpl platform market",
       "normalized_title": "buy now pay later bnpl platform",
@@ -32406,12 +32430,6 @@
       "title": "sales platforms software market",
       "normalized_title": "sales platforms software",
       "singular_title": "sale platform software"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/cybersecurity-insurance-market",
-      "title": "cybersecurity insurance market",
-      "normalized_title": "cybersecurity insurance",
-      "singular_title": "cybersecurity insurance"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/threat-intelligence-market",
@@ -33834,12 +33852,6 @@
       "title": "carbon offset platform market",
       "normalized_title": "carbon offset platform",
       "singular_title": "carbon offset platform"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/computeraided-facility-management-cafm-market",
-      "title": "computeraided facility management cafm market",
-      "normalized_title": "computeraided facility management cafm",
-      "singular_title": "computeraided facility management cafm"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/digital-lending-platforms-market",
@@ -38822,12 +38834,6 @@
       "singular_title": "process spectroscopy"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/master-recharge-api-market",
-      "title": "master recharge api market",
-      "normalized_title": "master recharge api",
-      "singular_title": "master recharge api"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/superconducting-materials-market",
       "title": "superconducting materials market",
       "normalized_title": "superconducting materials",
@@ -43044,12 +43050,6 @@
       "title": "network cameras and video analytics market",
       "normalized_title": "network cameras video analytics",
       "singular_title": "network camera video analytic"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/multifunction-calibrators-market",
-      "title": "multifunction calibrators market",
-      "normalized_title": "multifunction calibrators",
-      "singular_title": "multifunction calibrator"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/submarine-sensors-market",
@@ -68294,6 +68294,30 @@
       "singular_title": "level measuring instrument"
     },
     {
+      "url": "https://www.futuremarketinsights.com/reports/automotive-window-regulator-market",
+      "title": "automotive window regulator market",
+      "normalized_title": "automotive window regulator",
+      "singular_title": "automotive window regulator"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/automotive-homologation-services-market",
+      "title": "automotive homologation services market",
+      "normalized_title": "automotive homologation services",
+      "singular_title": "automotive homologation service"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/automotive-engineering-services-market",
+      "title": "automotive engineering services market",
+      "normalized_title": "automotive engineering services",
+      "singular_title": "automotive engineering service"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/automotive-body-in-white-market",
+      "title": "automotive body in white market",
+      "normalized_title": "automotive body white",
+      "singular_title": "automotive body white"
+    },
+    {
       "url": "https://www.futuremarketinsights.com/reports/electric-scooters-market",
       "title": "electric scooters market",
       "normalized_title": "electric scooters",
@@ -71216,12 +71240,6 @@
       "singular_title": "aerospace grade conduit raceway fitting system"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/automotive-body-in-white-market",
-      "title": "automotive body in white market",
-      "normalized_title": "automotive body white",
-      "singular_title": "automotive body white"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/adblue-pump-and-injector-replacement-parts-market",
       "title": "adblue pump and injector replacement parts market",
       "normalized_title": "adblue pump injector replacement parts",
@@ -74096,12 +74114,6 @@
       "singular_title": "automotive composite leaf spring"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/automotive-window-regulator-market",
-      "title": "automotive window regulator market",
-      "normalized_title": "automotive window regulator",
-      "singular_title": "automotive window regulator"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/automotive-adas-autonomy-mlops-and-model-lifecycle-management-market",
       "title": "automotive adas autonomy mlops and model lifecycle management market",
       "normalized_title": "automotive adas autonomy mlops model lifecycle management",
@@ -76440,12 +76452,6 @@
       "title": "commercial vehicle foundation brakes market",
       "normalized_title": "commercial vehicle foundation brakes",
       "singular_title": "commercial vehicle foundation brake"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/automotive-homologation-services-market",
-      "title": "automotive homologation services market",
-      "normalized_title": "automotive homologation services",
-      "singular_title": "automotive homologation service"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/commercial-vehicle-brake-chambers-market",
@@ -80306,12 +80312,6 @@
       "singular_title": "automotive axle"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/automotive-engineering-services-market",
-      "title": "automotive engineering services market",
-      "normalized_title": "automotive engineering services",
-      "singular_title": "automotive engineering service"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/marine-fuel-filter-market",
       "title": "marine fuel filter market",
       "normalized_title": "marine fuel filter",
@@ -83456,6 +83456,60 @@
       "singular_title": "automotive bearing"
     },
     {
+      "url": "https://www.futuremarketinsights.com/reports/disposable-e-cigarettes-market",
+      "title": "disposable e cigarettes market",
+      "normalized_title": "disposable e cigarettes",
+      "singular_title": "disposable e cigarette"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/dry-cleaning-and-laundry-services-market",
+      "title": "dry cleaning and laundry services market",
+      "normalized_title": "dry cleaning laundry services",
+      "singular_title": "dry cleaning laundry service"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/dog-collars-leashes-and-harnesses-market",
+      "title": "dog collars leashes and harnesses market",
+      "normalized_title": "dog collars leashes harnesses",
+      "singular_title": "dog collar leash harness"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/coffea-arabica-coffee-seed-oil-market",
+      "title": "coffea arabica coffee seed oil market",
+      "normalized_title": "coffea arabica coffee seed oil",
+      "singular_title": "coffea arabica coffee seed oil"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/baby-personal-care-products-market",
+      "title": "baby personal care products market",
+      "normalized_title": "baby personal care products",
+      "singular_title": "baby personal care product"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/aluminium-free-deodorant-market",
+      "title": "aluminium free deodorant market",
+      "normalized_title": "aluminium free deodorant",
+      "singular_title": "aluminium free deodorant"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/alternative-accommodation-market",
+      "title": "alternative accommodation market",
+      "normalized_title": "alternative accommodation",
+      "singular_title": "alternative accommodation"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/wall-decor-market",
+      "title": "wall decor market",
+      "normalized_title": "wall decor",
+      "singular_title": "wall decor"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/sports-and-athletic-insole-market",
+      "title": "sports and athletic insole market",
+      "normalized_title": "sports athletic insole",
+      "singular_title": "sport athletic insole"
+    },
+    {
       "url": "https://www.futuremarketinsights.com/reports/smart-home-appliances-market",
       "title": "smart home appliances market",
       "normalized_title": "smart home appliances",
@@ -85574,12 +85628,6 @@
       "singular_title": "smart shoe"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/aluminium-free-deodorant-market",
-      "title": "aluminium free deodorant market",
-      "normalized_title": "aluminium free deodorant",
-      "singular_title": "aluminium free deodorant"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/child-seat-travel-convenience-accessory-kits-market",
       "title": "child seat travel convenience accessory kits market",
       "normalized_title": "child seat travel convenience accessory kits",
@@ -85910,12 +85958,6 @@
       "singular_title": "feminine hygiene product"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/sports-and-athletic-insole-market",
-      "title": "sports and athletic insole market",
-      "normalized_title": "sports athletic insole",
-      "singular_title": "sport athletic insole"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/peptide-complexes-market",
       "title": "peptide complexes market",
       "normalized_title": "peptide complexes",
@@ -85986,12 +86028,6 @@
       "title": "pharmaceutical e commerce market",
       "normalized_title": "pharmaceutical e commerce",
       "singular_title": "pharmaceutical e commerce"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/baby-personal-care-products-market",
-      "title": "baby personal care products market",
-      "normalized_title": "baby personal care products",
-      "singular_title": "baby personal care product"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/vegan-footwear-market",
@@ -86160,12 +86196,6 @@
       "title": "leather sneakers market",
       "normalized_title": "leather sneakers",
       "singular_title": "leather sneaker"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/coffea-arabica-coffee-seed-oil-market",
-      "title": "coffea arabica coffee seed oil market",
-      "normalized_title": "coffea arabica coffee seed oil",
-      "singular_title": "coffea arabica coffee seed oil"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/work-shoes-market",
@@ -88298,12 +88328,6 @@
       "singular_title": "japan aquarium heater chiller"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/wall-decor-market",
-      "title": "wall decor market",
-      "normalized_title": "wall decor",
-      "singular_title": "wall decor"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/digital-print-for-d\u00e9cor-market",
       "title": "digital print for d\u00e9cor market",
       "normalized_title": "digital print decor",
@@ -90300,12 +90324,6 @@
       "title": "termite bait systems market",
       "normalized_title": "termite bait systems",
       "singular_title": "termite bait system"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/disposable-e-cigarettes-market",
-      "title": "disposable e cigarettes market",
-      "normalized_title": "disposable e cigarettes",
-      "singular_title": "disposable e cigarette"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/skin-toner-market",
@@ -94460,12 +94478,6 @@
       "singular_title": "rope"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/dry-cleaning-and-laundry-services-market",
-      "title": "dry cleaning and laundry services market",
-      "normalized_title": "dry cleaning laundry services",
-      "singular_title": "dry cleaning laundry service"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/furniture-rental-services-market",
       "title": "furniture rental services market",
       "normalized_title": "furniture rental services",
@@ -95438,12 +95450,6 @@
       "singular_title": "3d printed wearable"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/dog-collars-leashes-and-harnesses-market",
-      "title": "dog collars leashes and harnesses market",
-      "normalized_title": "dog collars leashes harnesses",
-      "singular_title": "dog collar leash harness"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/anti-pollution-hair-care-market",
       "title": "anti pollution hair care market",
       "normalized_title": "anti pollution hair care",
@@ -96054,12 +96060,6 @@
       "title": "aluminum curtain wall market",
       "normalized_title": "aluminum curtain wall",
       "singular_title": "aluminum curtain wall"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/alternative-accommodation-market",
-      "title": "alternative accommodation market",
-      "normalized_title": "alternative accommodation",
-      "singular_title": "alternative accommodation"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/ankle-boots-market",
@@ -98262,6 +98262,18 @@
       "title": "india pou water purifier market",
       "normalized_title": "india pou water purifier",
       "singular_title": "india pou water purifier"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/breakfast-cereal-market",
+      "title": "breakfast cereal market",
+      "normalized_title": "breakfast cereal",
+      "singular_title": "breakfast cereal"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/cocoa-market",
+      "title": "cocoa market",
+      "normalized_title": "cocoa",
+      "singular_title": "cocoa"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/milk-protein-market",
@@ -117584,22 +117596,10 @@
       "singular_title": "brain health supplement"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/breakfast-cereal-market",
-      "title": "breakfast cereal market",
-      "normalized_title": "breakfast cereal",
-      "singular_title": "breakfast cereal"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/confectionery-ingredients-market",
       "title": "confectionery ingredients market",
       "normalized_title": "confectionery ingredients",
       "singular_title": "confectionery ingredient"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/cocoa-market",
-      "title": "cocoa market",
-      "normalized_title": "cocoa",
-      "singular_title": "cocoa"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/usa-bubble-tea-market",
@@ -127820,6 +127820,30 @@
       "singular_title": "soil testing inspection certification"
     },
     {
+      "url": "https://www.futuremarketinsights.com/reports/cng-tanks-cylinders-market",
+      "title": "cng tanks cylinders market",
+      "normalized_title": "cng tanks cylinders",
+      "singular_title": "cng tank cylinder"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/advanced-biofuels-market",
+      "title": "advanced biofuels market",
+      "normalized_title": "advanced biofuels",
+      "singular_title": "advanced biofuel"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/sustainable-aviation-fuel-market",
+      "title": "sustainable aviation fuel market",
+      "normalized_title": "sustainable aviation fuel",
+      "singular_title": "sustainable aviation fuel"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/battery-leasing-service-market",
+      "title": "battery leasing service market",
+      "normalized_title": "battery leasing service",
+      "singular_title": "battery leasing service"
+    },
+    {
       "url": "https://www.futuremarketinsights.com/reports/oil-and-gas-analytics-market",
       "title": "oil and gas analytics market",
       "normalized_title": "oil gas analytics",
@@ -128246,12 +128270,6 @@
       "singular_title": "bio oil upgrading"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/sustainable-aviation-fuel-market",
-      "title": "sustainable aviation fuel market",
-      "normalized_title": "sustainable aviation fuel",
-      "singular_title": "sustainable aviation fuel"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/silent-generator-market",
       "title": "silent generator market",
       "normalized_title": "silent generator",
@@ -128268,12 +128286,6 @@
       "title": "power transmission lines and towers market",
       "normalized_title": "power transmission lines towers",
       "singular_title": "power transmission line tower"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/battery-leasing-service-market",
-      "title": "battery leasing service market",
-      "normalized_title": "battery leasing service",
-      "singular_title": "battery leasing service"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/solar-district-heating-market",
@@ -132266,12 +132278,6 @@
       "singular_title": "latin america wind turbine"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/cng-tanks-cylinders-market",
-      "title": "cng tanks cylinders market",
-      "normalized_title": "cng tanks cylinders",
-      "singular_title": "cng tank cylinder"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/floating-power-plant-market",
       "title": "floating power plant market",
       "normalized_title": "floating power plant",
@@ -132330,12 +132336,6 @@
       "title": "non concentrating solar collectors market",
       "normalized_title": "non concentrating solar collectors",
       "singular_title": "non concentrating solar collector"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/advanced-biofuels-market",
-      "title": "advanced biofuels market",
-      "normalized_title": "advanced biofuels",
-      "singular_title": "advanced biofuel"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/ram-bop-market",
@@ -132702,6 +132702,66 @@
       "title": "asia pacific upstream oil and gas services market",
       "normalized_title": "asia pacific upstream oil gas services",
       "singular_title": "asia pacific upstream oil gas service"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/teeth-whitening-market",
+      "title": "teeth whitening market",
+      "normalized_title": "teeth whitening",
+      "singular_title": "teeth whitening"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/global-acute-kidney-injury-treatment-market",
+      "title": "global acute kidney injury treatment market",
+      "normalized_title": "acute kidney injury treatment",
+      "singular_title": "acute kidney injury treatment"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/healthcare-business-intelligence-market",
+      "title": "healthcare business intelligence market",
+      "normalized_title": "healthcare business intelligence",
+      "singular_title": "healthcare business intelligence"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/transcatheter-heart-valve-replacement-tavi-market",
+      "title": "transcatheter heart valve replacement tavi market",
+      "normalized_title": "transcatheter heart valve replacement tavi",
+      "singular_title": "transcatheter heart valve replacement tavi"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/coronary-stents-market",
+      "title": "coronary stents market",
+      "normalized_title": "coronary stents",
+      "singular_title": "coronary stent"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/cold-plasma-market",
+      "title": "cold plasma market",
+      "normalized_title": "cold plasma",
+      "singular_title": "cold plasma"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/cosmetic-peptide-manufacturing-market",
+      "title": "cosmetic peptide manufacturing market",
+      "normalized_title": "cosmetic peptide manufacturing",
+      "singular_title": "cosmetic peptide manufacturing"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/clinical-trials-market",
+      "title": "clinical trials market",
+      "normalized_title": "clinical trials",
+      "singular_title": "clinical trial"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/alopecia-treatment-market",
+      "title": "alopecia treatment market",
+      "normalized_title": "alopecia treatment",
+      "singular_title": "alopecia treatment"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/automated-cpr-devices-market",
+      "title": "automated cpr devices market",
+      "normalized_title": "automated cpr devices",
+      "singular_title": "automated cpr device"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/animal-healthcare-market",
@@ -136304,12 +136364,6 @@
       "singular_title": "nipah virus infection testing"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/transcatheter-heart-valve-replacement-tavi-market",
-      "title": "transcatheter heart valve replacement tavi market",
-      "normalized_title": "transcatheter heart valve replacement tavi",
-      "singular_title": "transcatheter heart valve replacement tavi"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/tracheal-tubes-and-airway-products-market",
       "title": "tracheal tubes and airway products market",
       "normalized_title": "tracheal tubes airway products",
@@ -136844,12 +136898,6 @@
       "singular_title": "vitro diagnostic substrate"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/global-acute-kidney-injury-treatment-market",
-      "title": "global acute kidney injury treatment market",
-      "normalized_title": "acute kidney injury treatment",
-      "singular_title": "acute kidney injury treatment"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/parp-inhibitors-market",
       "title": "parp inhibitors market",
       "normalized_title": "parp inhibitors",
@@ -137154,12 +137202,6 @@
       "title": "pharma peeler centrifuge market",
       "normalized_title": "pharma peeler centrifuge",
       "singular_title": "pharma peeler centrifuge"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/cold-plasma-market",
-      "title": "cold plasma market",
-      "normalized_title": "cold plasma",
-      "singular_title": "cold plasma"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/glp-1-receptor-agonist-market",
@@ -140756,12 +140798,6 @@
       "singular_title": "chronic venous occlusion treatment"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/healthcare-business-intelligence-market",
-      "title": "healthcare business intelligence market",
-      "normalized_title": "healthcare business intelligence",
-      "singular_title": "healthcare business intelligence"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/molecular-imaging-market",
       "title": "molecular imaging market",
       "normalized_title": "molecular imaging",
@@ -141006,12 +141042,6 @@
       "title": "endoscope reprocessing device market",
       "normalized_title": "endoscope reprocessing device",
       "singular_title": "endoscope reprocessing device"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/coronary-stents-market",
-      "title": "coronary stents market",
-      "normalized_title": "coronary stents",
-      "singular_title": "coronary stent"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/electric-wheelchair-market",
@@ -142812,12 +142842,6 @@
       "title": "infant medical disposables market",
       "normalized_title": "infant medical disposables",
       "singular_title": "infant medical disposable"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/clinical-trials-market",
-      "title": "clinical trials market",
-      "normalized_title": "clinical trials",
-      "singular_title": "clinical trial"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/atherosclerosis-market",
@@ -144878,12 +144902,6 @@
       "singular_title": "external anthelmintic dog"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/teeth-whitening-market",
-      "title": "teeth whitening market",
-      "normalized_title": "teeth whitening",
-      "singular_title": "teeth whitening"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/veterinary-point-of-care-diagnostics-market",
       "title": "veterinary point of care diagnostics market",
       "normalized_title": "veterinary point care diagnostics",
@@ -145686,12 +145704,6 @@
       "title": "veterinary crispr based detection kits market",
       "normalized_title": "veterinary crispr based detection kits",
       "singular_title": "veterinary crispr based detection kit"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/automated-cpr-devices-market",
-      "title": "automated cpr devices market",
-      "normalized_title": "automated cpr devices",
-      "singular_title": "automated cpr device"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/whole-genome-amplification-market",
@@ -153746,12 +153758,6 @@
       "singular_title": "dosimetry"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/alopecia-treatment-market",
-      "title": "alopecia treatment market",
-      "normalized_title": "alopecia treatment",
-      "singular_title": "alopecia treatment"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/inr-test-meter-market",
       "title": "inr test meter market",
       "normalized_title": "inr test meter",
@@ -156126,12 +156132,6 @@
       "title": "contact lens solution market",
       "normalized_title": "contact lens solution",
       "singular_title": "contact len solution"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/cosmetic-peptide-manufacturing-market",
-      "title": "cosmetic peptide manufacturing market",
-      "normalized_title": "cosmetic peptide manufacturing",
-      "singular_title": "cosmetic peptide manufacturing"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/blood-pressure-monitor-market",
@@ -164810,6 +164810,54 @@
       "singular_title": "tourist disaster response assistance"
     },
     {
+      "url": "https://www.futuremarketinsights.com/reports/bopp-packaging-tapes-market",
+      "title": "bopp packaging tapes market",
+      "normalized_title": "bopp packaging tapes",
+      "singular_title": "bopp packaging tape"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/aluminium-extrusions-market",
+      "title": "aluminium extrusions market",
+      "normalized_title": "aluminium extrusions",
+      "singular_title": "aluminium extrusion"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/agriculture-packaging-market",
+      "title": "agriculture packaging market",
+      "normalized_title": "agriculture packaging",
+      "singular_title": "agriculture packaging"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/bioplastics-packaging-market",
+      "title": "bioplastics packaging market",
+      "normalized_title": "bioplastics packaging",
+      "singular_title": "bioplastic packaging"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/aluminum-foil-containers-market",
+      "title": "aluminum foil containers market",
+      "normalized_title": "aluminum foil containers",
+      "singular_title": "aluminum foil container"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/corrugated-fanfold-market",
+      "title": "corrugated fanfold market",
+      "normalized_title": "corrugated fanfold",
+      "singular_title": "corrugated fanfold"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/cosmetic-dropper-market",
+      "title": "cosmetic dropper market",
+      "normalized_title": "cosmetic dropper",
+      "singular_title": "cosmetic dropper"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/disposable-cups-market",
+      "title": "disposable cups market",
+      "normalized_title": "disposable cups",
+      "singular_title": "disposable cup"
+    },
+    {
       "url": "https://www.futuremarketinsights.com/reports/disposable-food-containers-market",
       "title": "disposable food containers market",
       "normalized_title": "disposable food containers",
@@ -167564,12 +167612,6 @@
       "singular_title": "paper wrap"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/cosmetic-dropper-market",
-      "title": "cosmetic dropper market",
-      "normalized_title": "cosmetic dropper",
-      "singular_title": "cosmetic dropper"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/retail-paper-bags-market",
       "title": "retail paper bags market",
       "normalized_title": "retail paper bags",
@@ -169838,12 +169880,6 @@
       "singular_title": "water soluble bag"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/aluminum-foil-containers-market",
-      "title": "aluminum foil containers market",
-      "normalized_title": "aluminum foil containers",
-      "singular_title": "aluminum foil container"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/b2b-reusable-beverage-kegs-and-pooling-market",
       "title": "b2b reusable beverage kegs and pooling market",
       "normalized_title": "b2b reusable beverage kegs pooling",
@@ -170040,12 +170076,6 @@
       "title": "alcoholic drinks packaging market",
       "normalized_title": "alcoholic drinks packaging",
       "singular_title": "alcoholic drink packaging"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/bioplastics-packaging-market",
-      "title": "bioplastics packaging market",
-      "normalized_title": "bioplastics packaging",
-      "singular_title": "bioplastic packaging"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/wine-bags-market",
@@ -175742,12 +175772,6 @@
       "singular_title": "sack filler"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/agriculture-packaging-market",
-      "title": "agriculture packaging market",
-      "normalized_title": "agriculture packaging",
-      "singular_title": "agriculture packaging"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/pe-resins-market",
       "title": "pe resins market",
       "normalized_title": "pe resins",
@@ -175758,12 +175782,6 @@
       "title": "north america silo bags market",
       "normalized_title": "north america silo bags",
       "singular_title": "north america silo bag"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/bopp-packaging-tapes-market",
-      "title": "bopp packaging tapes market",
-      "normalized_title": "bopp packaging tapes",
-      "singular_title": "bopp packaging tape"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/north-america-fresh-meat-packaging-films-market",
@@ -176558,12 +176576,6 @@
       "singular_title": "floating cover"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/aluminium-extrusions-market",
-      "title": "aluminium extrusions market",
-      "normalized_title": "aluminium extrusions",
-      "singular_title": "aluminium extrusion"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/blood-bags-market",
       "title": "blood bags market",
       "normalized_title": "blood bags",
@@ -176870,12 +176882,6 @@
       "singular_title": "high friction film"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/disposable-cups-market",
-      "title": "disposable cups market",
-      "normalized_title": "disposable cups",
-      "singular_title": "disposable cup"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/aluminum-slugs-market",
       "title": "aluminum slugs market",
       "normalized_title": "aluminum slugs",
@@ -177150,12 +177156,6 @@
       "title": "laminating machines market",
       "normalized_title": "laminating machines",
       "singular_title": "laminating machine"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/corrugated-fanfold-market",
-      "title": "corrugated fanfold market",
-      "normalized_title": "corrugated fanfold",
-      "singular_title": "corrugated fanfold"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/self-heating-food-packaging-market",
@@ -191714,6 +191714,18 @@
       "singular_title": "flexible bottle"
     },
     {
+      "url": "https://www.futuremarketinsights.com/reports/electric-sub-meter-market",
+      "title": "electric sub meter market",
+      "normalized_title": "electric sub meter",
+      "singular_title": "electric sub meter"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/agricultural-testing-services-market",
+      "title": "agricultural testing services market",
+      "normalized_title": "agricultural testing services",
+      "singular_title": "agricultural testing service"
+    },
+    {
       "url": "https://www.futuremarketinsights.com/reports/environmental-test-chamber-market",
       "title": "environmental test chamber market",
       "normalized_title": "environmental test chamber",
@@ -192258,12 +192270,6 @@
       "title": "grease analyzer market",
       "normalized_title": "grease analyzer",
       "singular_title": "grease analyzer"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/agricultural-testing-services-market",
-      "title": "agricultural testing services market",
-      "normalized_title": "agricultural testing services",
-      "singular_title": "agricultural testing service"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/esr-analyzer-market",
@@ -193566,12 +193572,6 @@
       "title": "battery module vent gas and propagation test systems market",
       "normalized_title": "battery module vent gas propagation test systems",
       "singular_title": "battery module vent gas propagation test system"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/electric-sub-meter-market",
-      "title": "electric sub meter market",
-      "normalized_title": "electric sub meter",
-      "singular_title": "electric sub meter"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/immersion-cooling-fluid-test-equipment-market",
