@@ -1,6 +1,138 @@
 {
-  "refreshed_at": "2026-10-23T07:33:34.522606+00:00",
+  "refreshed_at": "2026-10-24T07:18:17.095694+00:00",
   "titles": [
+    {
+      "url": "https://www.futuremarketinsights.com/reports/aluminum-market",
+      "title": "aluminum market",
+      "normalized_title": "aluminum",
+      "singular_title": "aluminum"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/biodegradable-polymers-market",
+      "title": "biodegradable polymers market",
+      "normalized_title": "biodegradable polymers",
+      "singular_title": "biodegradable polymer"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/biomass-pellets-market",
+      "title": "biomass pellets market",
+      "normalized_title": "biomass pellets",
+      "singular_title": "biomass pellet"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/global-bio-plastics-market",
+      "title": "global bio plastics market",
+      "normalized_title": "bio plastics",
+      "singular_title": "bio plastic"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/carbon-steel-market",
+      "title": "carbon steel market",
+      "normalized_title": "carbon steel",
+      "singular_title": "carbon steel"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/global-concrete-admixtures-market",
+      "title": "global concrete admixtures market",
+      "normalized_title": "concrete admixtures",
+      "singular_title": "concrete admixture"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/immersion-cooling-market",
+      "title": "immersion cooling market",
+      "normalized_title": "immersion cooling",
+      "singular_title": "immersion cooling"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/iron-oxide-market",
+      "title": "iron oxide market",
+      "normalized_title": "iron oxide",
+      "singular_title": "iron oxide"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/nylon-6-and-nylon-66-market",
+      "title": "nylon 6 and nylon 66 market",
+      "normalized_title": "nylon 6 nylon 66",
+      "singular_title": "nylon 6 nylon 66"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/precast-concrete-market",
+      "title": "precast concrete market",
+      "normalized_title": "precast concrete",
+      "singular_title": "precast concrete"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/recycled-concrete-aggregates-market",
+      "title": "recycled concrete aggregates market",
+      "normalized_title": "recycled concrete aggregates",
+      "singular_title": "recycled concrete aggregate"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/sheet-metal-market",
+      "title": "sheet metal market",
+      "normalized_title": "sheet metal",
+      "singular_title": "sheet metal"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/sludge-treatment-chemicals-market",
+      "title": "sludge treatment chemicals market",
+      "normalized_title": "sludge treatment chemicals",
+      "singular_title": "sludge treatment chemical"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/construction-aggregates-market",
+      "title": "construction aggregates market",
+      "normalized_title": "construction aggregates",
+      "singular_title": "construction aggregate"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/cosmetic-chemicals-market",
+      "title": "cosmetic chemicals market",
+      "normalized_title": "cosmetic chemicals",
+      "singular_title": "cosmetic chemical"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/decorative-paints-market",
+      "title": "decorative paints market",
+      "normalized_title": "decorative paints",
+      "singular_title": "decorative paint"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/fine-chemicals-market",
+      "title": "fine chemicals market",
+      "normalized_title": "fine chemicals",
+      "singular_title": "fine chemical"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/flocculant-and-coagulant-market",
+      "title": "flocculant and coagulant market",
+      "normalized_title": "flocculant coagulant",
+      "singular_title": "flocculant coagulant"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/geosynthetics-market",
+      "title": "geosynthetics market",
+      "normalized_title": "geosynthetics",
+      "singular_title": "geosynthetic"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/graphite-market",
+      "title": "graphite market",
+      "normalized_title": "graphite",
+      "singular_title": "graphite"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/water-and-wastewater-treatment-chemicals-market",
+      "title": "water and wastewater treatment chemicals market",
+      "normalized_title": "water wastewater treatment chemicals",
+      "singular_title": "water wastewater treatment chemical"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/super-absorbent-polymer-market",
+      "title": "super absorbent polymer market",
+      "normalized_title": "super absorbent polymer",
+      "singular_title": "super absorbent polymer"
+    },
     {
       "url": "https://www.futuremarketinsights.com/reports/wastewater-treatment-chemicals-market",
       "title": "wastewater treatment chemicals market",
@@ -3140,12 +3272,6 @@
       "singular_title": "hexylene glycol"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/biodegradable-polymers-market",
-      "title": "biodegradable polymers market",
-      "normalized_title": "biodegradable polymers",
-      "singular_title": "biodegradable polymer"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/electronic-circuit-board-level-underfill-material-market",
       "title": "electronic circuit board level underfill material market",
       "normalized_title": "electronic circuit board level underfill material",
@@ -3588,12 +3714,6 @@
       "title": "chemical logistics market",
       "normalized_title": "chemical logistics",
       "singular_title": "chemical logistic"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/immersion-cooling-market",
-      "title": "immersion cooling market",
-      "normalized_title": "immersion cooling",
-      "singular_title": "immersion cooling"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/sailcloth-market",
@@ -4490,12 +4610,6 @@
       "singular_title": "advanced ceramic"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/aluminum-market",
-      "title": "aluminum market",
-      "normalized_title": "aluminum",
-      "singular_title": "aluminum"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/lauric-aldehyde-market",
       "title": "lauric aldehyde market",
       "normalized_title": "lauric aldehyde",
@@ -4728,12 +4842,6 @@
       "title": "sodium dichloroisocyanurate market",
       "normalized_title": "sodium dichloroisocyanurate",
       "singular_title": "sodium dichloroisocyanurate"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/carbon-steel-market",
-      "title": "carbon steel market",
-      "normalized_title": "carbon steel",
-      "singular_title": "carbon steel"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/recycling-of-automotive-glass-and-laminated-windscreens-in-eu-industry",
@@ -4986,12 +5094,6 @@
       "title": "precipitated silica market",
       "normalized_title": "precipitated silica",
       "singular_title": "precipitated silica"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/fine-chemicals-market",
-      "title": "fine chemicals market",
-      "normalized_title": "fine chemicals",
-      "singular_title": "fine chemical"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/kitchen-vent-hood-and-duct-cleaning-chemicals-market",
@@ -6866,12 +6968,6 @@
       "singular_title": "cytokinin"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/cosmetic-chemicals-market",
-      "title": "cosmetic chemicals market",
-      "normalized_title": "cosmetic chemicals",
-      "singular_title": "cosmetic chemical"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/oxidizing-agents-market",
       "title": "oxidizing agents market",
       "normalized_title": "oxidizing agents",
@@ -7148,12 +7244,6 @@
       "singular_title": "ultrapure water"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/water-and-wastewater-treatment-chemicals-market",
-      "title": "water and wastewater treatment chemicals market",
-      "normalized_title": "water wastewater treatment chemicals",
-      "singular_title": "water wastewater treatment chemical"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/global-pearlescent-pigment-market",
       "title": "global pearlescent pigment market",
       "normalized_title": "pearlescent pigment",
@@ -7170,18 +7260,6 @@
       "title": "global emission control catalyst market",
       "normalized_title": "emission control catalyst",
       "singular_title": "emission control catalyst"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/global-bio-plastics-market",
-      "title": "global bio plastics market",
-      "normalized_title": "bio plastics",
-      "singular_title": "bio plastic"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/global-concrete-admixtures-market",
-      "title": "global concrete admixtures market",
-      "normalized_title": "concrete admixtures",
-      "singular_title": "concrete admixture"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/global-biophotonics-market",
@@ -7206,12 +7284,6 @@
       "title": "zeolite market",
       "normalized_title": "zeolite",
       "singular_title": "zeolite"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/super-absorbent-polymer-market",
-      "title": "super absorbent polymer market",
-      "normalized_title": "super absorbent polymer",
-      "singular_title": "super absorbent polymer"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/sodium-borohydride-market",
@@ -7340,12 +7412,6 @@
       "singular_title": "antistatic coating"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/recycled-concrete-aggregates-market",
-      "title": "recycled concrete aggregates market",
-      "normalized_title": "recycled concrete aggregates",
-      "singular_title": "recycled concrete aggregate"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/calcium-chloride-market",
       "title": "calcium chloride market",
       "normalized_title": "calcium chloride",
@@ -7442,12 +7508,6 @@
       "singular_title": "gulf corporation council cement"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/decorative-paints-market",
-      "title": "decorative paints market",
-      "normalized_title": "decorative paints",
-      "singular_title": "decorative paint"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/dysprosium-market",
       "title": "dysprosium market",
       "normalized_title": "dysprosium",
@@ -7488,12 +7548,6 @@
       "title": "sic sintering aids market",
       "normalized_title": "sic sintering aids",
       "singular_title": "sic sintering aid"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/sludge-treatment-chemicals-market",
-      "title": "sludge treatment chemicals market",
-      "normalized_title": "sludge treatment chemicals",
-      "singular_title": "sludge treatment chemical"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/boron-carbide-market",
@@ -10326,12 +10380,6 @@
       "title": "repair mortar polymer additives market",
       "normalized_title": "repair mortar polymer additives",
       "singular_title": "repair mortar polymer additive"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/biomass-pellets-market",
-      "title": "biomass pellets market",
-      "normalized_title": "biomass pellets",
-      "singular_title": "biomass pellet"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/thermal-mass-concrete-additives-market",
@@ -13710,12 +13758,6 @@
       "title": "silicon tetrachloride market",
       "normalized_title": "silicon tetrachloride",
       "singular_title": "silicon tetrachloride"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/precast-concrete-market",
-      "title": "precast concrete market",
-      "normalized_title": "precast concrete",
-      "singular_title": "precast concrete"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/rare-gas-market",
@@ -18062,12 +18104,6 @@
       "singular_title": "aerogel insulation"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/geosynthetics-market",
-      "title": "geosynthetics market",
-      "normalized_title": "geosynthetics",
-      "singular_title": "geosynthetic"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/pag-compressor-oil-market",
       "title": "pag compressor oil market",
       "normalized_title": "pag compressor oil",
@@ -19274,12 +19310,6 @@
       "singular_title": "amine oxide"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/nylon-6-and-nylon-66-market",
-      "title": "nylon 6 and nylon 66 market",
-      "normalized_title": "nylon 6 nylon 66",
-      "singular_title": "nylon 6 nylon 66"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/industrial-rubber-products-market",
       "title": "industrial rubber products market",
       "normalized_title": "industrial rubber products",
@@ -19508,12 +19538,6 @@
       "singular_title": "carbon disulfide"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/sheet-metal-market",
-      "title": "sheet metal market",
-      "normalized_title": "sheet metal",
-      "singular_title": "sheet metal"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/titanium-alumindes-market",
       "title": "titanium alumindes market",
       "normalized_title": "titanium alumindes",
@@ -19542,12 +19566,6 @@
       "title": "hypochlorite bleaches market",
       "normalized_title": "hypochlorite bleaches",
       "singular_title": "hypochlorite bleach"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/flocculant-and-coagulant-market",
-      "title": "flocculant and coagulant market",
-      "normalized_title": "flocculant coagulant",
-      "singular_title": "flocculant coagulant"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/bonded-abrasives-market",
@@ -19770,12 +19788,6 @@
       "title": "roofing chemicals market",
       "normalized_title": "roofing chemicals",
       "singular_title": "roofing chemical"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/graphite-market",
-      "title": "graphite market",
-      "normalized_title": "graphite",
-      "singular_title": "graphite"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/flue-gas-desulfurization-system-market",
@@ -20390,12 +20402,6 @@
       "singular_title": "amidoamine"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/iron-oxide-market",
-      "title": "iron oxide market",
-      "normalized_title": "iron oxide",
-      "singular_title": "iron oxide"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/low-dosage-hydrate-inhibitors-market",
       "title": "low dosage hydrate inhibitors market",
       "normalized_title": "low dosage hydrate inhibitors",
@@ -20478,12 +20484,6 @@
       "title": "precipitation hardening market",
       "normalized_title": "precipitation hardening",
       "singular_title": "precipitation hardening"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/construction-aggregates-market",
-      "title": "construction aggregates market",
-      "normalized_title": "construction aggregates",
-      "singular_title": "construction aggregate"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/countertop-market",
@@ -48554,6 +48554,204 @@
       "singular_title": "russian it software service"
     },
     {
+      "url": "https://www.futuremarketinsights.com/reports/genset-market",
+      "title": "genset market",
+      "normalized_title": "genset",
+      "singular_title": "genset"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/global-variable-frequency-drives-market",
+      "title": "global variable frequency drives market",
+      "normalized_title": "variable frequency drives",
+      "singular_title": "variable frequency drive"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/milling-machine-market",
+      "title": "milling machine market",
+      "normalized_title": "milling machine",
+      "singular_title": "milling machine"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/industrial-air-filtration-market",
+      "title": "industrial air filtration market",
+      "normalized_title": "industrial air filtration",
+      "singular_title": "industrial air filtration"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/global-compact-construction-equipment-market",
+      "title": "global compact construction equipment market",
+      "normalized_title": "compact construction equipment",
+      "singular_title": "compact construction equipment"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/vibrating-screens-market",
+      "title": "vibrating screens market",
+      "normalized_title": "vibrating screens",
+      "singular_title": "vibrating screen"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/crane-market",
+      "title": "crane market",
+      "normalized_title": "crane",
+      "singular_title": "crane"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/stainless-steel-welded-pipes-market",
+      "title": "stainless steel welded pipes market",
+      "normalized_title": "stainless steel welded pipes",
+      "singular_title": "stainless steel welded pipe"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/solar-panel-mounting-structures-market",
+      "title": "solar panel mounting structures market",
+      "normalized_title": "solar panel mounting structures",
+      "singular_title": "solar panel mounting structure"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/construction-anchors-market",
+      "title": "construction anchors market",
+      "normalized_title": "construction anchors",
+      "singular_title": "construction anchor"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/electrical-enclosure-market",
+      "title": "electrical enclosure market",
+      "normalized_title": "electrical enclosure",
+      "singular_title": "electrical enclosure"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/solar-micro-inverter-market",
+      "title": "solar micro inverter market",
+      "normalized_title": "solar micro inverter",
+      "singular_title": "solar micro inverter"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/tower-crane-market",
+      "title": "tower crane market",
+      "normalized_title": "tower crane",
+      "singular_title": "tower crane"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/noise-control-system-market",
+      "title": "noise control system market",
+      "normalized_title": "noise control system",
+      "singular_title": "noise control system"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/soil-testing-equipment-market",
+      "title": "soil testing equipment market",
+      "normalized_title": "soil testing equipment",
+      "singular_title": "soil testing equipment"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/switched-reluctance-motors-market",
+      "title": "switched reluctance motors market",
+      "normalized_title": "switched reluctance motors",
+      "singular_title": "switched reluctance motor"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/agriculture-equipment-market",
+      "title": "agriculture equipment market",
+      "normalized_title": "agriculture equipment",
+      "singular_title": "agriculture equipment"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/district-heating-market",
+      "title": "district heating market",
+      "normalized_title": "district heating",
+      "singular_title": "district heating"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/water-softening-systems-market",
+      "title": "water softening systems market",
+      "normalized_title": "water softening systems",
+      "singular_title": "water softening system"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/industrial-battery-charger-market",
+      "title": "industrial battery charger market",
+      "normalized_title": "industrial battery charger",
+      "singular_title": "industrial battery charger"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/collaborative-robot-market",
+      "title": "collaborative robot market",
+      "normalized_title": "collaborative robot",
+      "singular_title": "collaborative robot"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/industrial-robot-controllers-market",
+      "title": "industrial robot controllers market",
+      "normalized_title": "industrial robot controllers",
+      "singular_title": "industrial robot controller"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/tower-crane-rental-market",
+      "title": "tower crane rental market",
+      "normalized_title": "tower crane rental",
+      "singular_title": "tower crane rental"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/high-pressure-processing-market",
+      "title": "high pressure processing market",
+      "normalized_title": "high pressure processing",
+      "singular_title": "high pressure processing"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/carbide-tools-market",
+      "title": "carbide tools market",
+      "normalized_title": "carbide tools",
+      "singular_title": "carbide tool"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/fire-pump-market",
+      "title": "fire pump market",
+      "normalized_title": "fire pump",
+      "singular_title": "fire pump"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/slitting-machine-market",
+      "title": "slitting machine market",
+      "normalized_title": "slitting machine",
+      "singular_title": "slitting machine"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/thermostatic-radiator-valves-market",
+      "title": "thermostatic radiator valves market",
+      "normalized_title": "thermostatic radiator valves",
+      "singular_title": "thermostatic radiator valve"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/process-automation-and-instrumentation-market",
+      "title": "process automation and instrumentation market",
+      "normalized_title": "process automation instrumentation",
+      "singular_title": "process automation instrumentation"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/industrial-motors-market",
+      "title": "industrial motors market",
+      "normalized_title": "industrial motors",
+      "singular_title": "industrial motor"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/walk-in-cooler-and-freezer-market",
+      "title": "walk in cooler and freezer market",
+      "normalized_title": "walk cooler freezer",
+      "singular_title": "walk cooler freezer"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/temporary-storage-buildings-market",
+      "title": "temporary storage buildings market",
+      "normalized_title": "temporary storage buildings",
+      "singular_title": "temporary storage building"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/refrigeration-and-air-conditioning-compressors-market",
+      "title": "refrigeration and air conditioning compressors market",
+      "normalized_title": "refrigeration air conditioning compressors",
+      "singular_title": "refrigeration air conditioning compressor"
+    },
+    {
       "url": "https://www.futuremarketinsights.com/reports/mud-pumps-market",
       "title": "mud pumps market",
       "normalized_title": "mud pumps",
@@ -49616,12 +49814,6 @@
       "singular_title": "pto shaft"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/agriculture-equipment-market",
-      "title": "agriculture equipment market",
-      "normalized_title": "agriculture equipment",
-      "singular_title": "agriculture equipment"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/bitumen-sprayer-market",
       "title": "bitumen sprayer market",
       "normalized_title": "bitumen sprayer",
@@ -49862,12 +50054,6 @@
       "singular_title": "foundation drilling bucket"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/solar-micro-inverter-market",
-      "title": "solar micro inverter market",
-      "normalized_title": "solar micro inverter",
-      "singular_title": "solar micro inverter"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/sports-drainage-mats-market",
       "title": "sports drainage mats market",
       "normalized_title": "sports drainage mats",
@@ -49902,12 +50088,6 @@
       "title": "fluid conveyance systems market",
       "normalized_title": "fluid conveyance systems",
       "singular_title": "fluid conveyance system"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/carbide-tools-market",
-      "title": "carbide tools market",
-      "normalized_title": "carbide tools",
-      "singular_title": "carbide tool"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/internal-gear-skiving-machine-market",
@@ -51104,12 +51284,6 @@
       "singular_title": "mem oscillator"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/soil-testing-equipment-market",
-      "title": "soil testing equipment market",
-      "normalized_title": "soil testing equipment",
-      "singular_title": "soil testing equipment"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/smart-water-grid-market",
       "title": "smart water grid market",
       "normalized_title": "smart water grid",
@@ -51180,12 +51354,6 @@
       "title": "industrial linear accelerator market",
       "normalized_title": "industrial linear accelerator",
       "singular_title": "industrial linear accelerator"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/industrial-motors-market",
-      "title": "industrial motors market",
-      "normalized_title": "industrial motors",
-      "singular_title": "industrial motor"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/container-weighing-systems-market",
@@ -51428,12 +51596,6 @@
       "singular_title": "calibrator"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/temporary-storage-buildings-market",
-      "title": "temporary storage buildings market",
-      "normalized_title": "temporary storage buildings",
-      "singular_title": "temporary storage building"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/laser-safety-glasses-market",
       "title": "laser safety glasses market",
       "normalized_title": "laser safety glasses",
@@ -51444,12 +51606,6 @@
       "title": "paper moisture meter market",
       "normalized_title": "paper moisture meter",
       "singular_title": "paper moisture meter"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/water-softening-systems-market",
-      "title": "water softening systems market",
-      "normalized_title": "water softening systems",
-      "singular_title": "water softening system"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/truck-mounted-crane-market",
@@ -51842,12 +51998,6 @@
       "singular_title": "crane motor"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/milling-machine-market",
-      "title": "milling machine market",
-      "normalized_title": "milling machine",
-      "singular_title": "milling machine"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/delumper-market",
       "title": "delumper market",
       "normalized_title": "delumper",
@@ -51948,18 +52098,6 @@
       "title": "medium voltage capacitor bank market",
       "normalized_title": "medium voltage capacitor bank",
       "singular_title": "medium voltage capacitor bank"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/industrial-air-filtration-market",
-      "title": "industrial air filtration market",
-      "normalized_title": "industrial air filtration",
-      "singular_title": "industrial air filtration"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/industrial-robot-controllers-market",
-      "title": "industrial robot controllers market",
-      "normalized_title": "industrial robot controllers",
-      "singular_title": "industrial robot controller"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/induction-furnace-market",
@@ -52166,22 +52304,10 @@
       "singular_title": "boiler"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/district-heating-market",
-      "title": "district heating market",
-      "normalized_title": "district heating",
-      "singular_title": "district heating"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/europe-water-pumps-market",
       "title": "europe water pumps market",
       "normalized_title": "europe water pumps",
       "singular_title": "europe water pump"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/tower-crane-rental-market",
-      "title": "tower crane rental market",
-      "normalized_title": "tower crane rental",
-      "singular_title": "tower crane rental"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/mini-cranes-market",
@@ -52206,12 +52332,6 @@
       "title": "fiber laser market",
       "normalized_title": "fiber laser",
       "singular_title": "fiber laser"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/collaborative-robot-market",
-      "title": "collaborative robot market",
-      "normalized_title": "collaborative robot",
-      "singular_title": "collaborative robot"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/blasthole-drills-market",
@@ -52290,12 +52410,6 @@
       "title": "pasteuriser market",
       "normalized_title": "pasteuriser",
       "singular_title": "pasteuriser"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/solar-panel-mounting-structures-market",
-      "title": "solar panel mounting structures market",
-      "normalized_title": "solar panel mounting structures",
-      "singular_title": "solar panel mounting structure"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/motor-bearings-market",
@@ -52514,12 +52628,6 @@
       "singular_title": "fire rated cable"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/global-compact-construction-equipment-market",
-      "title": "global compact construction equipment market",
-      "normalized_title": "compact construction equipment",
-      "singular_title": "compact construction equipment"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/portable-metal-detectors-market",
       "title": "portable metal detectors market",
       "normalized_title": "portable metal detectors",
@@ -52578,12 +52686,6 @@
       "title": "automatic filling machine market",
       "normalized_title": "automatic filling machine",
       "singular_title": "automatic filling machine"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/high-pressure-processing-market",
-      "title": "high pressure processing market",
-      "normalized_title": "high pressure processing",
-      "singular_title": "high pressure processing"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/air-pressure-sensor-market",
@@ -52890,12 +52992,6 @@
       "title": "factory automation and industrial controls market",
       "normalized_title": "factory automation industrial controls",
       "singular_title": "factory automation industrial control"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/noise-control-system-market",
-      "title": "noise control system market",
-      "normalized_title": "noise control system",
-      "singular_title": "noise control system"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/vacuum-cleaner-filter-market",
@@ -54008,12 +54104,6 @@
       "singular_title": "united state hand towel automatic folding machine"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/construction-anchors-market",
-      "title": "construction anchors market",
-      "normalized_title": "construction anchors",
-      "singular_title": "construction anchor"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/construction-anchor-industry-analysis-in-united-kingdom",
       "title": "construction anchor industry analysis in united kingdom",
       "normalized_title": "construction anchor united kingdom",
@@ -54416,12 +54506,6 @@
       "singular_title": "cordless pop rivet gun"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/global-variable-frequency-drives-market",
-      "title": "global variable frequency drives market",
-      "normalized_title": "variable frequency drives",
-      "singular_title": "variable frequency drive"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/dehydrating-breather-market",
       "title": "dehydrating breather market",
       "normalized_title": "dehydrating breather",
@@ -54608,12 +54692,6 @@
       "singular_title": "inspection machine"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/tower-crane-market",
-      "title": "tower crane market",
-      "normalized_title": "tower crane",
-      "singular_title": "tower crane"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/concrete-pump-industry-analysis-in-north-america",
       "title": "concrete pump industry analysis in north america",
       "normalized_title": "concrete pump north america",
@@ -54624,12 +54702,6 @@
       "title": "industrial vision gateways market",
       "normalized_title": "industrial vision gateways",
       "singular_title": "industrial vision gateway"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/slitting-machine-market",
-      "title": "slitting machine market",
-      "normalized_title": "slitting machine",
-      "singular_title": "slitting machine"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/welding-consumables-market",
@@ -54662,22 +54734,10 @@
       "singular_title": "digital torque tool"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/fire-pump-market",
-      "title": "fire pump market",
-      "normalized_title": "fire pump",
-      "singular_title": "fire pump"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/additive-binder-jets-market",
       "title": "additive binder jets market",
       "normalized_title": "additive binder jets",
       "singular_title": "additive binder jet"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/industrial-battery-charger-market",
-      "title": "industrial battery charger market",
-      "normalized_title": "industrial battery charger",
-      "singular_title": "industrial battery charger"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/material-handling-equipment-market",
@@ -57800,12 +57860,6 @@
       "singular_title": "laminar airflow trolley"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/thermostatic-radiator-valves-market",
-      "title": "thermostatic radiator valves market",
-      "normalized_title": "thermostatic radiator valves",
-      "singular_title": "thermostatic radiator valve"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/lead-free-brass-rods-market",
       "title": "lead free brass rods market",
       "normalized_title": "lead free brass rods",
@@ -58592,12 +58646,6 @@
       "singular_title": "card printer ribbon"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/stainless-steel-welded-pipes-market",
-      "title": "stainless steel welded pipes market",
-      "normalized_title": "stainless steel welded pipes",
-      "singular_title": "stainless steel welded pipe"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/food-sorting-machines-market",
       "title": "food sorting machines market",
       "normalized_title": "food sorting machines",
@@ -58722,12 +58770,6 @@
       "title": "pressure reducing valve market",
       "normalized_title": "pressure reducing valve",
       "singular_title": "pressure reducing valve"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/walk-in-cooler-and-freezer-market",
-      "title": "walk in cooler and freezer market",
-      "normalized_title": "walk cooler freezer",
-      "singular_title": "walk cooler freezer"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/laser-beam-welding-equipment-market",
@@ -58892,22 +58934,10 @@
       "singular_title": "distribution component"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/refrigeration-and-air-conditioning-compressors-market",
-      "title": "refrigeration and air conditioning compressors market",
-      "normalized_title": "refrigeration air conditioning compressors",
-      "singular_title": "refrigeration air conditioning compressor"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/electric-gripper-market",
       "title": "electric gripper market",
       "normalized_title": "electric gripper",
       "singular_title": "electric gripper"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/process-automation-and-instrumentation-market",
-      "title": "process automation and instrumentation market",
-      "normalized_title": "process automation instrumentation",
-      "singular_title": "process automation instrumentation"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/tubular-heater-market",
@@ -58950,12 +58980,6 @@
       "title": "transmission overload protectors market",
       "normalized_title": "transmission overload protectors",
       "singular_title": "transmission overload protector"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/electrical-enclosure-market",
-      "title": "electrical enclosure market",
-      "normalized_title": "electrical enclosure",
-      "singular_title": "electrical enclosure"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/electrical-sub-panels-market",
@@ -59028,12 +59052,6 @@
       "title": "kitting robots market",
       "normalized_title": "kitting robots",
       "singular_title": "kitting robot"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/vibrating-screens-market",
-      "title": "vibrating screens market",
-      "normalized_title": "vibrating screens",
-      "singular_title": "vibrating screen"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/vapor-recovery-units-market",
@@ -65048,12 +65066,6 @@
       "singular_title": "high temperature industrial burner"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/genset-market",
-      "title": "genset market",
-      "normalized_title": "genset",
-      "singular_title": "genset"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/gas-meters-market",
       "title": "gas meters market",
       "normalized_title": "gas meters",
@@ -65522,12 +65534,6 @@
       "singular_title": "industrial air compressor"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/crane-market",
-      "title": "crane market",
-      "normalized_title": "crane",
-      "singular_title": "crane"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/lamella-clarifiers-market",
       "title": "lamella clarifiers market",
       "normalized_title": "lamella clarifiers",
@@ -65568,12 +65574,6 @@
       "title": "rockbreakers market",
       "normalized_title": "rockbreakers",
       "singular_title": "rockbreaker"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/switched-reluctance-motors-market",
-      "title": "switched reluctance motors market",
-      "normalized_title": "switched reluctance motors",
-      "singular_title": "switched reluctance motor"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/railway-track-fittings-market",
@@ -68444,6 +68444,60 @@
       "singular_title": "level measuring instrument"
     },
     {
+      "url": "https://www.futuremarketinsights.com/reports/adas-market",
+      "title": "adas market",
+      "normalized_title": "adas",
+      "singular_title": "ada"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/automotive-control-cable-market",
+      "title": "automotive control cable market",
+      "normalized_title": "automotive control cable",
+      "singular_title": "automotive control cable"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/automotive-tires-market",
+      "title": "automotive tires market",
+      "normalized_title": "automotive tires",
+      "singular_title": "automotive tire"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/autonomous-vehicles-market",
+      "title": "autonomous vehicles market",
+      "normalized_title": "autonomous vehicles",
+      "singular_title": "autonomous vehicle"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/global-hybrid-vehicles-market",
+      "title": "global hybrid vehicles market",
+      "normalized_title": "hybrid vehicles",
+      "singular_title": "hybrid vehicle"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/mobile-car-wash-and-detailing-market",
+      "title": "mobile car wash and detailing market",
+      "normalized_title": "mobile car wash detailing",
+      "singular_title": "mobile car wash detailing"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/railway-telematics-market",
+      "title": "railway telematics market",
+      "normalized_title": "railway telematics",
+      "singular_title": "railway telematic"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/driver-monitoring-system-market",
+      "title": "driver monitoring system market",
+      "normalized_title": "driver monitoring system",
+      "singular_title": "driver monitoring system"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/electric-bike-market",
+      "title": "electric bike market",
+      "normalized_title": "electric bike",
+      "singular_title": "electric bike"
+    },
+    {
       "url": "https://www.futuremarketinsights.com/reports/automotive-brake-system-and-components-market",
       "title": "automotive brake system and components market",
       "normalized_title": "automotive brake system components",
@@ -69696,12 +69750,6 @@
       "title": "automotive air conditioning system compressor market",
       "normalized_title": "automotive air conditioning system compressor",
       "singular_title": "automotive air conditioning system compressor"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/automotive-control-cable-market",
-      "title": "automotive control cable market",
-      "normalized_title": "automotive control cable",
-      "singular_title": "automotive control cable"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/over-the-air-engine-control-module-market",
@@ -72374,12 +72422,6 @@
       "singular_title": "wire rope sling"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/adas-market",
-      "title": "adas market",
-      "normalized_title": "adas",
-      "singular_title": "ada"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/roll-trailer-market",
       "title": "roll trailer market",
       "normalized_title": "roll trailer",
@@ -72570,12 +72612,6 @@
       "title": "aircraft exterior lighting market",
       "normalized_title": "aircraft exterior lighting",
       "singular_title": "aircraft exterior lighting"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/electric-bike-market",
-      "title": "electric bike market",
-      "normalized_title": "electric bike",
-      "singular_title": "electric bike"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/hydrogen-fuel-cell-stack-and-membrane-recycling-for-eu-mobility-market",
@@ -73820,12 +73856,6 @@
       "singular_title": "cabin monitoring system"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/driver-monitoring-system-market",
-      "title": "driver monitoring system market",
-      "normalized_title": "driver monitoring system",
-      "singular_title": "driver monitoring system"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/iso-15118-20-charging-market",
       "title": "iso 15118 20 charging market",
       "normalized_title": "iso 15118 20 charging",
@@ -74150,12 +74180,6 @@
       "singular_title": "asia pacific automotive telematic"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/mobile-car-wash-and-detailing-market",
-      "title": "mobile car wash and detailing market",
-      "normalized_title": "mobile car wash detailing",
-      "singular_title": "mobile car wash detailing"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/global-off-highway-vehicle-telematics-market",
       "title": "global off highway vehicle telematics market",
       "normalized_title": "off highway vehicle telematics",
@@ -74214,12 +74238,6 @@
       "title": "retarder and pto couplings market",
       "normalized_title": "retarder pto couplings",
       "singular_title": "retarder pto coupling"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/global-hybrid-vehicles-market",
-      "title": "global hybrid vehicles market",
-      "normalized_title": "hybrid vehicles",
-      "singular_title": "hybrid vehicle"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/hybrid-power-split-couplings-market",
@@ -74322,12 +74340,6 @@
       "title": "abs pump and modulator market",
       "normalized_title": "abs pump modulator",
       "singular_title": "abs pump modulator"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/railway-telematics-market",
-      "title": "railway telematics market",
-      "normalized_title": "railway telematics",
-      "singular_title": "railway telematic"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/automotive-composite-leaf-springs-market",
@@ -76596,12 +76608,6 @@
       "title": "golf cart batteries market",
       "normalized_title": "golf cart batteries",
       "singular_title": "golf cart battery"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/automotive-tires-market",
-      "title": "automotive tires market",
-      "normalized_title": "automotive tires",
-      "singular_title": "automotive tire"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/boat-trailer-industry-analysis-in-north-america",
@@ -80756,12 +80762,6 @@
       "singular_title": "automotive interior ambient lighting system"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/autonomous-vehicles-market",
-      "title": "autonomous vehicles market",
-      "normalized_title": "autonomous vehicles",
-      "singular_title": "autonomous vehicle"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/automotive-radar-market",
       "title": "automotive radar market",
       "normalized_title": "automotive radar",
@@ -83610,6 +83610,36 @@
       "title": "automotive bearings market",
       "normalized_title": "automotive bearings",
       "singular_title": "automotive bearing"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/menstrual-cups-market",
+      "title": "menstrual cups market",
+      "normalized_title": "menstrual cups",
+      "singular_title": "menstrual cup"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/pet-daycare-market",
+      "title": "pet daycare market",
+      "normalized_title": "pet daycare",
+      "singular_title": "pet daycare"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/pet-hotels-market",
+      "title": "pet hotels market",
+      "normalized_title": "pet hotels",
+      "singular_title": "pet hotel"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/gym-apparel-market",
+      "title": "gym apparel market",
+      "normalized_title": "gym apparel",
+      "singular_title": "gym apparel"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/hair-extensions-market",
+      "title": "hair extensions market",
+      "normalized_title": "hair extensions",
+      "singular_title": "hair extension"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/womens-luxury-footwear-market",
@@ -89486,12 +89516,6 @@
       "singular_title": "baby changing station"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/gym-apparel-market",
-      "title": "gym apparel market",
-      "normalized_title": "gym apparel",
-      "singular_title": "gym apparel"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/over-night-hair-treatment-products-market",
       "title": "over night hair treatment products market",
       "normalized_title": "over night hair treatment products",
@@ -89688,12 +89712,6 @@
       "title": "power adapter market",
       "normalized_title": "power adapter",
       "singular_title": "power adapter"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/pet-hotels-market",
-      "title": "pet hotels market",
-      "normalized_title": "pet hotels",
-      "singular_title": "pet hotel"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/enameled-cookware-market",
@@ -90594,12 +90612,6 @@
       "title": "gaming laptop market",
       "normalized_title": "gaming laptop",
       "singular_title": "gaming laptop"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/hair-extensions-market",
-      "title": "hair extensions market",
-      "normalized_title": "hair extensions",
-      "singular_title": "hair extension"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/heating-agents-market",
@@ -95684,12 +95696,6 @@
       "singular_title": "period balm"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/pet-daycare-market",
-      "title": "pet daycare market",
-      "normalized_title": "pet daycare",
-      "singular_title": "pet daycare"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/oil-colors-market",
       "title": "oil colors market",
       "normalized_title": "oil colors",
@@ -95712,12 +95718,6 @@
       "title": "meal kit delivery services market",
       "normalized_title": "meal kit delivery services",
       "singular_title": "meal kit delivery service"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/menstrual-cups-market",
-      "title": "menstrual cups market",
-      "normalized_title": "menstrual cups",
-      "singular_title": "menstrual cup"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/menstrual-cup-foam-wash-market",
@@ -98412,6 +98412,54 @@
       "title": "india pou water purifier market",
       "normalized_title": "india pou water purifier",
       "singular_title": "india pou water purifier"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/hibiscus-flower-powder-market",
+      "title": "hibiscus flower powder market",
+      "normalized_title": "hibiscus flower powder",
+      "singular_title": "hibiscus flower powder"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/allanblackia-confectionery-stearins-market",
+      "title": "allanblackia confectionery stearins market",
+      "normalized_title": "allanblackia confectionery stearins",
+      "singular_title": "allanblackia confectionery stearin"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/fermented-foods-and-beverages-market",
+      "title": "fermented foods and beverages market",
+      "normalized_title": "fermented foods beverages",
+      "singular_title": "fermented food beverage"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/hybrid-rice-seeds-market",
+      "title": "hybrid rice seeds market",
+      "normalized_title": "hybrid rice seeds",
+      "singular_title": "hybrid rice seed"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/ready-to-drink-coffee-market",
+      "title": "ready to drink coffee market",
+      "normalized_title": "ready drink coffee",
+      "singular_title": "ready drink coffee"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/millet-market",
+      "title": "millet market",
+      "normalized_title": "millet",
+      "singular_title": "millet"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/cellulase-market",
+      "title": "cellulase market",
+      "normalized_title": "cellulase",
+      "singular_title": "cellulase"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/greek-yogurt-market",
+      "title": "greek yogurt market",
+      "normalized_title": "greek yogurt",
+      "singular_title": "greek yogurt"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/flavored-whiskey-market",
@@ -101912,12 +101960,6 @@
       "singular_title": "usa prenatal vitamin supplement"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/ready-to-drink-coffee-market",
-      "title": "ready to drink coffee market",
-      "normalized_title": "ready drink coffee",
-      "singular_title": "ready drink coffee"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/amaretti-market",
       "title": "amaretti market",
       "normalized_title": "amaretti",
@@ -104540,12 +104582,6 @@
       "singular_title": "meal replacement bar"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/cellulase-market",
-      "title": "cellulase market",
-      "normalized_title": "cellulase",
-      "singular_title": "cellulase"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/cholesterol-control-supplements-market",
       "title": "cholesterol control supplements market",
       "normalized_title": "cholesterol control supplements",
@@ -105018,12 +105054,6 @@
       "title": "cocoa derivatives market",
       "normalized_title": "cocoa derivatives",
       "singular_title": "cocoa derivative"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/millet-market",
-      "title": "millet market",
-      "normalized_title": "millet",
-      "singular_title": "millet"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/milk-thistle-market",
@@ -106056,12 +106086,6 @@
       "title": "decorations and inclusions market",
       "normalized_title": "decorations inclusions",
       "singular_title": "decoration inclusion"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/hibiscus-flower-powder-market",
-      "title": "hibiscus flower powder market",
-      "normalized_title": "hibiscus flower powder",
-      "singular_title": "hibiscus flower powder"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/lemon-juice-concentrate-market",
@@ -113942,12 +113966,6 @@
       "singular_title": "aroma ingredient"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/greek-yogurt-market",
-      "title": "greek yogurt market",
-      "normalized_title": "greek yogurt",
-      "singular_title": "greek yogurt"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/sea-enzyme-products-market",
       "title": "sea enzyme products market",
       "normalized_title": "sea enzyme products",
@@ -114888,12 +114906,6 @@
       "title": "intestinal health pet dietary supplement market",
       "normalized_title": "intestinal health pet dietary supplement",
       "singular_title": "intestinal health pet dietary supplement"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/fermented-foods-and-beverages-market",
-      "title": "fermented foods and beverages market",
-      "normalized_title": "fermented foods beverages",
-      "singular_title": "fermented food beverage"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/uht-whipping-cream-market",
@@ -116682,12 +116694,6 @@
       "title": "alternative protein market",
       "normalized_title": "alternative protein",
       "singular_title": "alternative protein"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/hybrid-rice-seeds-market",
-      "title": "hybrid rice seeds market",
-      "normalized_title": "hybrid rice seeds",
-      "singular_title": "hybrid rice seed"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/organic-trace-minerals-market",
@@ -132870,6 +132876,24 @@
       "title": "asia pacific upstream oil and gas services market",
       "normalized_title": "asia pacific upstream oil gas services",
       "singular_title": "asia pacific upstream oil gas service"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/sonogenetic-neuromodulation-systems-market",
+      "title": "sonogenetic neuromodulation systems market",
+      "normalized_title": "sonogenetic neuromodulation systems",
+      "singular_title": "sonogenetic neuromodulation system"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/magnetogenetic-deep-brain-stimulators-market",
+      "title": "magnetogenetic deep brain stimulators market",
+      "normalized_title": "magnetogenetic deep brain stimulators",
+      "singular_title": "magnetogenetic deep brain stimulator"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/endolymphatic-duct-shunts-market",
+      "title": "endolymphatic duct shunts market",
+      "normalized_title": "endolymphatic duct shunts",
+      "singular_title": "endolymphatic duct shunt"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/t-cell-engager-therapeutics-market",
@@ -165014,6 +165038,12 @@
       "singular_title": "tourist disaster response assistance"
     },
     {
+      "url": "https://www.futuremarketinsights.com/reports/flexible-plastic-packaging-market",
+      "title": "flexible plastic packaging market",
+      "normalized_title": "flexible plastic packaging",
+      "singular_title": "flexible plastic packaging"
+    },
+    {
       "url": "https://www.futuremarketinsights.com/reports/logistics-packaging-market",
       "title": "logistics packaging market",
       "normalized_title": "logistics packaging",
@@ -168132,12 +168162,6 @@
       "title": "paper edge protectors market",
       "normalized_title": "paper edge protectors",
       "singular_title": "paper edge protector"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/flexible-plastic-packaging-market",
-      "title": "flexible plastic packaging market",
-      "normalized_title": "flexible plastic packaging",
-      "singular_title": "flexible plastic packaging"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/blackout-fabric-laminates-market",
@@ -191952,6 +191976,24 @@
       "title": "flexible bottle market",
       "normalized_title": "flexible bottle",
       "singular_title": "flexible bottle"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/thermometric-sap-flow-sensors-market",
+      "title": "thermometric sap flow sensors market",
+      "normalized_title": "thermometric sap flow sensors",
+      "singular_title": "thermometric sap flow sensor"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/electronic-trunk-dendrometers-market",
+      "title": "electronic trunk dendrometers market",
+      "normalized_title": "electronic trunk dendrometers",
+      "singular_title": "electronic trunk dendrometer"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/stem-water-potential-psychrometers-market",
+      "title": "stem water potential psychrometers market",
+      "normalized_title": "stem water potential psychrometers",
+      "singular_title": "stem water potential psychrometer"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/target-drag-flowmeters-market",
