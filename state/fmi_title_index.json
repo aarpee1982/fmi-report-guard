@@ -1,6 +1,24 @@
 {
-  "refreshed_at": "2026-10-25T07:36:15.530733+00:00",
+  "refreshed_at": "2026-10-26T07:49:05.489603+00:00",
   "titles": [
+    {
+      "url": "https://www.futuremarketinsights.com/reports/global-corrosion-protective-coatings-market",
+      "title": "global corrosion protective coatings market",
+      "normalized_title": "corrosion protective coatings",
+      "singular_title": "corrosion protective coating"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/electroplating-market",
+      "title": "electroplating market",
+      "normalized_title": "electroplating",
+      "singular_title": "electroplating"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/carbon-fiber-composites-market",
+      "title": "carbon fiber composites market",
+      "normalized_title": "carbon fiber composites",
+      "singular_title": "carbon fiber composite"
+    },
     {
       "url": "https://www.futuremarketinsights.com/reports/global-glass-fiber-reinforced-plastic-composites-market",
       "title": "global glass fiber reinforced plastic composites market",
@@ -7202,12 +7220,6 @@
       "singular_title": "biobased propylene glycol"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/global-corrosion-protective-coatings-market",
-      "title": "global corrosion protective coatings market",
-      "normalized_title": "corrosion protective coatings",
-      "singular_title": "corrosion protective coating"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/global-conductive-polymer-coatings-market",
       "title": "global conductive polymer coatings market",
       "normalized_title": "conductive polymer coatings",
@@ -10644,12 +10656,6 @@
       "title": "flow improver additives for 3d printing resins market",
       "normalized_title": "flow improver additives 3d printing resins",
       "singular_title": "flow improver additive 3d printing resin"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/electroplating-market",
-      "title": "electroplating market",
-      "normalized_title": "electroplating",
-      "singular_title": "electroplating"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/critical-care-disinfection-chemicals-market",
@@ -19982,12 +19988,6 @@
       "singular_title": "aramid fiber"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/carbon-fiber-composites-market",
-      "title": "carbon fiber composites market",
-      "normalized_title": "carbon fiber composites",
-      "singular_title": "carbon fiber composite"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/bioresorbable-polymers-market",
       "title": "bioresorbable polymers market",
       "normalized_title": "bioresorbable polymers",
@@ -24930,6 +24930,54 @@
       "title": "middle east 3d printing materials market",
       "normalized_title": "middle east 3d printing materials",
       "singular_title": "middle east 3d printing material"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/gpu-fabric-fault-isolation-software-market",
+      "title": "gpu fabric fault isolation software market",
+      "normalized_title": "gpu fabric fault isolation software",
+      "singular_title": "gpu fabric fault isolation software"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/ai-factory-resource-topology-management-software-market",
+      "title": "ai factory resource topology management software market",
+      "normalized_title": "ai factory resource topology management software",
+      "singular_title": "ai factory resource topology management software"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/high-density-ai-hall-conversion-services-market",
+      "title": "high density ai hall conversion services market",
+      "normalized_title": "high density ai hall conversion services",
+      "singular_title": "high density ai hall conversion service"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/thermal-aware-gpu-scheduling-software-market",
+      "title": "thermal aware gpu scheduling software market",
+      "normalized_title": "thermal aware gpu scheduling software",
+      "singular_title": "thermal aware gpu scheduling software"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/ai-data-center-power-spare-parts-optimization-platforms-market",
+      "title": "ai data center power spare parts optimization platforms market",
+      "normalized_title": "ai data center power spare parts optimization platforms",
+      "singular_title": "ai data center power spare part optimization platform"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/ai-workload-carbon-aware-placement-software-market",
+      "title": "ai workload carbon aware placement software market",
+      "normalized_title": "ai workload carbon aware placement software",
+      "singular_title": "ai workload carbon aware placement software"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/grid-aware-ai-workload-scheduling-software-market",
+      "title": "grid aware ai workload scheduling software market",
+      "normalized_title": "grid aware ai workload scheduling software",
+      "singular_title": "grid aware ai workload scheduling software"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/ai-rack-dynamic-power-reserve-controllers-market",
+      "title": "ai rack dynamic power reserve controllers market",
+      "normalized_title": "ai rack dynamic power reserve controllers",
+      "singular_title": "ai rack dynamic power reserve controller"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/photonic-interconnect-field-diagnostics-services-market",
@@ -68486,6 +68534,24 @@
       "singular_title": "level measuring instrument"
     },
     {
+      "url": "https://www.futuremarketinsights.com/reports/ev-charger-market",
+      "title": "ev charger market",
+      "normalized_title": "ev charger",
+      "singular_title": "ev charger"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/ev-powertrain-market",
+      "title": "ev powertrain market",
+      "normalized_title": "ev powertrain",
+      "singular_title": "ev powertrain"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/automotive-pumps-market",
+      "title": "automotive pumps market",
+      "normalized_title": "automotive pumps",
+      "singular_title": "automotive pump"
+    },
+    {
       "url": "https://www.futuremarketinsights.com/reports/motorcycle-suspension-system-market",
       "title": "motorcycle suspension system market",
       "normalized_title": "motorcycle suspension system",
@@ -71118,12 +71184,6 @@
       "title": "blended hydraulic regenerative brake systems market",
       "normalized_title": "blended hydraulic regenerative brake systems",
       "singular_title": "blended hydraulic regenerative brake system"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/automotive-pumps-market",
-      "title": "automotive pumps market",
-      "normalized_title": "automotive pumps",
-      "singular_title": "automotive pump"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/automotive-fuel-delivery-system-market",
@@ -74364,12 +74424,6 @@
       "title": "automotive fifth wheel coupling market",
       "normalized_title": "automotive fifth wheel coupling",
       "singular_title": "automotive fifth wheel coupling"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/ev-powertrain-market",
-      "title": "ev powertrain market",
-      "normalized_title": "ev powertrain",
-      "singular_title": "ev powertrain"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/iso-24089-software-update-compliance-management-platforms-market",
@@ -81348,12 +81402,6 @@
       "title": "automotive brake valves market",
       "normalized_title": "automotive brake valves",
       "singular_title": "automotive brake valve"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/ev-charger-market",
-      "title": "ev charger market",
-      "normalized_title": "ev charger",
-      "singular_title": "ev charger"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/airline-a-la-carte-services-market",
@@ -98474,6 +98522,48 @@
       "singular_title": "india pou water purifier"
     },
     {
+      "url": "https://www.futuremarketinsights.com/reports/sea-bass-market",
+      "title": "sea bass market",
+      "normalized_title": "sea bass",
+      "singular_title": "sea bass"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/pregelatinized-flour-market",
+      "title": "pregelatinized flour market",
+      "normalized_title": "pregelatinized flour",
+      "singular_title": "pregelatinized flour"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/focaccia-market",
+      "title": "focaccia market",
+      "normalized_title": "focaccia",
+      "singular_title": "focaccia"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/sprouted-flour-market",
+      "title": "sprouted flour market",
+      "normalized_title": "sprouted flour",
+      "singular_title": "sprouted flour"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/dinner-rolls-market",
+      "title": "dinner rolls market",
+      "normalized_title": "dinner rolls",
+      "singular_title": "dinner roll"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/fermented-and-cultured-flour-market",
+      "title": "fermented and cultured flour market",
+      "normalized_title": "fermented cultured flour",
+      "singular_title": "fermented cultured flour"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/heritage-and-landrace-wheat-flour-market",
+      "title": "heritage and landrace wheat flour market",
+      "normalized_title": "heritage landrace wheat flour",
+      "singular_title": "heritage landrace wheat flour"
+    },
+    {
       "url": "https://www.futuremarketinsights.com/reports/geriatric-compact-meal-market",
       "title": "geriatric compact meal market",
       "normalized_title": "geriatric compact meal",
@@ -113754,12 +113844,6 @@
       "title": "pulse ingredient industry analysis in korea",
       "normalized_title": "pulse ingredient korea",
       "singular_title": "pulse ingredient korea"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/sea-bass-market",
-      "title": "sea bass market",
-      "normalized_title": "sea bass",
-      "singular_title": "sea bass"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/demand-and-trend-analysis-of-yogurt-powder-in-western-europe",
@@ -133014,6 +133098,18 @@
       "title": "asia pacific upstream oil and gas services market",
       "normalized_title": "asia pacific upstream oil gas services",
       "singular_title": "asia pacific upstream oil gas service"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/preeclampsia-support-nutrition-market",
+      "title": "preeclampsia support nutrition market",
+      "normalized_title": "preeclampsia support nutrition",
+      "singular_title": "preeclampsia support nutrition"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/gestational-hypertension-nutrition-market",
+      "title": "gestational hypertension nutrition market",
+      "normalized_title": "gestational hypertension nutrition",
+      "singular_title": "gestational hypertension nutrition"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/perimenopause-nutrition-products-market",
@@ -192138,6 +192234,12 @@
       "title": "flexible bottle market",
       "normalized_title": "flexible bottle",
       "singular_title": "flexible bottle"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/weighing-soil-drainage-lysimeters-market",
+      "title": "weighing soil drainage lysimeters market",
+      "normalized_title": "weighing soil drainage lysimeters",
+      "singular_title": "weighing soil drainage lysimeter"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/thermometric-sap-flow-sensors-market",
