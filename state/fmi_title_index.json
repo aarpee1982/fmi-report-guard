@@ -1,6 +1,12 @@
 {
-  "refreshed_at": "2026-11-06T09:25:23.718328+00:00",
+  "refreshed_at": "2026-11-07T08:48:29.600170+00:00",
   "titles": [
+    {
+      "url": "https://www.futuremarketinsights.com/reports/super-absorbent-polymer-market",
+      "title": "super absorbent polymer market",
+      "normalized_title": "super absorbent polymer",
+      "singular_title": "super absorbent polymer"
+    },
     {
       "url": "https://www.futuremarketinsights.com/reports/sheet-metal-market",
       "title": "sheet metal market",
@@ -552,12 +558,6 @@
       "title": "water and wastewater treatment chemicals market",
       "normalized_title": "water wastewater treatment chemicals",
       "singular_title": "water wastewater treatment chemical"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/super-absorbent-polymer-market",
-      "title": "super absorbent polymer market",
-      "normalized_title": "super absorbent polymer",
-      "singular_title": "super absorbent polymer"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/wastewater-treatment-chemicals-market",
@@ -48734,6 +48734,12 @@
       "singular_title": "russian it software service"
     },
     {
+      "url": "https://www.futuremarketinsights.com/reports/global-hydraulic-cylinder-market",
+      "title": "global hydraulic cylinder market",
+      "normalized_title": "hydraulic cylinder",
+      "singular_title": "hydraulic cylinder"
+    },
+    {
       "url": "https://www.futuremarketinsights.com/reports/telehandlers-market",
       "title": "telehandlers market",
       "normalized_title": "telehandlers",
@@ -48882,12 +48888,6 @@
       "title": "water automation and instrumentation market",
       "normalized_title": "water automation instrumentation",
       "singular_title": "water automation instrumentation"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/global-hydraulic-cylinder-market",
-      "title": "global hydraulic cylinder market",
-      "normalized_title": "hydraulic cylinder",
-      "singular_title": "hydraulic cylinder"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/smart-pump-market",
@@ -68660,6 +68660,12 @@
       "singular_title": "level measuring instrument"
     },
     {
+      "url": "https://www.futuremarketinsights.com/reports/adas-market",
+      "title": "adas market",
+      "normalized_title": "adas",
+      "singular_title": "ada"
+    },
+    {
       "url": "https://www.futuremarketinsights.com/reports/electric-vehicle-battery-market",
       "title": "electric vehicle battery market",
       "normalized_title": "electric vehicle battery",
@@ -68772,12 +68778,6 @@
       "title": "automotive lighting market",
       "normalized_title": "automotive lighting",
       "singular_title": "automotive lighting"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/adas-market",
-      "title": "adas market",
-      "normalized_title": "adas",
-      "singular_title": "ada"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/automotive-control-cable-market",
@@ -98696,6 +98696,138 @@
       "singular_title": "india pou water purifier"
     },
     {
+      "url": "https://www.futuremarketinsights.com/reports/pet-food-flavor-enhancers-market",
+      "title": "pet food flavor enhancers market",
+      "normalized_title": "pet food flavor enhancers",
+      "singular_title": "pet food flavor enhancer"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/period-cramp-supplement-market",
+      "title": "period cramp supplement market",
+      "normalized_title": "period cramp supplement",
+      "singular_title": "period cramp supplement"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/organic-cheese-market",
+      "title": "organic cheese market",
+      "normalized_title": "organic cheese",
+      "singular_title": "organic cheese"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/organic-cane-sugar-market",
+      "title": "organic cane sugar market",
+      "normalized_title": "organic cane sugar",
+      "singular_title": "organic cane sugar"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/nutrigenomic-market",
+      "title": "nutrigenomic market",
+      "normalized_title": "nutrigenomic",
+      "singular_title": "nutrigenomic"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/natural-flavor-extract-market",
+      "title": "natural flavor extract market",
+      "normalized_title": "natural flavor extract",
+      "singular_title": "natural flavor extract"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/vegan-protein-powder-market",
+      "title": "vegan protein powder market",
+      "normalized_title": "vegan protein powder",
+      "singular_title": "vegan protein powder"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/invert-sugar-market",
+      "title": "invert sugar market",
+      "normalized_title": "invert sugar",
+      "singular_title": "invert sugar"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/kosher-foods-market",
+      "title": "kosher foods market",
+      "normalized_title": "kosher foods",
+      "singular_title": "kosher food"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/instant-tea-premixes-market",
+      "title": "instant tea premixes market",
+      "normalized_title": "instant tea premixes",
+      "singular_title": "instant tea premix"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/meal-replacement-products-market",
+      "title": "meal replacement products market",
+      "normalized_title": "meal replacement products",
+      "singular_title": "meal replacement product"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/vodka-market",
+      "title": "vodka market",
+      "normalized_title": "vodka",
+      "singular_title": "vodka"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/frozen-bakery-market",
+      "title": "frozen bakery market",
+      "normalized_title": "frozen bakery",
+      "singular_title": "frozen bakery"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/tempeh-market",
+      "title": "tempeh market",
+      "normalized_title": "tempeh",
+      "singular_title": "tempeh"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/pet-postbiotics-supplement-market",
+      "title": "pet postbiotics supplement market",
+      "normalized_title": "pet postbiotics supplement",
+      "singular_title": "pet postbiotic supplement"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/poultry-meal-market",
+      "title": "poultry meal market",
+      "normalized_title": "poultry meal",
+      "singular_title": "poultry meal"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/sexual-enhancement-supplements-market",
+      "title": "sexual enhancement supplements market",
+      "normalized_title": "sexual enhancement supplements",
+      "singular_title": "sexual enhancement supplement"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/sea-buckthorn-market",
+      "title": "sea buckthorn market",
+      "normalized_title": "sea buckthorn",
+      "singular_title": "sea buckthorn"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/medical-food-market",
+      "title": "medical food market",
+      "normalized_title": "medical food",
+      "singular_title": "medical food"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/sea-salt-market",
+      "title": "sea salt market",
+      "normalized_title": "sea salt",
+      "singular_title": "sea salt"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/seed-polymers-market",
+      "title": "seed polymers market",
+      "normalized_title": "seed polymers",
+      "singular_title": "seed polymer"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/sequestrants-market",
+      "title": "sequestrants market",
+      "normalized_title": "sequestrants",
+      "singular_title": "sequestrant"
+    },
+    {
       "url": "https://www.futuremarketinsights.com/reports/sorbitol-market",
       "title": "sorbitol market",
       "normalized_title": "sorbitol",
@@ -100694,12 +100826,6 @@
       "singular_title": "whey protein"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/vegan-protein-powder-market",
-      "title": "vegan protein powder market",
-      "normalized_title": "vegan protein powder",
-      "singular_title": "vegan protein powder"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/phycoerythrin-market",
       "title": "phycoerythrin market",
       "normalized_title": "phycoerythrin",
@@ -100860,12 +100986,6 @@
       "title": "ginseng market",
       "normalized_title": "ginseng",
       "singular_title": "ginseng"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/kosher-foods-market",
-      "title": "kosher foods market",
-      "normalized_title": "kosher foods",
-      "singular_title": "kosher food"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/lactose-free-products-market",
@@ -101090,12 +101210,6 @@
       "singular_title": "packaged food"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/medical-food-market",
-      "title": "medical food market",
-      "normalized_title": "medical food",
-      "singular_title": "medical food"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/matcha-market",
       "title": "matcha market",
       "normalized_title": "matcha",
@@ -101304,12 +101418,6 @@
       "title": "plant based spreads market",
       "normalized_title": "plant based spreads",
       "singular_title": "plant based spread"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/sexual-enhancement-supplements-market",
-      "title": "sexual enhancement supplements market",
-      "normalized_title": "sexual enhancement supplements",
-      "singular_title": "sexual enhancement supplement"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/global-soy-food-products-market",
@@ -101526,12 +101634,6 @@
       "title": "vegan supplements market",
       "normalized_title": "vegan supplements",
       "singular_title": "vegan supplement"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/frozen-bakery-market",
-      "title": "frozen bakery market",
-      "normalized_title": "frozen bakery",
-      "singular_title": "frozen bakery"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/coconut-flour-market",
@@ -102416,12 +102518,6 @@
       "singular_title": "monoprotein"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/meal-replacement-products-market",
-      "title": "meal replacement products market",
-      "normalized_title": "meal replacement products",
-      "singular_title": "meal replacement product"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/lactates-market",
       "title": "lactates market",
       "normalized_title": "lactates",
@@ -102810,12 +102906,6 @@
       "title": "superfood powders market",
       "normalized_title": "superfood powders",
       "singular_title": "superfood powder"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/tempeh-market",
-      "title": "tempeh market",
-      "normalized_title": "tempeh",
-      "singular_title": "tempeh"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/sea-bream-market",
@@ -111728,12 +111818,6 @@
       "singular_title": "malted milk powder"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/nutrigenomic-market",
-      "title": "nutrigenomic market",
-      "normalized_title": "nutrigenomic",
-      "singular_title": "nutrigenomic"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/dry-yogurt-market",
       "title": "dry yogurt market",
       "normalized_title": "dry yogurt",
@@ -119486,12 +119570,6 @@
       "singular_title": "united state infant formula"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/vodka-market",
-      "title": "vodka market",
-      "normalized_title": "vodka",
-      "singular_title": "vodka"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/organic-feed-market",
       "title": "organic feed market",
       "normalized_title": "organic feed",
@@ -125828,40 +125906,16 @@
       "singular_title": "raising agent"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/pet-food-flavor-enhancers-market",
-      "title": "pet food flavor enhancers market",
-      "normalized_title": "pet food flavor enhancers",
-      "singular_title": "pet food flavor enhancer"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/bakery-meal-market",
       "title": "bakery meal market",
       "normalized_title": "bakery meal",
       "singular_title": "bakery meal"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/sequestrants-market",
-      "title": "sequestrants market",
-      "normalized_title": "sequestrants",
-      "singular_title": "sequestrant"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/bread-improvers-market",
       "title": "bread improvers market",
       "normalized_title": "bread improvers",
       "singular_title": "bread improver"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/poultry-meal-market",
-      "title": "poultry meal market",
-      "normalized_title": "poultry meal",
-      "singular_title": "poultry meal"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/pet-postbiotics-supplement-market",
-      "title": "pet postbiotics supplement market",
-      "normalized_title": "pet postbiotics supplement",
-      "singular_title": "pet postbiotic supplement"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/organic-selenium-market",
@@ -125876,12 +125930,6 @@
       "singular_title": "pediatric nutrition"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/natural-flavor-extract-market",
-      "title": "natural flavor extract market",
-      "normalized_title": "natural flavor extract",
-      "singular_title": "natural flavor extract"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/grain-free-pet-food-market",
       "title": "grain free pet food market",
       "normalized_title": "grain free pet food",
@@ -125894,28 +125942,10 @@
       "singular_title": "organic follow up formula"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/seed-polymers-market",
-      "title": "seed polymers market",
-      "normalized_title": "seed polymers",
-      "singular_title": "seed polymer"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/essential-oil-isolates-market",
       "title": "essential oil isolates market",
       "normalized_title": "essential oil isolates",
       "singular_title": "essential oil isolate"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/organic-cane-sugar-market",
-      "title": "organic cane sugar market",
-      "normalized_title": "organic cane sugar",
-      "singular_title": "organic cane sugar"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/invert-sugar-market",
-      "title": "invert sugar market",
-      "normalized_title": "invert sugar",
-      "singular_title": "invert sugar"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/hickory-nuts-market",
@@ -125936,18 +125966,6 @@
       "singular_title": "glutamine"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/sea-buckthorn-market",
-      "title": "sea buckthorn market",
-      "normalized_title": "sea buckthorn",
-      "singular_title": "sea buckthorn"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/period-cramp-supplement-market",
-      "title": "period cramp supplement market",
-      "normalized_title": "period cramp supplement",
-      "singular_title": "period cramp supplement"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/cat-and-dog-food-toppers-market",
       "title": "cat and dog food toppers market",
       "normalized_title": "cat dog food toppers",
@@ -125958,18 +125976,6 @@
       "title": "healthy aging supplement market",
       "normalized_title": "healthy aging supplement",
       "singular_title": "healthy aging supplement"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/organic-cheese-market",
-      "title": "organic cheese market",
-      "normalized_title": "organic cheese",
-      "singular_title": "organic cheese"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/instant-tea-premixes-market",
-      "title": "instant tea premixes market",
-      "normalized_title": "instant tea premixes",
-      "singular_title": "instant tea premix"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/silk-protein-market",
@@ -125994,12 +126000,6 @@
       "title": "fish powder market",
       "normalized_title": "fish powder",
       "singular_title": "fish powder"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/sea-salt-market",
-      "title": "sea salt market",
-      "normalized_title": "sea salt",
-      "singular_title": "sea salt"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/powdered-beverages-market",
@@ -134102,6 +134102,42 @@
       "singular_title": "asia pacific upstream oil gas service"
     },
     {
+      "url": "https://www.futuremarketinsights.com/reports/molecular-diagnostics-market",
+      "title": "molecular diagnostics market",
+      "normalized_title": "molecular diagnostics",
+      "singular_title": "molecular diagnostic"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/sports-medicine-market",
+      "title": "sports medicine market",
+      "normalized_title": "sports medicine",
+      "singular_title": "sport medicine"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/scar-treatment-market",
+      "title": "scar treatment market",
+      "normalized_title": "scar treatment",
+      "singular_title": "scar treatment"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/continuous-glucose-monitoring-systems-market",
+      "title": "continuous glucose monitoring systems market",
+      "normalized_title": "continuous glucose monitoring systems",
+      "singular_title": "continuous glucose monitoring system"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/glp-1-receptor-agonist-market",
+      "title": "glp 1 receptor agonist market",
+      "normalized_title": "glp 1 receptor agonist",
+      "singular_title": "glp 1 receptor agonist"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/prostate-cancer-market",
+      "title": "prostate cancer market",
+      "normalized_title": "prostate cancer",
+      "singular_title": "prostate cancer"
+    },
+    {
       "url": "https://www.futuremarketinsights.com/reports/animal-model-market",
       "title": "animal model market",
       "normalized_title": "animal model",
@@ -134322,12 +134358,6 @@
       "title": "loop mediated isothermal amplification market",
       "normalized_title": "loop mediated isothermal amplification",
       "singular_title": "loop mediated isothermal amplification"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/molecular-diagnostics-market",
-      "title": "molecular diagnostics market",
-      "normalized_title": "molecular diagnostics",
-      "singular_title": "molecular diagnostic"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/next-generation-biomanufacturing-market",
@@ -137552,12 +137582,6 @@
       "singular_title": "ambulatory surgical centre 092017"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/sports-medicine-market",
-      "title": "sports medicine market",
-      "normalized_title": "sports medicine",
-      "singular_title": "sport medicine"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/soft-tissue-repair-market",
       "title": "soft tissue repair market",
       "normalized_title": "soft tissue repair",
@@ -138968,12 +138992,6 @@
       "singular_title": "pharma peeler centrifuge"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/glp-1-receptor-agonist-market",
-      "title": "glp 1 receptor agonist market",
-      "normalized_title": "glp 1 receptor agonist",
-      "singular_title": "glp 1 receptor agonist"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/black-maca-extract-market",
       "title": "black maca extract market",
       "normalized_title": "black maca extract",
@@ -139518,12 +139536,6 @@
       "title": "electromyography devices market",
       "normalized_title": "electromyography devices",
       "singular_title": "electromyography device"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/continuous-glucose-monitoring-systems-market",
-      "title": "continuous glucose monitoring systems market",
-      "normalized_title": "continuous glucose monitoring systems",
-      "singular_title": "continuous glucose monitoring system"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/diagnostic-x-ray-system-market",
@@ -155258,12 +155270,6 @@
       "singular_title": "ligament augmentation"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/scar-treatment-market",
-      "title": "scar treatment market",
-      "normalized_title": "scar treatment",
-      "singular_title": "scar treatment"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/vessel-sealing-devices-market",
       "title": "vessel sealing devices market",
       "normalized_title": "vessel sealing devices",
@@ -155274,12 +155280,6 @@
       "title": "outsourced testing services market",
       "normalized_title": "outsourced testing services",
       "singular_title": "outsourced testing service"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/prostate-cancer-market",
-      "title": "prostate cancer market",
-      "normalized_title": "prostate cancer",
-      "singular_title": "prostate cancer"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/non-alcoholic-steatohepatitis-clinical-trials-market",
