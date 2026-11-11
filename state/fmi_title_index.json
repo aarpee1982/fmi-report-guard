@@ -1,6 +1,24 @@
 {
-  "refreshed_at": "2026-11-10T09:51:01.301574+00:00",
+  "refreshed_at": "2026-11-11T09:26:21.338473+00:00",
   "titles": [
+    {
+      "url": "https://www.futuremarketinsights.com/reports/global-corrosion-protective-coatings-market",
+      "title": "global corrosion protective coatings market",
+      "normalized_title": "corrosion protective coatings",
+      "singular_title": "corrosion protective coating"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/cable-ties-market",
+      "title": "cable ties market",
+      "normalized_title": "cable ties",
+      "singular_title": "cable tie"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/pervious-pavement-market",
+      "title": "pervious pavement market",
+      "normalized_title": "pervious pavement",
+      "singular_title": "pervious pavement"
+    },
     {
       "url": "https://www.futuremarketinsights.com/reports/texture-paints-market",
       "title": "texture paints market",
@@ -564,12 +582,6 @@
       "title": "nematode suppression additives market",
       "normalized_title": "nematode suppression additives",
       "singular_title": "nematode suppression additive"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/global-corrosion-protective-coatings-market",
-      "title": "global corrosion protective coatings market",
-      "normalized_title": "corrosion protective coatings",
-      "singular_title": "corrosion protective coating"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/electroplating-market",
@@ -25130,6 +25142,90 @@
       "singular_title": "middle east 3d printing material"
     },
     {
+      "url": "https://www.futuremarketinsights.com/reports/generative-ai-market",
+      "title": "generative ai market",
+      "normalized_title": "generative ai",
+      "singular_title": "generative ai"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/esports-market",
+      "title": "esports market",
+      "normalized_title": "esports",
+      "singular_title": "esport"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/qr-code-payment-market",
+      "title": "qr code payment market",
+      "normalized_title": "qr code payment",
+      "singular_title": "qr code payment"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/open-source-intelligence-market",
+      "title": "open source intelligence market",
+      "normalized_title": "open source intelligence",
+      "singular_title": "open source intelligence"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/data-center-gpu-market",
+      "title": "data center gpu market",
+      "normalized_title": "data center gpu",
+      "singular_title": "data center gpu"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/ddos-protection-market",
+      "title": "ddos protection market",
+      "normalized_title": "ddos protection",
+      "singular_title": "ddo protection"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/atomic-layer-deposition-market",
+      "title": "atomic layer deposition market",
+      "normalized_title": "atomic layer deposition",
+      "singular_title": "atomic layer deposition"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/api-security-market",
+      "title": "api security market",
+      "normalized_title": "api security",
+      "singular_title": "api security"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/digital-signature-market",
+      "title": "digital signature market",
+      "normalized_title": "digital signature",
+      "singular_title": "digital signature"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/wireless-connectivity-market",
+      "title": "wireless connectivity market",
+      "normalized_title": "wireless connectivity",
+      "singular_title": "wireless connectivity"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/procure-to-pay-solutions-market",
+      "title": "procure to pay solutions market",
+      "normalized_title": "procure pay solutions",
+      "singular_title": "procure pay solution"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/tv-white-space-spectrum-market",
+      "title": "tv white space spectrum market",
+      "normalized_title": "tv white space spectrum",
+      "singular_title": "tv white space spectrum"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/business-intelligence-market",
+      "title": "business intelligence market",
+      "normalized_title": "business intelligence",
+      "singular_title": "business intelligence"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/data-center-cpu-market",
+      "title": "data center cpu market",
+      "normalized_title": "data center cpu",
+      "singular_title": "data center cpu"
+    },
+    {
       "url": "https://www.futuremarketinsights.com/reports/connected-tv-market",
       "title": "connected tv market",
       "normalized_title": "connected tv",
@@ -25152,6 +25248,30 @@
       "title": "submarine optical fiber cables market",
       "normalized_title": "submarine optical fiber cables",
       "singular_title": "submarine optical fiber cable"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/glass-interposers-market",
+      "title": "glass interposers market",
+      "normalized_title": "glass interposers",
+      "singular_title": "glass interposer"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/well-intervention-market",
+      "title": "well intervention market",
+      "normalized_title": "well intervention",
+      "singular_title": "well intervention"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/load-bank-market",
+      "title": "load bank market",
+      "normalized_title": "load bank",
+      "singular_title": "load bank"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/contraband-detector-market",
+      "title": "contraband detector market",
+      "normalized_title": "contraband detector",
+      "singular_title": "contraband detector"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/fire-alarm-systems-market",
@@ -25406,12 +25526,6 @@
       "singular_title": "portable monitor"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/procure-to-pay-solutions-market",
-      "title": "procure to pay solutions market",
-      "normalized_title": "procure pay solutions",
-      "singular_title": "procure pay solution"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/smart-railways-market",
       "title": "smart railways market",
       "normalized_title": "smart railways",
@@ -25422,12 +25536,6 @@
       "title": "super apps market",
       "normalized_title": "super apps",
       "singular_title": "super app"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/tv-white-space-spectrum-market",
-      "title": "tv white space spectrum market",
-      "normalized_title": "tv white space spectrum",
-      "singular_title": "tv white space spectrum"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/wi-fi-market",
@@ -25778,12 +25886,6 @@
       "singular_title": "semiconductor wafer"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/open-source-intelligence-market",
-      "title": "open source intelligence market",
-      "normalized_title": "open source intelligence",
-      "singular_title": "open source intelligence"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/remote-sensing-services-market",
       "title": "remote sensing services market",
       "normalized_title": "remote sensing services",
@@ -25898,12 +26000,6 @@
       "singular_title": "next generation wireless network"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/data-center-gpu-market",
-      "title": "data center gpu market",
-      "normalized_title": "data center gpu",
-      "singular_title": "data center gpu"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/it-asset-disposition-market",
       "title": "it asset disposition market",
       "normalized_title": "it asset disposition",
@@ -25926,12 +26022,6 @@
       "title": "fitness apps market",
       "normalized_title": "fitness apps",
       "singular_title": "fitness app"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/api-security-market",
-      "title": "api security market",
-      "normalized_title": "api security",
-      "singular_title": "api security"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/data-center-market",
@@ -25988,12 +26078,6 @@
       "singular_title": "humidifier"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/ddos-protection-market",
-      "title": "ddos protection market",
-      "normalized_title": "ddos protection",
-      "singular_title": "ddo protection"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/hr-tech-market",
       "title": "hr tech market",
       "normalized_title": "hr tech",
@@ -26028,12 +26112,6 @@
       "title": "talent acquisition and staffing technology market",
       "normalized_title": "talent acquisition staffing technology",
       "singular_title": "talent acquisition staffing technology"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/qr-code-payment-market",
-      "title": "qr code payment market",
-      "normalized_title": "qr code payment",
-      "singular_title": "qr code payment"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/medtech-market",
@@ -26120,12 +26198,6 @@
       "singular_title": "ai fintech"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/esports-market",
-      "title": "esports market",
-      "normalized_title": "esports",
-      "singular_title": "esport"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/process-mining-market",
       "title": "process mining market",
       "normalized_title": "process mining",
@@ -26142,12 +26214,6 @@
       "title": "content creation market",
       "normalized_title": "content creation",
       "singular_title": "content creation"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/generative-ai-market",
-      "title": "generative ai market",
-      "normalized_title": "generative ai",
-      "singular_title": "generative ai"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/solar-cells-and-module-market",
@@ -35408,12 +35474,6 @@
       "singular_title": "quality process management application"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/digital-signature-market",
-      "title": "digital signature market",
-      "normalized_title": "digital signature",
-      "singular_title": "digital signature"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/demand-and-trends-analysis-of-smart-home-security-camera-in-western-europe",
       "title": "demand and trends analysis of smart home security camera in western europe",
       "normalized_title": "demand trends smart home security camera western europe",
@@ -37026,12 +37086,6 @@
       "title": "bot security market",
       "normalized_title": "bot security",
       "singular_title": "bot security"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/business-intelligence-market",
-      "title": "business intelligence market",
-      "normalized_title": "business intelligence",
-      "singular_title": "business intelligence"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/near-eye-display-market",
@@ -41204,12 +41258,6 @@
       "singular_title": "fintech as service"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/wireless-connectivity-market",
-      "title": "wireless connectivity market",
-      "normalized_title": "wireless connectivity",
-      "singular_title": "wireless connectivity"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/lead-mining-software-market",
       "title": "lead mining software market",
       "normalized_title": "lead mining software",
@@ -42228,12 +42276,6 @@
       "title": "hvac software market",
       "normalized_title": "hvac software",
       "singular_title": "hvac software"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/data-center-cpu-market",
-      "title": "data center cpu market",
-      "normalized_title": "data center cpu",
-      "singular_title": "data center cpu"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/edutainment-centers-market",
@@ -44496,12 +44538,6 @@
       "title": "alarm management system market",
       "normalized_title": "alarm management system",
       "singular_title": "alarm management system"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/atomic-layer-deposition-market",
-      "title": "atomic layer deposition market",
-      "normalized_title": "atomic layer deposition",
-      "singular_title": "atomic layer deposition"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/ar-vr-software-market",
@@ -48876,6 +48912,18 @@
       "title": "russian it software and services market",
       "normalized_title": "russian it software services",
       "singular_title": "russian it software service"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/shunt-capacitor-market",
+      "title": "shunt capacitor market",
+      "normalized_title": "shunt capacitor",
+      "singular_title": "shunt capacitor"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/islanding-protection-market",
+      "title": "islanding protection market",
+      "normalized_title": "islanding protection",
+      "singular_title": "islanding protection"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/industrial-and-workplace-safety-market",
@@ -84014,6 +84062,18 @@
       "singular_title": "automotive bearing"
     },
     {
+      "url": "https://www.futuremarketinsights.com/reports/beauty-and-personal-care-product-market",
+      "title": "beauty and personal care product market",
+      "normalized_title": "beauty personal care product",
+      "singular_title": "beauty personal care product"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/landscaping-services-market",
+      "title": "landscaping services market",
+      "normalized_title": "landscaping services",
+      "singular_title": "landscaping service"
+    },
+    {
       "url": "https://www.futuremarketinsights.com/reports/halal-cosmetics-market",
       "title": "halal cosmetics market",
       "normalized_title": "halal cosmetics",
@@ -84668,12 +84728,6 @@
       "singular_title": "small space furniture"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/landscaping-services-market",
-      "title": "landscaping services market",
-      "normalized_title": "landscaping services",
-      "singular_title": "landscaping service"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/luxury-handbag-market",
       "title": "luxury handbag market",
       "normalized_title": "luxury handbag",
@@ -84906,12 +84960,6 @@
       "title": "sparkling bottled water market",
       "normalized_title": "sparkling bottled water",
       "singular_title": "sparkling bottled water"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/beauty-and-personal-care-product-market",
-      "title": "beauty and personal care product market",
-      "normalized_title": "beauty personal care product",
-      "singular_title": "beauty personal care product"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/fabric-softeners-market",
@@ -98846,6 +98894,36 @@
       "singular_title": "india pou water purifier"
     },
     {
+      "url": "https://www.futuremarketinsights.com/reports/patchouli-oil-market",
+      "title": "patchouli oil market",
+      "normalized_title": "patchouli oil",
+      "singular_title": "patchouli oil"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/silicon-fertilizers-market",
+      "title": "silicon fertilizers market",
+      "normalized_title": "silicon fertilizers",
+      "singular_title": "silicon fertilizer"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/lager-market",
+      "title": "lager market",
+      "normalized_title": "lager",
+      "singular_title": "lager"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/tagatose-market",
+      "title": "tagatose market",
+      "normalized_title": "tagatose",
+      "singular_title": "tagatose"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/forage-market",
+      "title": "forage market",
+      "normalized_title": "forage",
+      "singular_title": "forage"
+    },
+    {
       "url": "https://www.futuremarketinsights.com/reports/dough-relaxants-market",
       "title": "dough relaxants market",
       "normalized_title": "dough relaxants",
@@ -98904,12 +98982,6 @@
       "title": "guacamole market",
       "normalized_title": "guacamole",
       "singular_title": "guacamole"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/silicon-fertilizers-market",
-      "title": "silicon fertilizers market",
-      "normalized_title": "silicon fertilizers",
-      "singular_title": "silicon fertilizer"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/hazelnut-market",
@@ -101442,12 +101514,6 @@
       "title": "fruit wine market",
       "normalized_title": "fruit wine",
       "singular_title": "fruit wine"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/patchouli-oil-market",
-      "title": "patchouli oil market",
-      "normalized_title": "patchouli oil",
-      "singular_title": "patchouli oil"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/matcha-market",
@@ -123446,12 +123512,6 @@
       "singular_title": "reflow oven"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/forage-market",
-      "title": "forage market",
-      "normalized_title": "forage",
-      "singular_title": "forage"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/fish-collagen-peptides-market",
       "title": "fish collagen peptides market",
       "normalized_title": "fish collagen peptides",
@@ -123680,12 +123740,6 @@
       "singular_title": "hydrolyzed egg"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/lager-market",
-      "title": "lager market",
-      "normalized_title": "lager",
-      "singular_title": "lager"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/immune-health-supplements-market",
       "title": "immune health supplements market",
       "normalized_title": "immune health supplements",
@@ -123732,12 +123786,6 @@
       "title": "bake stable pastry fillings market",
       "normalized_title": "bake stable pastry fillings",
       "singular_title": "bake stable pastry filling"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/tagatose-market",
-      "title": "tagatose market",
-      "normalized_title": "tagatose",
-      "singular_title": "tagatose"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/seaweed-hydrocolloid-market",
@@ -129372,6 +129420,12 @@
       "title": "soil testing inspection and certification market",
       "normalized_title": "soil testing inspection certification",
       "singular_title": "soil testing inspection certification"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/electronic-load-market",
+      "title": "electronic load market",
+      "normalized_title": "electronic load",
+      "singular_title": "electronic load"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/synthetic-fuels-market",
