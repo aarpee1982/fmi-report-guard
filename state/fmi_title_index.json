@@ -1,6 +1,48 @@
 {
-  "refreshed_at": "2026-11-20T10:01:27.565577+00:00",
+  "refreshed_at": "2026-11-21T09:49:59.849043+00:00",
   "titles": [
+    {
+      "url": "https://www.futuremarketinsights.com/reports/rutile-market",
+      "title": "rutile market",
+      "normalized_title": "rutile",
+      "singular_title": "rutile"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/aluminosilicate-glass-market",
+      "title": "aluminosilicate glass market",
+      "normalized_title": "aluminosilicate glass",
+      "singular_title": "aluminosilicate glass"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/aromatic-solvents-market",
+      "title": "aromatic solvents market",
+      "normalized_title": "aromatic solvents",
+      "singular_title": "aromatic solvent"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/ethylene-oxide-market",
+      "title": "ethylene oxide market",
+      "normalized_title": "ethylene oxide",
+      "singular_title": "ethylene oxide"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/gamma-butyrolactone-market",
+      "title": "gamma butyrolactone market",
+      "normalized_title": "gamma butyrolactone",
+      "singular_title": "gamma butyrolactone"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/neodymium-market",
+      "title": "neodymium market",
+      "normalized_title": "neodymium",
+      "singular_title": "neodymium"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/rayon-fiber-market",
+      "title": "rayon fiber market",
+      "normalized_title": "rayon fiber",
+      "singular_title": "rayon fiber"
+    },
     {
       "url": "https://www.futuremarketinsights.com/reports/debonding-on-demand-adhesive-tapes-for-electronics-dismantling-market",
       "title": "debonding on demand adhesive tapes for electronics dismantling market",
@@ -68954,6 +68996,12 @@
       "singular_title": "level measuring instrument"
     },
     {
+      "url": "https://www.futuremarketinsights.com/reports/airless-tires-market",
+      "title": "airless tires market",
+      "normalized_title": "airless tires",
+      "singular_title": "airless tire"
+    },
+    {
       "url": "https://www.futuremarketinsights.com/reports/air-taxi-exterior-component-systems-market",
       "title": "air taxi exterior component systems market",
       "normalized_title": "air taxi exterior component systems",
@@ -84170,6 +84218,36 @@
       "singular_title": "automotive bearing"
     },
     {
+      "url": "https://www.futuremarketinsights.com/reports/mascara-market",
+      "title": "mascara market",
+      "normalized_title": "mascara",
+      "singular_title": "mascara"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/blanket-market",
+      "title": "blanket market",
+      "normalized_title": "blanket",
+      "singular_title": "blanket"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/toothpaste-market",
+      "title": "toothpaste market",
+      "normalized_title": "toothpaste",
+      "singular_title": "toothpaste"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/concealers-market",
+      "title": "concealers market",
+      "normalized_title": "concealers",
+      "singular_title": "concealer"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/bronzers-market",
+      "title": "bronzers market",
+      "normalized_title": "bronzers",
+      "singular_title": "bronzer"
+    },
+    {
       "url": "https://www.futuremarketinsights.com/reports/faucets-market",
       "title": "faucets market",
       "normalized_title": "faucets",
@@ -86018,22 +86096,10 @@
       "singular_title": "pet car seat"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/toothpaste-market",
-      "title": "toothpaste market",
-      "normalized_title": "toothpaste",
-      "singular_title": "toothpaste"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/cold-pressed-soap-market",
       "title": "cold pressed soap market",
       "normalized_title": "cold pressed soap",
       "singular_title": "cold pressed soap"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/blanket-market",
-      "title": "blanket market",
-      "normalized_title": "blanket",
-      "singular_title": "blanket"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/basketball-shoes-market",
@@ -86624,18 +86690,6 @@
       "singular_title": "lip liner"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/concealers-market",
-      "title": "concealers market",
-      "normalized_title": "concealers",
-      "singular_title": "concealer"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/bronzers-market",
-      "title": "bronzers market",
-      "normalized_title": "bronzers",
-      "singular_title": "bronzer"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/body-oils-market",
       "title": "body oils market",
       "normalized_title": "body oils",
@@ -86688,12 +86742,6 @@
       "title": "canada clean beauty market",
       "normalized_title": "canada clean beauty",
       "singular_title": "canada clean beauty"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/mascara-market",
-      "title": "mascara market",
-      "normalized_title": "mascara",
-      "singular_title": "mascara"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/talc-free-body-powders-market",
@@ -99012,6 +99060,690 @@
       "title": "india pou water purifier market",
       "normalized_title": "india pou water purifier",
       "singular_title": "india pou water purifier"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/mediterranean-metabolic-syndrome-support-ingredient-packs-market",
+      "title": "mediterranean metabolic syndrome support ingredient packs market",
+      "normalized_title": "mediterranean metabolic syndrome support ingredient packs",
+      "singular_title": "mediterranean metabolic syndrome support ingredient pack"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/mediterranean-mood-and-stress-support-complexes-market",
+      "title": "mediterranean mood and stress support complexes market",
+      "normalized_title": "mediterranean mood stress support complexes",
+      "singular_title": "mediterranean mood stress support complex"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/pdo-pgi-linked-mediterranean-ingredient-collections-market",
+      "title": "pdo pgi linked mediterranean ingredient collections market",
+      "normalized_title": "pdo pgi linked mediterranean ingredient collections",
+      "singular_title": "pdo pgi linked mediterranean ingredient collection"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/mediterranean-pet-nutrition-ingredient-blends-market",
+      "title": "mediterranean pet nutrition ingredient blends market",
+      "normalized_title": "mediterranean pet nutrition ingredient blends",
+      "singular_title": "mediterranean pet nutrition ingredient blend"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/mediterranean-healthy-aging-beverage-ingredients-market",
+      "title": "mediterranean healthy aging beverage ingredients market",
+      "normalized_title": "mediterranean healthy aging beverage ingredients",
+      "singular_title": "mediterranean healthy aging beverage ingredient"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/wet-food-for-cat-market",
+      "title": "wet food for cat market",
+      "normalized_title": "wet food cat",
+      "singular_title": "wet food cat"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/rice-bran-fatty-alcohols-market",
+      "title": "rice bran fatty alcohols market",
+      "normalized_title": "rice bran fatty alcohols",
+      "singular_title": "rice bran fatty alcohol"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/tamarind-gum-derivatives-market",
+      "title": "tamarind gum derivatives market",
+      "normalized_title": "tamarind gum derivatives",
+      "singular_title": "tamarind gum derivative"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/mediterranean-cognitive-first-ingredient-systems-market",
+      "title": "mediterranean cognitive first ingredient systems market",
+      "normalized_title": "mediterranean cognitive first ingredient systems",
+      "singular_title": "mediterranean cognitive first ingredient system"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/oil-in-water-anionic-emulsifier-market",
+      "title": "oil in water anionic emulsifier market",
+      "normalized_title": "oil water anionic emulsifier",
+      "singular_title": "oil water anionic emulsifier"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/pvpp-beer-stabilizer-market",
+      "title": "pvpp beer stabilizer market",
+      "normalized_title": "pvpp beer stabilizer",
+      "singular_title": "pvpp beer stabilizer"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/pet-food-emulsifier-market",
+      "title": "pet food emulsifier market",
+      "normalized_title": "pet food emulsifier",
+      "singular_title": "pet food emulsifier"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/pet-food-pulverizer-market",
+      "title": "pet food pulverizer market",
+      "normalized_title": "pet food pulverizer",
+      "singular_title": "pet food pulverizer"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/haskap-berry-powder-market",
+      "title": "haskap berry powder market",
+      "normalized_title": "haskap berry powder",
+      "singular_title": "haskap berry powder"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/canned-wet-cat-food-market",
+      "title": "canned wet cat food market",
+      "normalized_title": "canned wet cat food",
+      "singular_title": "canned wet cat food"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/flaxseed-gum-market",
+      "title": "flaxseed gum market",
+      "normalized_title": "flaxseed gum",
+      "singular_title": "flaxseed gum"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/dill-pickles-market",
+      "title": "dill pickles market",
+      "normalized_title": "dill pickles",
+      "singular_title": "dill pickle"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/craft-beer-saccharification-equipment-market",
+      "title": "craft beer saccharification equipment market",
+      "normalized_title": "craft beer saccharification equipment",
+      "singular_title": "craft beer saccharification equipment"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/food-grade-cassia-gum-powder-market",
+      "title": "food grade cassia gum powder market",
+      "normalized_title": "food grade cassia gum powder",
+      "singular_title": "food grade cassia gum powder"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/custom-supplement-formulation-service-market",
+      "title": "custom supplement formulation service market",
+      "normalized_title": "custom supplement formulation service",
+      "singular_title": "custom supplement formulation service"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/whey-protein-ingredients-market",
+      "title": "whey protein ingredients market",
+      "normalized_title": "whey protein ingredients",
+      "singular_title": "whey protein ingredient"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/bakery-stabilizers-market",
+      "title": "bakery stabilizers market",
+      "normalized_title": "bakery stabilizers",
+      "singular_title": "bakery stabilizer"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/blockchain-food-traceability-market",
+      "title": "blockchain food traceability market",
+      "normalized_title": "blockchain food traceability",
+      "singular_title": "blockchain food traceability"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/vegan-dips-market",
+      "title": "vegan dips market",
+      "normalized_title": "vegan dips",
+      "singular_title": "vegan dip"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/tea-and-coffee-bags-market",
+      "title": "tea and coffee bags market",
+      "normalized_title": "tea coffee bags",
+      "singular_title": "tea coffee bag"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/uncooked-pasta-and-noodles-market",
+      "title": "uncooked pasta and noodles market",
+      "normalized_title": "uncooked pasta noodles",
+      "singular_title": "uncooked pasta noodle"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/snail-market",
+      "title": "snail market",
+      "normalized_title": "snail",
+      "singular_title": "snail"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/upcycled-food-waste-protein-snacks-market",
+      "title": "upcycled food waste protein snacks market",
+      "normalized_title": "upcycled food waste protein snacks",
+      "singular_title": "upcycled food waste protein snack"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/skimmed-milk-powder-market",
+      "title": "skimmed milk powder market",
+      "normalized_title": "skimmed milk powder",
+      "singular_title": "skimmed milk powder"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/organic-beverages-market",
+      "title": "organic beverages market",
+      "normalized_title": "organic beverages",
+      "singular_title": "organic beverage"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/reconstituted-milk-market",
+      "title": "reconstituted milk market",
+      "normalized_title": "reconstituted milk",
+      "singular_title": "reconstituted milk"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/premium-bottled-water-market",
+      "title": "premium bottled water market",
+      "normalized_title": "premium bottled water",
+      "singular_title": "premium bottled water"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/oyster-and-clam-market",
+      "title": "oyster and clam market",
+      "normalized_title": "oyster clam",
+      "singular_title": "oyster clam"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/l-carnitine-market",
+      "title": "l carnitine market",
+      "normalized_title": "l carnitine",
+      "singular_title": "l carnitine"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/meat-starter-cultures-market",
+      "title": "meat starter cultures market",
+      "normalized_title": "meat starter cultures",
+      "singular_title": "meat starter culture"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/meal-kit-market",
+      "title": "meal kit market",
+      "normalized_title": "meal kit",
+      "singular_title": "meal kit"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/krill-oil-supplements-market",
+      "title": "krill oil supplements market",
+      "normalized_title": "krill oil supplements",
+      "singular_title": "krill oil supplement"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/neuro-sensory-flavored-beverages-innovation-market",
+      "title": "neuro sensory flavored beverages innovation market",
+      "normalized_title": "neuro sensory flavored beverages innovation",
+      "singular_title": "neuro sensory flavored beverage innovation"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/gluten-feed-market",
+      "title": "gluten feed market",
+      "normalized_title": "gluten feed",
+      "singular_title": "gluten feed"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/healthy-snacks-market",
+      "title": "healthy snacks market",
+      "normalized_title": "healthy snacks",
+      "singular_title": "healthy snack"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/ice-cream-premix-and-stabilizers-market",
+      "title": "ice cream premix and stabilizers market",
+      "normalized_title": "ice cream premix stabilizers",
+      "singular_title": "ice cream premix stabilizer"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/food-technology-market",
+      "title": "food technology market",
+      "normalized_title": "food technology",
+      "singular_title": "food technology"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/fresh-vegetables-market",
+      "title": "fresh vegetables market",
+      "normalized_title": "fresh vegetables",
+      "singular_title": "fresh vegetable"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/dips-and-spreads-market",
+      "title": "dips and spreads market",
+      "normalized_title": "dips spreads",
+      "singular_title": "dip spread"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/dog-food-and-snacks-market",
+      "title": "dog food and snacks market",
+      "normalized_title": "dog food snacks",
+      "singular_title": "dog food snack"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/epoxidized-soybean-oil-market",
+      "title": "epoxidized soybean oil market",
+      "normalized_title": "epoxidized soybean oil",
+      "singular_title": "epoxidized soybean oil"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/edible-animal-fat-market",
+      "title": "edible animal fat market",
+      "normalized_title": "edible animal fat",
+      "singular_title": "edible animal fat"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/food-minerals-market",
+      "title": "food minerals market",
+      "normalized_title": "food minerals",
+      "singular_title": "food mineral"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/flavor-compounds-market",
+      "title": "flavor compounds market",
+      "normalized_title": "flavor compounds",
+      "singular_title": "flavor compound"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/xylose-market",
+      "title": "xylose market",
+      "normalized_title": "xylose",
+      "singular_title": "xylose"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/tomato-sauce-concentrate-market",
+      "title": "tomato sauce concentrate market",
+      "normalized_title": "tomato sauce concentrate",
+      "singular_title": "tomato sauce concentrate"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/textured-vegetable-protein-market",
+      "title": "textured vegetable protein market",
+      "normalized_title": "textured vegetable protein",
+      "singular_title": "textured vegetable protein"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/cocoa-bean-derivatives-market",
+      "title": "cocoa bean derivatives market",
+      "normalized_title": "cocoa bean derivatives",
+      "singular_title": "cocoa bean derivative"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/vinegar-market",
+      "title": "vinegar market",
+      "normalized_title": "vinegar",
+      "singular_title": "vinegar"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/plant-protein-hydrolysate-market",
+      "title": "plant protein hydrolysate market",
+      "normalized_title": "plant protein hydrolysate",
+      "singular_title": "plant protein hydrolysate"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/salmon-fish-market",
+      "title": "salmon fish market",
+      "normalized_title": "salmon fish",
+      "singular_title": "salmon fish"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/sauces-and-condiments-market",
+      "title": "sauces and condiments market",
+      "normalized_title": "sauces condiments",
+      "singular_title": "sauce condiment"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/spray-dried-animal-plasma-sdap-market",
+      "title": "spray dried animal plasma sdap market",
+      "normalized_title": "spray dried animal plasma sdap",
+      "singular_title": "spray dried animal plasma sdap"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/pine-bark-extracts-market",
+      "title": "pine bark extracts market",
+      "normalized_title": "pine bark extracts",
+      "singular_title": "pine bark extract"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/non-dairy-ice-cream-market",
+      "title": "non dairy ice cream market",
+      "normalized_title": "non dairy ice cream",
+      "singular_title": "non dairy ice cream"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/plant-based-meals-market",
+      "title": "plant based meals market",
+      "normalized_title": "plant based meals",
+      "singular_title": "plant based meal"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/pasta-sauces-market",
+      "title": "pasta sauces market",
+      "normalized_title": "pasta sauces",
+      "singular_title": "pasta sauce"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/nutritional-bars-market",
+      "title": "nutritional bars market",
+      "normalized_title": "nutritional bars",
+      "singular_title": "nutritional bar"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/marine-collagen-based-products-market",
+      "title": "marine collagen based products market",
+      "normalized_title": "marine collagen based products",
+      "singular_title": "marine collagen based product"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/marine-protein-hydrolysate-market",
+      "title": "marine protein hydrolysate market",
+      "normalized_title": "marine protein hydrolysate",
+      "singular_title": "marine protein hydrolysate"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/melatonin-supplements-market",
+      "title": "melatonin supplements market",
+      "normalized_title": "melatonin supplements",
+      "singular_title": "melatonin supplement"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/natural-food-flavors-market",
+      "title": "natural food flavors market",
+      "normalized_title": "natural food flavors",
+      "singular_title": "natural food flavor"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/meat-extracts-market",
+      "title": "meat extracts market",
+      "normalized_title": "meat extracts",
+      "singular_title": "meat extract"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/gummy-supplements-market",
+      "title": "gummy supplements market",
+      "normalized_title": "gummy supplements",
+      "singular_title": "gummy supplement"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/fried-onion-market",
+      "title": "fried onion market",
+      "normalized_title": "fried onion",
+      "singular_title": "fried onion"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/lemonade-market",
+      "title": "lemonade market",
+      "normalized_title": "lemonade",
+      "singular_title": "lemonade"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/infant-nutrition-hydrolysate-ingredients-market",
+      "title": "infant nutrition hydrolysate ingredients market",
+      "normalized_title": "infant nutrition hydrolysate ingredients",
+      "singular_title": "infant nutrition hydrolysate ingredient"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/food-fortifying-agents-market",
+      "title": "food fortifying agents market",
+      "normalized_title": "food fortifying agents",
+      "singular_title": "food fortifying agent"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/food-antioxidant-market",
+      "title": "food antioxidant market",
+      "normalized_title": "food antioxidant",
+      "singular_title": "food antioxidant"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/diamine-oxidase-enzyme-market",
+      "title": "diamine oxidase enzyme market",
+      "normalized_title": "diamine oxidase enzyme",
+      "singular_title": "diamine oxidase enzyme"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/early-life-nutrition-market",
+      "title": "early life nutrition market",
+      "normalized_title": "early life nutrition",
+      "singular_title": "early life nutrition"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/food-encapsulation-market",
+      "title": "food encapsulation market",
+      "normalized_title": "food encapsulation",
+      "singular_title": "food encapsulation"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/collagen-peptide-market",
+      "title": "collagen peptide market",
+      "normalized_title": "collagen peptide",
+      "singular_title": "collagen peptide"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/branched-chain-amino-acids-market",
+      "title": "branched chain amino acids market",
+      "normalized_title": "branched chain amino acids",
+      "singular_title": "branched chain amino acid"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/chili-sauce-market",
+      "title": "chili sauce market",
+      "normalized_title": "chili sauce",
+      "singular_title": "chili sauce"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/biotin-ingredients-market",
+      "title": "biotin ingredients market",
+      "normalized_title": "biotin ingredients",
+      "singular_title": "biotin ingredient"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/postpartum-health-supplements-market",
+      "title": "postpartum health supplements market",
+      "normalized_title": "postpartum health supplements",
+      "singular_title": "postpartum health supplement"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/short-path-evaporator-for-food-market",
+      "title": "short path evaporator for food market",
+      "normalized_title": "short path evaporator food",
+      "singular_title": "short path evaporator food"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/orange-compound-market",
+      "title": "orange compound market",
+      "normalized_title": "orange compound",
+      "singular_title": "orange compound"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/pepper-market",
+      "title": "pepper market",
+      "normalized_title": "pepper",
+      "singular_title": "pepper"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/mct-oil-market",
+      "title": "mct oil market",
+      "normalized_title": "mct oil",
+      "singular_title": "mct oil"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/platycladus-orientalis-leaf-extract-market",
+      "title": "platycladus orientalis leaf extract market",
+      "normalized_title": "platycladus orientalis leaf extract",
+      "singular_title": "platycladus orientalis leaf extract"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/plant-based-energy-drink-market",
+      "title": "plant based energy drink market",
+      "normalized_title": "plant based energy drink",
+      "singular_title": "plant based energy drink"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/insect-based-ingredients-market",
+      "title": "insect based ingredients market",
+      "normalized_title": "insect based ingredients",
+      "singular_title": "insect based ingredient"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/guava-puree-market",
+      "title": "guava puree market",
+      "normalized_title": "guava puree",
+      "singular_title": "guava puree"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/lemon-compound-market",
+      "title": "lemon compound market",
+      "normalized_title": "lemon compound",
+      "singular_title": "lemon compound"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/fruit-and-vegetable-juice-market",
+      "title": "fruit and vegetable juice market",
+      "normalized_title": "fruit vegetable juice",
+      "singular_title": "fruit vegetable juice"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/l-limonene-oil-market",
+      "title": "l limonene oil market",
+      "normalized_title": "l limonene oil",
+      "singular_title": "l limonene oil"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/vanilla-extract-market",
+      "title": "vanilla extract market",
+      "normalized_title": "vanilla extract",
+      "singular_title": "vanilla extract"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/feed-grade-spray-dried-animal-plasma-sdap-market",
+      "title": "feed grade spray dried animal plasma sdap market",
+      "normalized_title": "feed grade spray dried animal plasma sdap",
+      "singular_title": "feed grade spray dried animal plasma sdap"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/eucommia-leaf-extract-market",
+      "title": "eucommia leaf extract market",
+      "normalized_title": "eucommia leaf extract",
+      "singular_title": "eucommia leaf extract"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/savory-flavor-modulators-market",
+      "title": "savory flavor modulators market",
+      "normalized_title": "savory flavor modulators",
+      "singular_title": "savory flavor modulator"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/sialyllactose-ingredients-market",
+      "title": "sialyllactose ingredients market",
+      "normalized_title": "sialyllactose ingredients",
+      "singular_title": "sialyllactose ingredient"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/animal-feed-protein-ingredients-market",
+      "title": "animal feed protein ingredients market",
+      "normalized_title": "animal feed protein ingredients",
+      "singular_title": "animal feed protein ingredient"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/frozen-egg-market",
+      "title": "frozen egg market",
+      "normalized_title": "frozen egg",
+      "singular_title": "frozen egg"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/novel-feed-additives-market",
+      "title": "novel feed additives market",
+      "normalized_title": "novel feed additives",
+      "singular_title": "novel feed additive"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/organic-seed-varieties-market",
+      "title": "organic seed varieties market",
+      "normalized_title": "organic seed varieties",
+      "singular_title": "organic seed variety"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/fresh-fruits-vegetables-market",
+      "title": "fresh fruits vegetables market",
+      "normalized_title": "fresh fruits vegetables",
+      "singular_title": "fresh fruit vegetable"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/protein-dispersion-aids-market",
+      "title": "protein dispersion aids market",
+      "normalized_title": "protein dispersion aids",
+      "singular_title": "protein dispersion aid"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/food-grade-exopolysaccharides-market",
+      "title": "food grade exopolysaccharides market",
+      "normalized_title": "food grade exopolysaccharides",
+      "singular_title": "food grade exopolysaccharide"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/mustard-oil-market",
+      "title": "mustard oil market",
+      "normalized_title": "mustard oil",
+      "singular_title": "mustard oil"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/dried-cranberries-market",
+      "title": "dried cranberries market",
+      "normalized_title": "dried cranberries",
+      "singular_title": "dried cranberry"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/fresh-pears-market",
+      "title": "fresh pears market",
+      "normalized_title": "fresh pears",
+      "singular_title": "fresh pear"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/coffee-substitute-market",
+      "title": "coffee substitute market",
+      "normalized_title": "coffee substitute",
+      "singular_title": "coffee substitute"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/caffeine-supplements-market",
+      "title": "caffeine supplements market",
+      "normalized_title": "caffeine supplements",
+      "singular_title": "caffeine supplement"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/kale-chips-market",
+      "title": "kale chips market",
+      "normalized_title": "kale chips",
+      "singular_title": "kale chip"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/rice-noodles-market",
+      "title": "rice noodles market",
+      "normalized_title": "rice noodles",
+      "singular_title": "rice noodle"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/tonic-water-market",
+      "title": "tonic water market",
+      "normalized_title": "tonic water",
+      "singular_title": "tonic water"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/cordial-drink-market",
+      "title": "cordial drink market",
+      "normalized_title": "cordial drink",
+      "singular_title": "cordial drink"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/fish-protein-hydrolysate-market",
@@ -112466,36 +113198,6 @@
       "singular_title": "united state industrial pepper"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/pdo-pgi-linked-mediterranean-ingredient-collections-market",
-      "title": "pdo pgi linked mediterranean ingredient collections market",
-      "normalized_title": "pdo pgi linked mediterranean ingredient collections",
-      "singular_title": "pdo pgi linked mediterranean ingredient collection"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/mediterranean-pet-nutrition-ingredient-blends-market",
-      "title": "mediterranean pet nutrition ingredient blends market",
-      "normalized_title": "mediterranean pet nutrition ingredient blends",
-      "singular_title": "mediterranean pet nutrition ingredient blend"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/mediterranean-metabolic-syndrome-support-ingredient-packs-market",
-      "title": "mediterranean metabolic syndrome support ingredient packs market",
-      "normalized_title": "mediterranean metabolic syndrome support ingredient packs",
-      "singular_title": "mediterranean metabolic syndrome support ingredient pack"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/mediterranean-mood-and-stress-support-complexes-market",
-      "title": "mediterranean mood and stress support complexes market",
-      "normalized_title": "mediterranean mood stress support complexes",
-      "singular_title": "mediterranean mood stress support complex"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/mediterranean-healthy-aging-beverage-ingredients-market",
-      "title": "mediterranean healthy aging beverage ingredients market",
-      "normalized_title": "mediterranean healthy aging beverage ingredients",
-      "singular_title": "mediterranean healthy aging beverage ingredient"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/united-states-frozen-egg-market",
       "title": "united states frozen egg market",
       "normalized_title": "united states frozen egg",
@@ -112566,12 +113268,6 @@
       "title": "demand for yeast in eu",
       "normalized_title": "demand yeast eu",
       "singular_title": "demand yeast eu"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/mediterranean-cognitive-first-ingredient-systems-market",
-      "title": "mediterranean cognitive first ingredient systems market",
-      "normalized_title": "mediterranean cognitive first ingredient systems",
-      "singular_title": "mediterranean cognitive first ingredient system"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/demand-for-fat-filled-milk-powder-in-eu",
@@ -112664,28 +113360,10 @@
       "singular_title": "united state tamarind gum derivative"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/rice-bran-fatty-alcohols-market",
-      "title": "rice bran fatty alcohols market",
-      "normalized_title": "rice bran fatty alcohols",
-      "singular_title": "rice bran fatty alcohol"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/pvpp-beer-stabilizer-market",
-      "title": "pvpp beer stabilizer market",
-      "normalized_title": "pvpp beer stabilizer",
-      "singular_title": "pvpp beer stabilizer"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/united-states-film-forming-starches-market",
       "title": "united states film forming starches market",
       "normalized_title": "united states film forming starches",
       "singular_title": "united state film forming starch"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/pet-food-pulverizer-market",
-      "title": "pet food pulverizer market",
-      "normalized_title": "pet food pulverizer",
-      "singular_title": "pet food pulverizer"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/united-states-citrus-molasses-market",
@@ -112694,94 +113372,16 @@
       "singular_title": "united state citrus molass"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/pet-food-emulsifier-market",
-      "title": "pet food emulsifier market",
-      "normalized_title": "pet food emulsifier",
-      "singular_title": "pet food emulsifier"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/haskap-berry-powder-market",
-      "title": "haskap berry powder market",
-      "normalized_title": "haskap berry powder",
-      "singular_title": "haskap berry powder"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/united-states-caramel-malt-market",
       "title": "united states caramel malt market",
       "normalized_title": "united states caramel malt",
       "singular_title": "united state caramel malt"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/oil-in-water-anionic-emulsifier-market",
-      "title": "oil in water anionic emulsifier market",
-      "normalized_title": "oil water anionic emulsifier",
-      "singular_title": "oil water anionic emulsifier"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/gcc-functional-food-beverage-market",
       "title": "gcc functional food beverage market",
       "normalized_title": "gcc functional food beverage",
       "singular_title": "gcc functional food beverage"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/wet-food-for-cat-market",
-      "title": "wet food for cat market",
-      "normalized_title": "wet food cat",
-      "singular_title": "wet food cat"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/food-grade-cassia-gum-powder-market",
-      "title": "food grade cassia gum powder market",
-      "normalized_title": "food grade cassia gum powder",
-      "singular_title": "food grade cassia gum powder"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/tamarind-gum-derivatives-market",
-      "title": "tamarind gum derivatives market",
-      "normalized_title": "tamarind gum derivatives",
-      "singular_title": "tamarind gum derivative"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/flaxseed-gum-market",
-      "title": "flaxseed gum market",
-      "normalized_title": "flaxseed gum",
-      "singular_title": "flaxseed gum"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/dill-pickles-market",
-      "title": "dill pickles market",
-      "normalized_title": "dill pickles",
-      "singular_title": "dill pickle"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/blockchain-food-traceability-market",
-      "title": "blockchain food traceability market",
-      "normalized_title": "blockchain food traceability",
-      "singular_title": "blockchain food traceability"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/custom-supplement-formulation-service-market",
-      "title": "custom supplement formulation service market",
-      "normalized_title": "custom supplement formulation service",
-      "singular_title": "custom supplement formulation service"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/bakery-stabilizers-market",
-      "title": "bakery stabilizers market",
-      "normalized_title": "bakery stabilizers",
-      "singular_title": "bakery stabilizer"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/canned-wet-cat-food-market",
-      "title": "canned wet cat food market",
-      "normalized_title": "canned wet cat food",
-      "singular_title": "canned wet cat food"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/craft-beer-saccharification-equipment-market",
-      "title": "craft beer saccharification equipment market",
-      "normalized_title": "craft beer saccharification equipment",
-      "singular_title": "craft beer saccharification equipment"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/demand-for-spirulina-extract-in-eu",
@@ -112796,172 +113396,10 @@
       "singular_title": "demand egg replacement ingredient eu"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/neuro-sensory-flavored-beverages-innovation-market",
-      "title": "neuro sensory flavored beverages innovation market",
-      "normalized_title": "neuro sensory flavored beverages innovation",
-      "singular_title": "neuro sensory flavored beverage innovation"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/upcycled-food-waste-protein-snacks-market",
-      "title": "upcycled food waste protein snacks market",
-      "normalized_title": "upcycled food waste protein snacks",
-      "singular_title": "upcycled food waste protein snack"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/whey-protein-ingredients-market",
-      "title": "whey protein ingredients market",
-      "normalized_title": "whey protein ingredients",
-      "singular_title": "whey protein ingredient"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/vegan-dips-market",
-      "title": "vegan dips market",
-      "normalized_title": "vegan dips",
-      "singular_title": "vegan dip"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/uncooked-pasta-and-noodles-market",
-      "title": "uncooked pasta and noodles market",
-      "normalized_title": "uncooked pasta noodles",
-      "singular_title": "uncooked pasta noodle"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/tea-and-coffee-bags-market",
-      "title": "tea and coffee bags market",
-      "normalized_title": "tea coffee bags",
-      "singular_title": "tea coffee bag"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/snail-market",
-      "title": "snail market",
-      "normalized_title": "snail",
-      "singular_title": "snail"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/smoked-meat-market",
       "title": "smoked meat market",
       "normalized_title": "smoked meat",
       "singular_title": "smoked meat"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/skimmed-milk-powder-market",
-      "title": "skimmed milk powder market",
-      "normalized_title": "skimmed milk powder",
-      "singular_title": "skimmed milk powder"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/reconstituted-milk-market",
-      "title": "reconstituted milk market",
-      "normalized_title": "reconstituted milk",
-      "singular_title": "reconstituted milk"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/premium-bottled-water-market",
-      "title": "premium bottled water market",
-      "normalized_title": "premium bottled water",
-      "singular_title": "premium bottled water"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/oyster-and-clam-market",
-      "title": "oyster and clam market",
-      "normalized_title": "oyster clam",
-      "singular_title": "oyster clam"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/organic-beverages-market",
-      "title": "organic beverages market",
-      "normalized_title": "organic beverages",
-      "singular_title": "organic beverage"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/meat-starter-cultures-market",
-      "title": "meat starter cultures market",
-      "normalized_title": "meat starter cultures",
-      "singular_title": "meat starter culture"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/meal-kit-market",
-      "title": "meal kit market",
-      "normalized_title": "meal kit",
-      "singular_title": "meal kit"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/l-carnitine-market",
-      "title": "l carnitine market",
-      "normalized_title": "l carnitine",
-      "singular_title": "l carnitine"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/krill-oil-supplements-market",
-      "title": "krill oil supplements market",
-      "normalized_title": "krill oil supplements",
-      "singular_title": "krill oil supplement"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/ice-cream-premix-and-stabilizers-market",
-      "title": "ice cream premix and stabilizers market",
-      "normalized_title": "ice cream premix stabilizers",
-      "singular_title": "ice cream premix stabilizer"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/healthy-snacks-market",
-      "title": "healthy snacks market",
-      "normalized_title": "healthy snacks",
-      "singular_title": "healthy snack"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/gluten-feed-market",
-      "title": "gluten feed market",
-      "normalized_title": "gluten feed",
-      "singular_title": "gluten feed"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/fresh-vegetables-market",
-      "title": "fresh vegetables market",
-      "normalized_title": "fresh vegetables",
-      "singular_title": "fresh vegetable"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/food-technology-market",
-      "title": "food technology market",
-      "normalized_title": "food technology",
-      "singular_title": "food technology"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/food-minerals-market",
-      "title": "food minerals market",
-      "normalized_title": "food minerals",
-      "singular_title": "food mineral"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/flavor-compounds-market",
-      "title": "flavor compounds market",
-      "normalized_title": "flavor compounds",
-      "singular_title": "flavor compound"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/epoxidized-soybean-oil-market",
-      "title": "epoxidized soybean oil market",
-      "normalized_title": "epoxidized soybean oil",
-      "singular_title": "epoxidized soybean oil"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/edible-animal-fat-market",
-      "title": "edible animal fat market",
-      "normalized_title": "edible animal fat",
-      "singular_title": "edible animal fat"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/dog-food-and-snacks-market",
-      "title": "dog food and snacks market",
-      "normalized_title": "dog food snacks",
-      "singular_title": "dog food snack"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/dips-and-spreads-market",
-      "title": "dips and spreads market",
-      "normalized_title": "dips spreads",
-      "singular_title": "dip spread"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/demand-for-whole-wheat-flour-in-eu",
@@ -113132,280 +113570,16 @@
       "singular_title": "demand allergen free food eu"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/cocoa-bean-derivatives-market",
-      "title": "cocoa bean derivatives market",
-      "normalized_title": "cocoa bean derivatives",
-      "singular_title": "cocoa bean derivative"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/xylose-market",
-      "title": "xylose market",
-      "normalized_title": "xylose",
-      "singular_title": "xylose"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/tomato-sauce-concentrate-market",
-      "title": "tomato sauce concentrate market",
-      "normalized_title": "tomato sauce concentrate",
-      "singular_title": "tomato sauce concentrate"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/textured-vegetable-protein-market",
-      "title": "textured vegetable protein market",
-      "normalized_title": "textured vegetable protein",
-      "singular_title": "textured vegetable protein"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/sauces-and-condiments-market",
-      "title": "sauces and condiments market",
-      "normalized_title": "sauces condiments",
-      "singular_title": "sauce condiment"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/salmon-fish-market",
-      "title": "salmon fish market",
-      "normalized_title": "salmon fish",
-      "singular_title": "salmon fish"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/precision-fermentation-ingredients-market",
       "title": "precision fermentation ingredients market",
       "normalized_title": "precision fermentation ingredients",
       "singular_title": "precision fermentation ingredient"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/plant-protein-hydrolysate-market",
-      "title": "plant protein hydrolysate market",
-      "normalized_title": "plant protein hydrolysate",
-      "singular_title": "plant protein hydrolysate"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/plant-based-meals-market",
-      "title": "plant based meals market",
-      "normalized_title": "plant based meals",
-      "singular_title": "plant based meal"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/pine-bark-extracts-market",
-      "title": "pine bark extracts market",
-      "normalized_title": "pine bark extracts",
-      "singular_title": "pine bark extract"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/pasta-sauces-market",
-      "title": "pasta sauces market",
-      "normalized_title": "pasta sauces",
-      "singular_title": "pasta sauce"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/nutritional-bars-market",
-      "title": "nutritional bars market",
-      "normalized_title": "nutritional bars",
-      "singular_title": "nutritional bar"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/non-dairy-ice-cream-market",
-      "title": "non dairy ice cream market",
-      "normalized_title": "non dairy ice cream",
-      "singular_title": "non dairy ice cream"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/natural-food-flavors-market",
-      "title": "natural food flavors market",
-      "normalized_title": "natural food flavors",
-      "singular_title": "natural food flavor"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/melatonin-supplements-market",
-      "title": "melatonin supplements market",
-      "normalized_title": "melatonin supplements",
-      "singular_title": "melatonin supplement"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/meat-extracts-market",
-      "title": "meat extracts market",
-      "normalized_title": "meat extracts",
-      "singular_title": "meat extract"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/marine-protein-hydrolysate-market",
-      "title": "marine protein hydrolysate market",
-      "normalized_title": "marine protein hydrolysate",
-      "singular_title": "marine protein hydrolysate"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/marine-collagen-based-products-market",
-      "title": "marine collagen based products market",
-      "normalized_title": "marine collagen based products",
-      "singular_title": "marine collagen based product"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/lemonade-market",
-      "title": "lemonade market",
-      "normalized_title": "lemonade",
-      "singular_title": "lemonade"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/infant-nutrition-hydrolysate-ingredients-market",
-      "title": "infant nutrition hydrolysate ingredients market",
-      "normalized_title": "infant nutrition hydrolysate ingredients",
-      "singular_title": "infant nutrition hydrolysate ingredient"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/gummy-supplements-market",
-      "title": "gummy supplements market",
-      "normalized_title": "gummy supplements",
-      "singular_title": "gummy supplement"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/fried-onion-market",
-      "title": "fried onion market",
-      "normalized_title": "fried onion",
-      "singular_title": "fried onion"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/food-fortifying-agents-market",
-      "title": "food fortifying agents market",
-      "normalized_title": "food fortifying agents",
-      "singular_title": "food fortifying agent"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/food-antioxidant-market",
-      "title": "food antioxidant market",
-      "normalized_title": "food antioxidant",
-      "singular_title": "food antioxidant"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/early-life-nutrition-market",
-      "title": "early life nutrition market",
-      "normalized_title": "early life nutrition",
-      "singular_title": "early life nutrition"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/diamine-oxidase-enzyme-market",
-      "title": "diamine oxidase enzyme market",
-      "normalized_title": "diamine oxidase enzyme",
-      "singular_title": "diamine oxidase enzyme"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/chili-sauce-market",
-      "title": "chili sauce market",
-      "normalized_title": "chili sauce",
-      "singular_title": "chili sauce"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/branched-chain-amino-acids-market",
-      "title": "branched chain amino acids market",
-      "normalized_title": "branched chain amino acids",
-      "singular_title": "branched chain amino acid"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/biotin-ingredients-market",
-      "title": "biotin ingredients market",
-      "normalized_title": "biotin ingredients",
-      "singular_title": "biotin ingredient"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/food-encapsulation-market",
-      "title": "food encapsulation market",
-      "normalized_title": "food encapsulation",
-      "singular_title": "food encapsulation"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/collagen-peptide-market",
-      "title": "collagen peptide market",
-      "normalized_title": "collagen peptide",
-      "singular_title": "collagen peptide"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/vinegar-market",
-      "title": "vinegar market",
-      "normalized_title": "vinegar",
-      "singular_title": "vinegar"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/spray-dried-animal-plasma-sdap-market",
-      "title": "spray dried animal plasma sdap market",
-      "normalized_title": "spray dried animal plasma sdap",
-      "singular_title": "spray dried animal plasma sdap"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/animal-feed-protein-ingredients-market",
-      "title": "animal feed protein ingredients market",
-      "normalized_title": "animal feed protein ingredients",
-      "singular_title": "animal feed protein ingredient"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/postpartum-health-supplements-market",
-      "title": "postpartum health supplements market",
-      "normalized_title": "postpartum health supplements",
-      "singular_title": "postpartum health supplement"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/short-path-evaporator-for-food-market",
-      "title": "short path evaporator for food market",
-      "normalized_title": "short path evaporator food",
-      "singular_title": "short path evaporator food"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/pepper-market",
-      "title": "pepper market",
-      "normalized_title": "pepper",
-      "singular_title": "pepper"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/orange-compound-market",
-      "title": "orange compound market",
-      "normalized_title": "orange compound",
-      "singular_title": "orange compound"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/l-limonene-oil-market",
-      "title": "l limonene oil market",
-      "normalized_title": "l limonene oil",
-      "singular_title": "l limonene oil"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/mct-oil-market",
-      "title": "mct oil market",
-      "normalized_title": "mct oil",
-      "singular_title": "mct oil"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/insect-based-ingredients-market",
-      "title": "insect based ingredients market",
-      "normalized_title": "insect based ingredients",
-      "singular_title": "insect based ingredient"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/plant-based-energy-drink-market",
-      "title": "plant based energy drink market",
-      "normalized_title": "plant based energy drink",
-      "singular_title": "plant based energy drink"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/lemon-compound-market",
-      "title": "lemon compound market",
-      "normalized_title": "lemon compound",
-      "singular_title": "lemon compound"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/feed-grade-spray-dried-animal-plasma-sdap-market",
-      "title": "feed grade spray dried animal plasma sdap market",
-      "normalized_title": "feed grade spray dried animal plasma sdap",
-      "singular_title": "feed grade spray dried animal plasma sdap"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/demand-for-plant-based-milk-in-eu",
       "title": "demand for plant based milk in eu",
       "normalized_title": "demand plant based milk eu",
       "singular_title": "demand plant based milk eu"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/platycladus-orientalis-leaf-extract-market",
-      "title": "platycladus orientalis leaf extract market",
-      "normalized_title": "platycladus orientalis leaf extract",
-      "singular_title": "platycladus orientalis leaf extract"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/demand-for-polydextrose-in-the-eu",
@@ -113418,24 +113592,6 @@
       "title": "demand for plant based cheese in eu",
       "normalized_title": "demand plant based cheese eu",
       "singular_title": "demand plant based cheese eu"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/guava-puree-market",
-      "title": "guava puree market",
-      "normalized_title": "guava puree",
-      "singular_title": "guava puree"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/eucommia-leaf-extract-market",
-      "title": "eucommia leaf extract market",
-      "normalized_title": "eucommia leaf extract",
-      "singular_title": "eucommia leaf extract"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/fruit-and-vegetable-juice-market",
-      "title": "fruit and vegetable juice market",
-      "normalized_title": "fruit vegetable juice",
-      "singular_title": "fruit vegetable juice"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/demand-for-vegan-protein-bars-in-eu",
@@ -113456,12 +113612,6 @@
       "singular_title": "demand food waste management eu"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/fresh-fruits-vegetables-market",
-      "title": "fresh fruits vegetables market",
-      "normalized_title": "fresh fruits vegetables",
-      "singular_title": "fresh fruit vegetable"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/demand-for-bean-flour-in-eu",
       "title": "demand for bean flour in eu",
       "normalized_title": "demand bean flour eu",
@@ -113480,64 +113630,16 @@
       "singular_title": "demand astaxanthin eu"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/food-grade-exopolysaccharides-market",
-      "title": "food grade exopolysaccharides market",
-      "normalized_title": "food grade exopolysaccharides",
-      "singular_title": "food grade exopolysaccharide"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/demand-for-agricultural-adjuvants-in-eu",
       "title": "demand for agricultural adjuvants in eu",
       "normalized_title": "demand agricultural adjuvants eu",
       "singular_title": "demand agricultural adjuvant eu"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/frozen-egg-market",
-      "title": "frozen egg market",
-      "normalized_title": "frozen egg",
-      "singular_title": "frozen egg"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/sialyllactose-ingredients-market",
-      "title": "sialyllactose ingredients market",
-      "normalized_title": "sialyllactose ingredients",
-      "singular_title": "sialyllactose ingredient"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/organic-seed-varieties-market",
-      "title": "organic seed varieties market",
-      "normalized_title": "organic seed varieties",
-      "singular_title": "organic seed variety"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/protein-dispersion-aids-market",
-      "title": "protein dispersion aids market",
-      "normalized_title": "protein dispersion aids",
-      "singular_title": "protein dispersion aid"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/savory-flavor-modulators-market",
-      "title": "savory flavor modulators market",
-      "normalized_title": "savory flavor modulators",
-      "singular_title": "savory flavor modulator"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/uk-processed-beef-market",
       "title": "uk processed beef market",
       "normalized_title": "uk processed beef",
       "singular_title": "uk processed beef"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/vanilla-extract-market",
-      "title": "vanilla extract market",
-      "normalized_title": "vanilla extract",
-      "singular_title": "vanilla extract"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/novel-feed-additives-market",
-      "title": "novel feed additives market",
-      "normalized_title": "novel feed additives",
-      "singular_title": "novel feed additive"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/neotame-market",
@@ -134588,16 +134690,232 @@
       "singular_title": "asia pacific upstream oil gas service"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/anemia-supplements-market",
-      "title": "anemia supplements market",
-      "normalized_title": "anemia supplements",
-      "singular_title": "anemia supplement"
+      "url": "https://www.futuremarketinsights.com/reports/solid-oral-dosage-protac-degrader-formulations-market",
+      "title": "solid oral dosage protac degrader formulations market",
+      "normalized_title": "solid oral dosage protac degrader formulations",
+      "singular_title": "solid oral dosage protac degrader formulation"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/nasal-mucosa-therapeutics-market",
+      "title": "nasal mucosa therapeutics market",
+      "normalized_title": "nasal mucosa therapeutics",
+      "singular_title": "nasal mucosa therapeutic"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/self-amplifying-rna-cancer-immunotherapy-platforms-market",
+      "title": "self amplifying rna cancer immunotherapy platforms market",
+      "normalized_title": "self amplifying rna cancer immunotherapy platforms",
+      "singular_title": "self amplifying rna cancer immunotherapy platform"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/subcutaneous-bispecific-antibody-auto-injectors-market",
+      "title": "subcutaneous bispecific antibody auto injectors market",
+      "normalized_title": "subcutaneous bispecific antibody auto injectors",
+      "singular_title": "subcutaneous bispecific antibody auto injector"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/microneedle-patch-influenza-vaccine-delivery-market",
+      "title": "microneedle patch influenza vaccine delivery market",
+      "normalized_title": "microneedle patch influenza vaccine delivery",
+      "singular_title": "microneedle patch influenza vaccine delivery"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/bioreactor-single-use-protein-a-chromatography-media-market",
+      "title": "bioreactor single use protein a chromatography media market",
+      "normalized_title": "bioreactor single use protein chromatography media",
+      "singular_title": "bioreactor single use protein chromatography media"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/dental-operatory-products-market",
+      "title": "dental operatory products market",
+      "normalized_title": "dental operatory products",
+      "singular_title": "dental operatory product"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/heart-failure-biomarker-market",
+      "title": "heart failure biomarker market",
+      "normalized_title": "heart failure biomarker",
+      "singular_title": "heart failure biomarker"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/long-acting-implantable-glp-1-obesity-devices-market",
+      "title": "long acting implantable glp 1 obesity devices market",
+      "normalized_title": "long acting implantable glp 1 obesity devices",
+      "singular_title": "long acting implantable glp 1 obesity device"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/drug-loaded-pellets-market",
+      "title": "drug loaded pellets market",
+      "normalized_title": "drug loaded pellets",
+      "singular_title": "drug loaded pellet"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/algorithmic-clinical-audit-trail-market",
+      "title": "algorithmic clinical audit trail market",
+      "normalized_title": "algorithmic clinical audit trail",
+      "singular_title": "algorithmic clinical audit trail"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/tylosin-market",
+      "title": "tylosin market",
+      "normalized_title": "tylosin",
+      "singular_title": "tylosin"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/pre-filled-syringe-cell-therapy-delivery-systems-market",
+      "title": "pre filled syringe cell therapy delivery systems market",
+      "normalized_title": "pre filled syringe cell therapy delivery systems",
+      "singular_title": "pre filled syringe cell therapy delivery system"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/exosome-based-neurodegenerative-disease-therapeutics-market",
+      "title": "exosome based neurodegenerative disease therapeutics market",
+      "normalized_title": "exosome based neurodegenerative disease therapeutics",
+      "singular_title": "exosome based neurodegenerative disease therapeutic"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/lyophilized-viral-vector-storage-solutions-market",
+      "title": "lyophilized viral vector storage solutions market",
+      "normalized_title": "lyophilized viral vector storage solutions",
+      "singular_title": "lyophilized viral vector storage solution"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/payer-policy-intelligence-platforms-market",
+      "title": "payer policy intelligence platforms market",
+      "normalized_title": "payer policy intelligence platforms",
+      "singular_title": "payer policy intelligence platform"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/provider-directory-accuracy-management-market",
+      "title": "provider directory accuracy management market",
+      "normalized_title": "provider directory accuracy management",
+      "singular_title": "provider directory accuracy management"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/radiology-structured-reporting-automation-market",
+      "title": "radiology structured reporting automation market",
+      "normalized_title": "radiology structured reporting automation",
+      "singular_title": "radiology structured reporting automation"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/detachable-embolization-coils-market",
+      "title": "detachable embolization coils market",
+      "normalized_title": "detachable embolization coils",
+      "singular_title": "detachable embolization coil"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/revenue-cycle-denials-intelligence-market",
+      "title": "revenue cycle denials intelligence market",
+      "normalized_title": "revenue cycle denials intelligence",
+      "singular_title": "revenue cycle denial intelligence"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/nitinol-fixation-implants-market",
+      "title": "nitinol fixation implants market",
+      "normalized_title": "nitinol fixation implants",
+      "singular_title": "nitinol fixation implant"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/dental-3d-educational-tools-market",
+      "title": "dental 3d educational tools market",
+      "normalized_title": "dental 3d educational tools",
+      "singular_title": "dental 3d educational tool"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/neonatal-mri-systems-market",
+      "title": "neonatal mri systems market",
+      "normalized_title": "neonatal mri systems",
+      "singular_title": "neonatal mri system"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/imaging-interoperability-middleware-market",
+      "title": "imaging interoperability middleware market",
+      "normalized_title": "imaging interoperability middleware",
+      "singular_title": "imaging interoperability middleware"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/clinical-documentation-integrity-automation-market",
+      "title": "clinical documentation integrity automation market",
+      "normalized_title": "clinical documentation integrity automation",
+      "singular_title": "clinical documentation integrity automation"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/clinical-ai-model-governance-market",
+      "title": "clinical ai model governance market",
+      "normalized_title": "clinical ai model governance",
+      "singular_title": "clinical ai model governance"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/care-pathway-variance-analytics-market",
+      "title": "care pathway variance analytics market",
+      "normalized_title": "care pathway variance analytics",
+      "singular_title": "care pathway variance analytic"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/clinical-data-provenance-management-market",
+      "title": "clinical data provenance management market",
+      "normalized_title": "clinical data provenance management",
+      "singular_title": "clinical data provenance management"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/closed-system-bioprocessing-market",
+      "title": "closed system bioprocessing market",
+      "normalized_title": "closed system bioprocessing",
+      "singular_title": "closed system bioprocessing"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/real-world-evidence-solutions-market",
+      "title": "real world evidence solutions market",
+      "normalized_title": "real world evidence solutions",
+      "singular_title": "real world evidence solution"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/surface-plasmon-resonance-spr-systems-market",
+      "title": "surface plasmon resonance spr systems market",
+      "normalized_title": "surface plasmon resonance spr systems",
+      "singular_title": "surface plasmon resonance spr system"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/integrated-clinical-chemistry-and-immunoassay-analyzer-market",
+      "title": "integrated clinical chemistry and immunoassay analyzer market",
+      "normalized_title": "integrated clinical chemistry immunoassay analyzer",
+      "singular_title": "integrated clinical chemistry immunoassay analyzer"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/clinical-genai-safety-monitoring-market",
+      "title": "clinical genai safety monitoring market",
+      "normalized_title": "clinical genai safety monitoring",
+      "singular_title": "clinical genai safety monitoring"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/fhir-prior-authorization-market",
+      "title": "fhir prior authorization market",
+      "normalized_title": "fhir prior authorization",
+      "singular_title": "fhir prior authorization"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/hl7-fhir-compliance-market",
+      "title": "hl7 fhir compliance market",
+      "normalized_title": "hl7 fhir compliance",
+      "singular_title": "hl7 fhir compliance"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/ct-guided-biopsy-market",
+      "title": "ct guided biopsy market",
+      "normalized_title": "ct guided biopsy",
+      "singular_title": "ct guided biopsy"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/clamps-market",
       "title": "clamps market",
       "normalized_title": "clamps",
       "singular_title": "clamp"
+    },
+    {
+      "url": "https://www.futuremarketinsights.com/reports/anemia-supplements-market",
+      "title": "anemia supplements market",
+      "normalized_title": "anemia supplements",
+      "singular_title": "anemia supplement"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/surgical-irrigation-market",
@@ -143060,226 +143378,10 @@
       "singular_title": "edge ai continuous vital sign patch"
     },
     {
-      "url": "https://www.futuremarketinsights.com/reports/drug-loaded-pellets-market",
-      "title": "drug loaded pellets market",
-      "normalized_title": "drug loaded pellets",
-      "singular_title": "drug loaded pellet"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/heart-failure-biomarker-market",
-      "title": "heart failure biomarker market",
-      "normalized_title": "heart failure biomarker",
-      "singular_title": "heart failure biomarker"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/dental-operatory-products-market",
-      "title": "dental operatory products market",
-      "normalized_title": "dental operatory products",
-      "singular_title": "dental operatory product"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/long-acting-implantable-glp-1-obesity-devices-market",
-      "title": "long acting implantable glp 1 obesity devices market",
-      "normalized_title": "long acting implantable glp 1 obesity devices",
-      "singular_title": "long acting implantable glp 1 obesity device"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/subcutaneous-bispecific-antibody-auto-injectors-market",
-      "title": "subcutaneous bispecific antibody auto injectors market",
-      "normalized_title": "subcutaneous bispecific antibody auto injectors",
-      "singular_title": "subcutaneous bispecific antibody auto injector"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/self-amplifying-rna-cancer-immunotherapy-platforms-market",
-      "title": "self amplifying rna cancer immunotherapy platforms market",
-      "normalized_title": "self amplifying rna cancer immunotherapy platforms",
-      "singular_title": "self amplifying rna cancer immunotherapy platform"
-    },
-    {
       "url": "https://www.futuremarketinsights.com/reports/transdermal-peptide-hormone-replacement-patches-market",
       "title": "transdermal peptide hormone replacement patches market",
       "normalized_title": "transdermal peptide hormone replacement patches",
       "singular_title": "transdermal peptide hormone replacement patch"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/microneedle-patch-influenza-vaccine-delivery-market",
-      "title": "microneedle patch influenza vaccine delivery market",
-      "normalized_title": "microneedle patch influenza vaccine delivery",
-      "singular_title": "microneedle patch influenza vaccine delivery"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/nasal-mucosa-therapeutics-market",
-      "title": "nasal mucosa therapeutics market",
-      "normalized_title": "nasal mucosa therapeutics",
-      "singular_title": "nasal mucosa therapeutic"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/solid-oral-dosage-protac-degrader-formulations-market",
-      "title": "solid oral dosage protac degrader formulations market",
-      "normalized_title": "solid oral dosage protac degrader formulations",
-      "singular_title": "solid oral dosage protac degrader formulation"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/bioreactor-single-use-protein-a-chromatography-media-market",
-      "title": "bioreactor single use protein a chromatography media market",
-      "normalized_title": "bioreactor single use protein chromatography media",
-      "singular_title": "bioreactor single use protein chromatography media"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/lyophilized-viral-vector-storage-solutions-market",
-      "title": "lyophilized viral vector storage solutions market",
-      "normalized_title": "lyophilized viral vector storage solutions",
-      "singular_title": "lyophilized viral vector storage solution"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/exosome-based-neurodegenerative-disease-therapeutics-market",
-      "title": "exosome based neurodegenerative disease therapeutics market",
-      "normalized_title": "exosome based neurodegenerative disease therapeutics",
-      "singular_title": "exosome based neurodegenerative disease therapeutic"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/pre-filled-syringe-cell-therapy-delivery-systems-market",
-      "title": "pre filled syringe cell therapy delivery systems market",
-      "normalized_title": "pre filled syringe cell therapy delivery systems",
-      "singular_title": "pre filled syringe cell therapy delivery system"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/tylosin-market",
-      "title": "tylosin market",
-      "normalized_title": "tylosin",
-      "singular_title": "tylosin"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/algorithmic-clinical-audit-trail-market",
-      "title": "algorithmic clinical audit trail market",
-      "normalized_title": "algorithmic clinical audit trail",
-      "singular_title": "algorithmic clinical audit trail"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/revenue-cycle-denials-intelligence-market",
-      "title": "revenue cycle denials intelligence market",
-      "normalized_title": "revenue cycle denials intelligence",
-      "singular_title": "revenue cycle denial intelligence"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/clinical-documentation-integrity-automation-market",
-      "title": "clinical documentation integrity automation market",
-      "normalized_title": "clinical documentation integrity automation",
-      "singular_title": "clinical documentation integrity automation"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/detachable-embolization-coils-market",
-      "title": "detachable embolization coils market",
-      "normalized_title": "detachable embolization coils",
-      "singular_title": "detachable embolization coil"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/radiology-structured-reporting-automation-market",
-      "title": "radiology structured reporting automation market",
-      "normalized_title": "radiology structured reporting automation",
-      "singular_title": "radiology structured reporting automation"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/provider-directory-accuracy-management-market",
-      "title": "provider directory accuracy management market",
-      "normalized_title": "provider directory accuracy management",
-      "singular_title": "provider directory accuracy management"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/payer-policy-intelligence-platforms-market",
-      "title": "payer policy intelligence platforms market",
-      "normalized_title": "payer policy intelligence platforms",
-      "singular_title": "payer policy intelligence platform"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/imaging-interoperability-middleware-market",
-      "title": "imaging interoperability middleware market",
-      "normalized_title": "imaging interoperability middleware",
-      "singular_title": "imaging interoperability middleware"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/closed-system-bioprocessing-market",
-      "title": "closed system bioprocessing market",
-      "normalized_title": "closed system bioprocessing",
-      "singular_title": "closed system bioprocessing"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/clinical-data-provenance-management-market",
-      "title": "clinical data provenance management market",
-      "normalized_title": "clinical data provenance management",
-      "singular_title": "clinical data provenance management"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/neonatal-mri-systems-market",
-      "title": "neonatal mri systems market",
-      "normalized_title": "neonatal mri systems",
-      "singular_title": "neonatal mri system"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/dental-3d-educational-tools-market",
-      "title": "dental 3d educational tools market",
-      "normalized_title": "dental 3d educational tools",
-      "singular_title": "dental 3d educational tool"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/nitinol-fixation-implants-market",
-      "title": "nitinol fixation implants market",
-      "normalized_title": "nitinol fixation implants",
-      "singular_title": "nitinol fixation implant"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/care-pathway-variance-analytics-market",
-      "title": "care pathway variance analytics market",
-      "normalized_title": "care pathway variance analytics",
-      "singular_title": "care pathway variance analytic"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/clinical-ai-model-governance-market",
-      "title": "clinical ai model governance market",
-      "normalized_title": "clinical ai model governance",
-      "singular_title": "clinical ai model governance"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/real-world-evidence-solutions-market",
-      "title": "real world evidence solutions market",
-      "normalized_title": "real world evidence solutions",
-      "singular_title": "real world evidence solution"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/hl7-fhir-compliance-market",
-      "title": "hl7 fhir compliance market",
-      "normalized_title": "hl7 fhir compliance",
-      "singular_title": "hl7 fhir compliance"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/fhir-prior-authorization-market",
-      "title": "fhir prior authorization market",
-      "normalized_title": "fhir prior authorization",
-      "singular_title": "fhir prior authorization"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/clinical-genai-safety-monitoring-market",
-      "title": "clinical genai safety monitoring market",
-      "normalized_title": "clinical genai safety monitoring",
-      "singular_title": "clinical genai safety monitoring"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/surface-plasmon-resonance-spr-systems-market",
-      "title": "surface plasmon resonance spr systems market",
-      "normalized_title": "surface plasmon resonance spr systems",
-      "singular_title": "surface plasmon resonance spr system"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/integrated-clinical-chemistry-and-immunoassay-analyzer-market",
-      "title": "integrated clinical chemistry and immunoassay analyzer market",
-      "normalized_title": "integrated clinical chemistry immunoassay analyzer",
-      "singular_title": "integrated clinical chemistry immunoassay analyzer"
-    },
-    {
-      "url": "https://www.futuremarketinsights.com/reports/ct-guided-biopsy-market",
-      "title": "ct guided biopsy market",
-      "normalized_title": "ct guided biopsy",
-      "singular_title": "ct guided biopsy"
     },
     {
       "url": "https://www.futuremarketinsights.com/reports/lateral-flow-assay-component-market",
